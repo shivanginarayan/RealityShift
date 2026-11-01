@@ -1,0 +1,71 @@
+{
+  "protocol": 2,
+  "used": {
+    "evaluations": 2,
+    "trials": 3,
+    "candidates": 1
+  },
+  "runs": {
+    "97e62296adf349f4b89bfbfe1db351e6": {
+      "strategy_id": "s0002",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 10,
+        "success_rate": 0.47619047619047616,
+        "score": 50.532828214788054,
+        "rank": [
+          0.47619047619047616,
+          -0.10921897716998126,
+          -0.02290128453686699
+        ]
+      },
+      "strategy_sha256": "dd47ca10902e883c58ad8ca92db1bc6a777df6deeb22632c3f333a99d7b0c2dc",
+      "report_sha256": "8a995cf27f95481111c9831f52bde310448d81efa67bb1e45046ba3263d64264",
+      "case_successes": {
+        "case_a": 3,
+        "case_b": 2,
+        "case_c": 3,
+        "case_d": 0,
+        "case_e": 1,
+        "case_f": 1
+      },
+      "successful_recoveries": {
+        "case_d": 0,
+        "case_e": 1,
+        "case_f": 1
+      }
+    },
+    "ed88a41c5a7249e68bf3371e043ad6bd": {
+      "strategy_id": "initial",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 15,
+        "success_rate": 0.7142857142857143,
+        "score": 70.49433656717682,
+        "rank": [
+          0.7142857142857143,
+          -0.05476459177551361,
+          -1.9056147730760682
+        ]
+      },
+      "strategy_sha256": "d5b5c17eb1ac7e93207ce6663d9372e0c3407c7cc10eec2304eae842d3942279",
+      "report_sha256": "d87ea0608e85c3deee3db09cc4d0ecde4c3edd721163bc4a79558b470a2e7e82",
+      "case_successes": {
+        "case_a": 5,
+        "case_b": 2,
+        "case_c": 3,
+        "case_d": 2,
+        "case_e": 2,
+        "case_f": 1
+      },
+      "successful_recoveries": {
+        "case_d": 2,
+        "case_e": 2,
+        "case_f": 1
+      }
+    }
+  },
+  "promoted": "initial"
+}

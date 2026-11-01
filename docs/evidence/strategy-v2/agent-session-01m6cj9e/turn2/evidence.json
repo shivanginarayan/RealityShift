@@ -1,0 +1,13 @@
+{
+  "kind": "trueforge_session_export",
+  "session_id": "01m6cj9e08f1bthk34h5xgzqw5",
+  "turn_id": "01m6cjfsj22bpz66vberg4tfxg",
+  "status": "done",
+  "terminal": true,
+  "successful_turn": true,
+  "event_count": 23,
+  "pages": 1,
+  "exported_utc": "2026-11-01T22:10:21.072267+00:00",
+  "trace_sha256": "9dfe25f6af17782a4f93c6de83253318ecc648b58482dfee053465defede0b62",
+  "note": "Session completion alone does not prove skill improvement. Inspect tool outcomes."
+}

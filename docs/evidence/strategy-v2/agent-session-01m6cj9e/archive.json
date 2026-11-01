@@ -1,0 +1,18 @@
+{
+  "authorship": "agent_enum_selection_with_disclosed_supervision",
+  "note": "Public event projections remove reasoning_content recursively. Original raw exports remain private; their hashes are in each export receipt.",
+  "sha256": {
+    "audit.jsonl": "6d2ad5f135c2a12f3fe42f7eb7831bc12e7f0c6530a76651fc6e0015c305ea93",
+    "state.json": "4621a9d76b2a029bb64fe734587cb92fc54fcdd6aeda49e40c5be3ee6dbacce7",
+    "trajectories.zip": "f7c026fafc93fdb3bdf5b47e9a4ecdf024fefca338a2717b24f80ac6664353c6",
+    "turn1/agent.json": "77a391f639d07b17358486d7231459ec794a3c965e3c17aee5047b79278bf254",
+    "turn1/events.jsonl": "141d500df6d3e9f0d8c5e04ee89a54e00fc864a28b689385faf54b51e0624383",
+    "turn1/evidence.json": "cee6d7923bf93e251fc0401d3b7b331642233eea48f59211fbcbb511fc793c9d",
+    "turn1/run.json": "ebb000bf446db918f2a2fbb49605bd79d70bc722eb8f921d7fd828ba0bab8fe6",
+    "turn2/agent.json": "77a391f639d07b17358486d7231459ec794a3c965e3c17aee5047b79278bf254",
+    "turn2/events.jsonl": "c73b08a3518293cb96c843360ae078bf47fd2e299646c8ee38dfbe47ec6f10c6",
+    "turn2/evidence.json": "7ead37e128add91c1432a8050152602b95397cf1093a0bdabd4b4921bb6d5a21",
+    "turn2/run.json": "6e343f54ad418dbc2e82badbcd2120725f31f3d3d700c0a450919f6203d64b19",
+    "turn2/supervision.json": "b73b5e41939e8625050b8a2abb14d668d9f44b554c050eccb71be908d2337be3"
+  }
+}

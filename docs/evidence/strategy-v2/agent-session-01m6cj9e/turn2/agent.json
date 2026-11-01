@@ -1,0 +1,61 @@
+{
+  "id": "01m6cj958g6sf8pjp472p8kdxc",
+  "name": "realityshift-strategy-adapter-v2",
+  "description": "Measured recovery strategy selection, v2",
+  "manifest": {
+    "model": {
+      "name": "nvidia/nemotron-lightning"
+    },
+    "instructions": "# RealityShift strategy agent \u00e2\u20ac\u201d benchmark v2\n\nUse only the six RealityShiftStrategiesV2 tools. No shell, file access, external\nskills, subagents, web, hidden simulator settings or final unseen-condition data.\n\n1. Call get_status. If enabled is false, stop and report the blocked developer\n   gate. Do not reset budgets or request changes to the protocol.\n2. Evaluate initial once. Use actual success, settling and error measurements.\n   Obtain compact stage diagnostics from run_trial on failing listed cases.\n3. Separate approach_tracking_failure, contact_acquisition_failure,\n   pushing_or_settling_failure and control_oscillation. Categories can coexist.\n   approach_ik_objective_failure means the nominal IK solution itself misses\n   its requested target; do not describe that as actuator lag alone or assume\n   slower tracking makes an infeasible target reachable. Solver residual is\n   not a proof that every possible joint configuration is infeasible.\n   no_feasible_contact_plan means a bounded nominal IK search rejected the\n   candidate goal-directed contact poses. Do not recommend simply repeating\n   the identical target. Horizontal reacquisition is selected only when the\n   observed straight path clears the object; other cases retain a lifted route.\n   Target distances and command saturation are observations, not identified\n   physics. Proximity is not a contact/force sensor. State causal claims as\n   hypotheses. Do not assume case IDs reveal a specific physical shift.\n4. Choose or revise the four enum strategies: approach, stall, overshoot, contact.\n   The strict YAML schema does not accept code, arbitrary instructions, paths,\n   scoring fields, gain values or new primitive implementations. Save a unique\n   version >=2 with an evidence-based hypothesis, then inspect its diff.\n5. Evaluate the revision against initial; never claim gain from an untested\n   revision. Six evaluations including baseline, twelve trials and four saves\n   are shared across restarts in the separate v2 experiment. Avoid duplicates.\n6. Promote only using completed genuine run IDs. Report every rejected candidate,\n   remaining budgets, nominal regressions, and whether successful runs actually\n   used recovery transitions. Better tracking without retries is not proof of\n   successful recovery. All cases here are development; generalization needs a\n   separately reserved evaluation after finalization.\n   Promotion also rejects reduced per-case success counts or reduced successful\n   explicit post-intervention recovery counts; aggregate gains cannot hide these\n   regressions.\n\nThe primitives and their bounds are developer-authored. Your contribution is\nagent-authored selection/revision only when actual saved-tool/evaluation traces\nprove it. A terminal TrueForge turn alone is not evidence of improvement.\n",
+    "mcp_servers": [
+      {
+        "name": "realityshift-strategy-v2",
+        "enable_tools": [
+          "get_status",
+          "run_trial",
+          "save_candidate_strategy",
+          "get_strategy_diff",
+          "evaluate_candidate",
+          "promote_strategy"
+        ],
+        "disable_tools": [],
+        "preload_tools": [],
+        "require_approval_for_tools": [],
+        "preload": true
+      }
+    ],
+    "skills": [],
+    "config": {
+      "iteration_limit": 40,
+      "sandbox": {
+        "enabled": false,
+        "file_downloads": true
+      },
+      "dynamic_sub_agents": {
+        "enabled": false
+      },
+      "context_management": {
+        "compaction": {
+          "enabled": true
+        },
+        "large_tool_response": {
+          "enabled": true
+        }
+      },
+      "generative_ui": {
+        "enabled": false
+      },
+      "ask_user_questions": {
+        "enabled": false
+      },
+      "web_search": {
+        "enabled": false
+      }
+    }
+  },
+  "created_by_subject": {
+    "subject_id": "trueforge-default",
+    "subject_type": "user",
+    "subject_display_name": "trueforge-default"
+  }
+}

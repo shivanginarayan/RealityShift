@@ -1,0 +1,10 @@
+{
+  "episodes": 84,
+  "authorship": "developer",
+  "sha256": {
+    "manifest.json": "441115b739ae247d127a9b3af6edc30754f9b5c72eeb7429077307cc36c71508",
+    "report.json": "d620bc58d7687988495a84d547575d365a5e75a4b778de627944a1bb8cdb292b",
+    "stability.json": "abbf1e79471ea1e872561d944d71912f650d7570e52f6b9bbb37bbd7d062fac7",
+    "trajectories.zip": "bb200eea2b70ba3332a2858b3e157479258cdb487ebf13f4b56311f18d8fdb2c"
+  }
+}

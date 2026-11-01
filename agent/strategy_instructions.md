@@ -13,6 +13,10 @@ skills, subagents, web, hidden simulator settings or final unseen-condition data
    its requested target; do not describe that as actuator lag alone or assume
    slower tracking makes an infeasible target reachable. Solver residual is
    not a proof that every possible joint configuration is infeasible.
+   no_feasible_contact_plan means a bounded nominal IK search rejected the
+   candidate goal-directed contact poses. Do not recommend simply repeating
+   the identical target. Horizontal reacquisition is selected only when the
+   observed straight path clears the object; other cases retain a lifted route.
    Target distances and command saturation are observations, not identified
    physics. Proximity is not a contact/force sensor. State causal claims as
    hypotheses. Do not assume case IDs reveal a specific physical shift.

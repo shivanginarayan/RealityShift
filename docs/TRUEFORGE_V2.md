@@ -1,8 +1,10 @@
 # Gated TrueForge recovery-strategy integration
 
-**Currently blocked by measured developer stability, not by credentials.** The
-current v2 prototype is not enabled or promoted. No v2 model session has run.
-See [diagnosis, all ablations and failed checks](STRATEGY_RECOVERY_V2.md).
+**Update:** the [reachable-recovery follow-up](REACHABLE_RECOVERY.md) passes the
+unchanged developer gate at 15/21 and activates the separately frozen v2
+protocol. The new NVIDIA-backed [strategy session](STRATEGY_AGENT_RESULT.md)
+completed with a regressing candidate and no promotion. The earlier
+[diagnosis and failed experiments](STRATEGY_RECOVERY_V2.md) remain preserved.
 
 ## Strict strategy surface
 
@@ -24,7 +26,8 @@ Developer primitives and future agent-authored selections are distinct authorshi
 
 ## Protocol and tools
 
-`evaluation/v2/spec.json` is a **development draft**, not an activated freeze.
+`evaluation/v2/spec.json` is now locked by `evaluation/v2/frozen.json` using the
+passing `reachable-contact-geometry` evidence.
 The 21 episodes include known development cases and explicit scripted probes;
 there is no claim of genuinely unseen conditions. The scoring rules remain
 unchanged; the additional probe episodes make aggregate v2 scores different
@@ -55,13 +58,14 @@ hidden-parameter identification.
 
 ## Activation workflow after stable developer evidence exists
 
-The commands below are a future workflow. The current evidence correctly fails
-the first command; do not bypass the gate or edit its thresholds after outcomes.
+The passing evidence below was verified and activated once. Do not repeat the
+activation or launch commands for the reserved session, reset budgets, or edit
+the gate thresholds after outcomes.
 
 ```powershell
-python -s -c "from evaluation.v2.evidence import verify; print(verify('docs/evidence/strategy-v2/position-contact', require_current=True))"
-python -s -m evaluation.v2.activate --evidence docs/evidence/strategy-v2/position-contact
-# Only after a future verified passing gate and one-time freeze:
+python -s -c "from evaluation.v2.evidence import verify; print(verify('docs/evidence/strategy-v2/reachable-contact-geometry', require_current=True))"
+python -s -m evaluation.v2.activate --evidence docs/evidence/strategy-v2/reachable-contact-geometry
+# After the verified gate and one-time freeze:
 python -s -m agent.strategy_server
 python -s -m agent.configure_strategy_trueforge --model nvidia/nemotron-lightning
 python -s -m agent.run_strategy_adaptation
@@ -81,7 +85,7 @@ The launcher reserves a session once and refuses implicit duplicate launches or
 launches after tool budgets have been used. It preserves agent, benchmark,
 session and turn records under the new runtime directory.
 
-Collect a future real session with:
+Collect an existing real session with:
 
 ```powershell
 python -s -m agent.run_strategy_adaptation --collect .runtime/strategy-v2/agent_runs/RUN

@@ -10,7 +10,9 @@ from evaluation.recovery_diagnosis import analyze
 from evaluation.v2.evidence import verify
 
 
-@pytest.mark.parametrize('run', ['first', 'response-probe', 'position-contact'])
+@pytest.mark.parametrize('run', ['first', 'response-probe', 'position-contact',
+                               'reachable-contact-first', 'reachable-contact-pose',
+                               'reachable-table-clear', 'reachable-contact-geometry'])
 def test_all_developer_ablation_outcomes_are_rescored(run):
     result = verify(ROOT / 'docs/evidence/strategy-v2' / run)
     assert result['verified'] and result['episodes_rescored'] == 84

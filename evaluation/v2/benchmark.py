@@ -8,7 +8,7 @@ import mujoco
 import numpy as np
 
 from agent.strategy_diagnostics import diagnose
-from control.strategies import StrategyController
+from control.reachable_recovery import ReachableStrategyController as StrategyController
 from control.strategy_schema import load_strategy, strategy_text
 from evaluation.benchmark import ROOT, source_hash
 from evaluation.heldout import verify_protocol
@@ -17,6 +17,7 @@ from evaluation.metrics import aggregate, score_episode
 
 DIRECTORY = ROOT / 'evaluation/v2'
 SOURCES = ['evaluation/v2/spec.json', 'evaluation/v2/benchmark.py', 'control/strategies.py',
+           'control/reachable_recovery.py',
            'control/strategy_schema.py', 'agent/strategy_diagnostics.py',
            'control/recovery.py', 'control/settled_recovery.py', 'strategies/v2/initial.yaml']
 

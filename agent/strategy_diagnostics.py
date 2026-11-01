@@ -47,7 +47,7 @@ def diagnose(rows):
         start = end
     approach = [s for s in segments if s['stage'] in
                 ('approach', 'lower', 'recover_lift', 'recover_reapproach', 'recover_lower',
-                 'stabilize', 'reposition', 'correct_lower')]
+                 'stabilize', 'reposition', 'correct_lower', 'reacquire')]
     push_indices = [i for i, r in enumerate(rows) if r['stage'] in ('push', 'repush')]
     acquired = any(gaps[i] <= .065 for i in push_indices)
     failed = max(errors[-10:]) > .05 or len(rows) < 10

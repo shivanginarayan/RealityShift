@@ -1,0 +1,5 @@
+{
+  "kind": "developer_corrective_followup",
+  "prompt": "Your first turn did not evaluate initial across all 21 episodes. Comparing three diagnostic trials with a 21-episode candidate is invalid and does not establish improvement. First call evaluate_candidate(strategy_id=\"initial\") exactly once, then compare its full result with s0002. A diagnostic trial ID cannot be used as a baseline evaluation ID. Your previous claim that slower tracking reduces IK infeasibility is unsupported; contact categories are proximity hypotheses, not measured forces. Continue selecting and evaluating enum-only strategies if the measured evidence supports another revision, within the existing remaining budgets. Keep every failed candidate, inspect actual diffs, and use promote_strategy only with genuine full-evaluation IDs. Do not ask for additional permission. Stop when the budgets or evidence warrant stopping, and report matching-case outcomes honestly even if no improvement occurs. This is a supervised corrective follow-up; do not describe the entire session as unassisted.",
+  "utc": "2026-11-01T22:08:11.285089+00:00"
+}

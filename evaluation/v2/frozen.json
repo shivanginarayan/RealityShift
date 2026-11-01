@@ -1,0 +1,30 @@
+{
+  "benchmark_version": 2,
+  "gate_path": "docs/evidence/strategy-v2/reachable-contact-geometry/stability.json",
+  "gate_sha256": "03f380ed37e38d733f3602653806bb95792e3e68d0a234fff73359c3e4ed18c2",
+  "evidence_index_path": "docs/evidence/strategy-v2/reachable-contact-geometry/archive.json",
+  "evidence_index_sha256": "9491beec45fbba1c16f3dc6d448e0a9f7d3662b5e6468dee36e39e10836b496b",
+  "source_sha256": {
+    "evaluation/v2/spec.json": "e5fe42a37f1d3a49fbe3ee2c144126ab931a673317276a18ae85a1aa304e5e0e",
+    "evaluation/v2/benchmark.py": "5a4090734794058c90d19a7439ede2a61bd8f9145763a54748fd1315c215cc11",
+    "control/strategies.py": "17439fa0acfe9f6da0f67a66a0e3709fc23c441679bc0de1d7d34a0562a1e6c9",
+    "control/reachable_recovery.py": "8314cbbad11b254b82acfb1d54dbeba29416152643159a35081e38f43a9f00ea",
+    "control/strategy_schema.py": "6a7bf360d8d6ed2fbebd9b0caaa17ae988317217e1fef99434278f1ab09b6c84",
+    "agent/strategy_diagnostics.py": "518df613d1c78eb86ae55675ebaba386aad20d11615b98c861641ceeb39feb39",
+    "control/recovery.py": "a6a152f83da8adfb3d5049d54928df2fbe865da28242005ad4f0b56ba451f5e1",
+    "control/settled_recovery.py": "12dcd3c0adb19df4aaf3f9444ed60c94f720d6306159e4c6f558bbc0afd9ced1",
+    "strategies/v2/initial.yaml": "d5b5c17eb1ac7e93207ce6663d9372e0c3407c7cc10eec2304eae842d3942279",
+    "agent/strategy_bridge.py": "7cc96242cd4a4b0faae2ad20c4904a5c44a295c7018f16b57649b7653a3295af",
+    "agent/strategy_server.py": "8d5c2b9e13f240d282dfb0cac44382ad3f8de0253b53eae04e78e835a868edd0",
+    "agent/strategy_instructions.md": "6a5c2b27203d4f636241a6f0335f51731b4e2c2e79164f8c99d41ed3b2e0196b",
+    "agent/configure_strategy_trueforge.py": "57aa7833dbb4882db85543ad9683e6cce96019ba4ffcf5262997895881f2124b",
+    "agent/run_strategy_adaptation.py": "5a38a75cc62c5abcc961c8e9334f7f93b7d3f832e5dfd3f9f9ec76238dc1b328",
+    "evaluation/v2/activate.py": "ca49eeafe54c6df2b47f6af9e3ce0db0280bce7acb5d0b01b7ff65335754ad9e",
+    "evaluation/v2/evidence.py": "1060e65e79c0f3cf5298fbf4fd4fd740fc24c5101a16a6cb1f1cad192e973a32",
+    "evaluation/strategy_ablation.py": "762eee6f5b303e5bb8795f883fcb141272c1c279bc268ebb1e06d3f8b161dd0f",
+    "docs/evidence/strategy-v2/reachable-contact-geometry/archive.json": "9491beec45fbba1c16f3dc6d448e0a9f7d3662b5e6468dee36e39e10836b496b",
+    "docs/evidence/strategy-v2/reachable-contact-geometry/manifest.json": "26d0cded060df310e27cbe77db1048fb2a83c11aa803eaa7f6a1db9c436a182b",
+    "docs/evidence/strategy-v2/reachable-contact-geometry/report.json": "be941f8560a1f6ec55488aa5acd2242500743ea6c9351d8b87e9f250798ad620",
+    "docs/evidence/strategy-v2/reachable-contact-geometry/stability.json": "03f380ed37e38d733f3602653806bb95792e3e68d0a234fff73359c3e4ed18c2"
+  }
+}

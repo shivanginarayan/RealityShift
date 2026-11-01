@@ -1,0 +1,34 @@
+{
+  "method": "Nominal FK/collision replay; no simulator steps or model calls",
+  "source_archive": "docs/evidence/strategy-v2/reachable-contact-pose/trajectories.zip",
+  "episode": "full/case_f/seed1",
+  "step": 121,
+  "target": [
+    0.30188078189580597,
+    0.06899872784278913,
+    -0.275
+  ],
+  "nominal_joints": [
+    1.3775697781513405,
+    0.38896725761409207,
+    1.6989999999999998,
+    -0.5552187104961931,
+    1.2229620212214283,
+    -1.093,
+    -1.4989999999999999
+  ],
+  "table_contacts": [
+    {
+      "geom_a": 0,
+      "geom_b": 14,
+      "distance_m": -0.06831194142030021
+    },
+    {
+      "geom_a": 0,
+      "geom_b": 15,
+      "distance_m": -0.0545873794891024
+    }
+  ],
+  "model_calls": 0,
+  "new_simulation_trials": 0
+}

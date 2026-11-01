@@ -205,6 +205,11 @@ it is not evidence of autonomous adaptation or held-out generalization.
 
 ## Automated checks
 
+The latest developer recovery work is described in
+[Reachable recovery](docs/REACHABLE_RECOVERY.md), including measured improvements,
+regressions and gripper/table collision diagnosis. It remains separate from
+the original frozen benchmark and TrueForge result.
+
 GitHub Actions runs on pushes, pull requests and manual dispatch using Windows
 and Python 3.11. It installs the pinned simulator dependencies, checks dependency
 consistency, verifies the frozen benchmark and runs all tests. It needs no model
