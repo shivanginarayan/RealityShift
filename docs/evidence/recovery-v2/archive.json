@@ -1,0 +1,19 @@
+{
+  "authorship": "developer",
+  "comparison_runs": [
+    "first",
+    "contact-fix",
+    "final"
+  ],
+  "episodes": 90,
+  "archive_sha256": "4f1738b0b95b16d4c2cc2a5aac8110d73e7d5ded7ca3f83e34eb7bd67696ae53",
+  "files_sha256": {
+    "first/manifest.json": "a9faf42eee50e7ea37fc0fe547a3dc1e4239d79e967f0182b4b9c479be057d46",
+    "first/report.json": "145fd34e35fb2c0cc19f000e10a47190a47a9a9bd3eb92f99d13af6c4e47a070",
+    "contact-fix/manifest.json": "be6ddc180894db1fb1a043c067cad2fcce69a2af449c6b8286e79116147f39b9",
+    "contact-fix/report.json": "a7240512f50558f2137a388fe4ff0716fbdba36996dbd709515ade48ac2d28fc",
+    "final/manifest.json": "a3a3551a2eb37bb48f227befdd0c1b61a9f75a1f47c44c1309a4e5674b77eb18",
+    "final/report.json": "7d7d45e74886e920fafbb38aac6af9fbee79653ba11f9a99f6dcb7f86e89179a"
+  },
+  "note": "All three attempts preserved. No model-driven experiment or held-out simulation."
+}

@@ -1,0 +1,1265 @@
+{
+  "experiment": "developer_recovery_v2_increment1",
+  "authorship": "developer",
+  "original_artifacts_unchanged": true,
+  "source_sha256": {
+    "control/recovery.py": "a6a152f83da8adfb3d5049d54928df2fbe865da28242005ad4f0b56ba451f5e1",
+    "agent/recovery_diagnostics.py": "0aa066073cd74d712bd00a97ec8e1ee7b95e271fda324aade2516b217426f9f8",
+    "evaluation/recovery_comparison.py": "c7f706e6ab8d4506d8da150b23668b27e65c5d59ddc2c8a1831e2815f6f40ed8"
+  },
+  "controllers": {
+    "original_v1": {
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 35.24115569470959,
+        "rank": [
+          0.3333333333333333,
+          -0.3085628483268962,
+          -3.002590443725983
+        ]
+      },
+      "by_scenario": {
+        "nominal": {
+          "eligible": true,
+          "episodes": 5,
+          "successes": 5,
+          "success_rate": 1.0,
+          "score": 94.1445325789582,
+          "rank": [
+            1.0,
+            -0.013553352192711764,
+            -2.8994112012464406
+          ]
+        },
+        "high_mass": {
+          "eligible": true,
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "score": 2.013320554323414,
+          "rank": [
+            0.0,
+            -0.6512755415591549,
+            -2.328594743237965
+          ]
+        },
+        "actuator_delay": {
+          "eligible": true,
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "score": 9.565613950847126,
+          "rank": [
+            0.0,
+            -0.2608596512288218,
+            -3.779765386693545
+          ]
+        }
+      },
+      "episodes": [
+        {
+          "scenario": "nominal",
+          "seed": 0,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 92.95474791503793,
+          "final_error_xy_m": 0.011131302124051978,
+          "settled_time_fraction": 0.66,
+          "mean_squared_torque": 2.960820609028912,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.34666,
+            "best_error_xy_m": 0.01113,
+            "final_error_xy_m": 0.01113,
+            "max_tip_object_gap_m": 0.68523,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "5394774e69d0d7ed51f4b459fc000d4b7c35eac0a4f12d04a63d19be24d63898"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 1,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 94.09406875118522,
+          "final_error_xy_m": 0.005148281220369671,
+          "settled_time_fraction": 0.57,
+          "mean_squared_torque": 2.975024648800018,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.2322,
+            "best_error_xy_m": 0.00515,
+            "final_error_xy_m": 0.00515,
+            "max_tip_object_gap_m": 0.56029,
+            "failure_hypotheses": {
+              "stall": 1
+            },
+            "examples": [
+              {
+                "step": 70,
+                "hypothesis": "stall",
+                "goal_error_xy_m": 0.22646,
+                "tip_object_gap_m": 0.01792
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "ba0bc59e6a57e313500e918bddd58388ad58ede84e38f252710ff51e4a1b1167"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 2,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 95.44659040567296,
+          "final_error_xy_m": 0.004668573191509336,
+          "settled_time_fraction": 0.43666666666666665,
+          "mean_squared_torque": 2.9677884081134773,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.23573,
+            "best_error_xy_m": 0.00467,
+            "final_error_xy_m": 0.00467,
+            "max_tip_object_gap_m": 0.62284,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "12adc9cae265cf56e53f9118bc8d7f06bb40b282f752e524918a77708da6ed32"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 3,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 94.32805097023531,
+          "final_error_xy_m": 0.005132059077450566,
+          "settled_time_fraction": 0.5466666666666666,
+          "mean_squared_torque": 2.9684158107039047,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.29381,
+            "best_error_xy_m": 0.00513,
+            "final_error_xy_m": 0.00513,
+            "max_tip_object_gap_m": 0.6157,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "c00cfa800e075485a71d9af24a73d2a62a65426320f1e313e2366a0c63650416"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 4,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 93.89920485265958,
+          "final_error_xy_m": 0.041686545350177275,
+          "settled_time_fraction": 0.44333333333333336,
+          "mean_squared_torque": 2.6250065295858915,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.20627,
+            "best_error_xy_m": 0.04169,
+            "final_error_xy_m": 0.04169,
+            "max_tip_object_gap_m": 0.5861,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "18ee885be67acf45ad9c9e507530993e754b21ac3c03b68f92ff7574e76bc4af"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 0,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 0.0,
+          "final_error_xy_m": 0.9545569744237186,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 2.8769481550645035,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.34666,
+            "best_error_xy_m": 0.00625,
+            "final_error_xy_m": 0.95456,
+            "max_tip_object_gap_m": 0.68523,
+            "failure_hypotheses": {
+              "contact_not_acquired": 1
+            },
+            "examples": [
+              {
+                "step": 73,
+                "hypothesis": "contact_not_acquired",
+                "goal_error_xy_m": 0.60846,
+                "tip_object_gap_m": 0.0873
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "9c30d86b979fd9ad3458ddcd893f73f6d2f009147d3c7931a7d9ca5b5ce19d08"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 1,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 0.0,
+          "final_error_xy_m": 0.6350196920109926,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 1.6929754274198443,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.2322,
+            "best_error_xy_m": 0.00998,
+            "final_error_xy_m": 0.63502,
+            "max_tip_object_gap_m": 0.56029,
+            "failure_hypotheses": {
+              "overshoot": 1
+            },
+            "examples": [
+              {
+                "step": 58,
+                "hypothesis": "overshoot",
+                "goal_error_xy_m": 0.05215,
+                "tip_object_gap_m": 0.09193
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "566f6a4d6a7fe90fd4632ff17c4dd23c8746f42b13baf4735ee32c15d5302820"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 2,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 0.0,
+          "final_error_xy_m": 0.8556059669431384,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 1.7889455120508126,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.23573,
+            "best_error_xy_m": 0.01287,
+            "final_error_xy_m": 0.85561,
+            "max_tip_object_gap_m": 0.62284,
+            "failure_hypotheses": {
+              "overshoot": 1
+            },
+            "examples": [
+              {
+                "step": 59,
+                "hypothesis": "overshoot",
+                "goal_error_xy_m": 0.28802,
+                "tip_object_gap_m": 0.07513
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "25889ad166560251d0fd87dce9a7c7115feed527d4740b6f9b373301fb525a83"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 3,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 0.0,
+          "final_error_xy_m": 0.5628601437083515,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 2.228760568964788,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.29381,
+            "best_error_xy_m": 0.018,
+            "final_error_xy_m": 0.56286,
+            "max_tip_object_gap_m": 0.6157,
+            "failure_hypotheses": {
+              "overshoot": 1
+            },
+            "examples": [
+              {
+                "step": 48,
+                "hypothesis": "overshoot",
+                "goal_error_xy_m": 0.05747,
+                "tip_object_gap_m": 0.11173
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "ac6fb82eff2e82beb40a677ecdf303b5e7c9cfe23ad33a79d282246c8a76d084"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 4,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.06660277161707,
+          "final_error_xy_m": 0.24833493070957327,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.055344052689876,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.20627,
+            "best_error_xy_m": 0.01855,
+            "final_error_xy_m": 0.24833,
+            "max_tip_object_gap_m": 0.5861,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "2b378a40ae0a9a34a4cd7992a2c0246be536bbad0de1bf4faa72005527e38a1d"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 0,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 6.341877577166441,
+          "final_error_xy_m": 0.34145306057083896,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.668795283571579,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.34666,
+            "best_error_xy_m": 0.3313,
+            "final_error_xy_m": 0.34145,
+            "max_tip_object_gap_m": 0.68488,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "81d8d38cb85541dfd5d62567de34aeff2d1e3ec7c92a0cff1b95bc490d330177"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 1,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.959995211901262,
+          "final_error_xy_m": 0.2260001197024685,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.728501620298458,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.2322,
+            "best_error_xy_m": 0.226,
+            "final_error_xy_m": 0.226,
+            "max_tip_object_gap_m": 0.74424,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "f8349a917867425db13e37d9b717698852cd59e2de4adbf7c4983f8eff8a08af"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 2,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.510295106263285,
+          "final_error_xy_m": 0.2372426223434179,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.908890580063928,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.23573,
+            "best_error_xy_m": 0.23463,
+            "final_error_xy_m": 0.23724,
+            "max_tip_object_gap_m": 0.77044,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "6355139b3823406d1954b06b3eee0370e100dbf14fcafadd2f74695966a8f183"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 3,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 8.153716975313333,
+          "final_error_xy_m": 0.29615707561716664,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.8403835745013186,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.29381,
+            "best_error_xy_m": 0.29381,
+            "final_error_xy_m": 0.29616,
+            "max_tip_object_gap_m": 0.697,
+            "failure_hypotheses": {
+              "lost_contact": 1
+            },
+            "examples": [
+              {
+                "step": 283,
+                "hypothesis": "lost_contact",
+                "goal_error_xy_m": 0.29622,
+                "tip_object_gap_m": 0.52244
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "6102fb55b1f961cd71b2cb8bc4c9e044f3bbdfbcb8e180974dc2811fb3c5370a"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 4,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 11.862184883591308,
+          "final_error_xy_m": 0.20344537791021733,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.75225587503244,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.20627,
+            "best_error_xy_m": 0.20042,
+            "final_error_xy_m": 0.20345,
+            "max_tip_object_gap_m": 0.78688,
+            "failure_hypotheses": {
+              "contact_not_acquired": 1
+            },
+            "examples": [
+              {
+                "step": 158,
+                "hypothesis": "contact_not_acquired",
+                "goal_error_xy_m": 0.20354,
+                "tip_object_gap_m": 0.34032
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss."
+          },
+          "trajectory_sha256": "418111e7390c2703ea73cbc1b98bb5ec9ebfad533578dd804ca6c07d7a1218ac"
+        }
+      ]
+    },
+    "developer_recovery_v2": {
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 37.35257161189384,
+        "rank": [
+          0.3333333333333333,
+          -0.18363015414709852,
+          -2.9491572828803876
+        ]
+      },
+      "by_scenario": {
+        "nominal": {
+          "eligible": true,
+          "episodes": 5,
+          "successes": 5,
+          "success_rate": 1.0,
+          "score": 93.84913531558333,
+          "rank": [
+            1.0,
+            -0.006104950443750074,
+            -2.862141792622951
+          ]
+        },
+        "high_mass": {
+          "eligible": true,
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "score": 8.642560918827204,
+          "rank": [
+            0.0,
+            -0.2839359770293199,
+            -2.290380481068907
+          ]
+        },
+        "actuator_delay": {
+          "eligible": true,
+          "episodes": 5,
+          "successes": 0,
+          "success_rate": 0.0,
+          "score": 9.566018601270981,
+          "rank": [
+            0.0,
+            -0.26084953496822544,
+            -3.6949495749493053
+          ]
+        }
+      },
+      "episodes": [
+        {
+          "scenario": "nominal",
+          "seed": 0,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 93.04844186561706,
+          "final_error_xy_m": 0.00878895335957352,
+          "settled_time_fraction": 0.66,
+          "mean_squared_torque": 2.965404801726969,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.34666,
+            "best_error_xy_m": 0.00879,
+            "final_error_xy_m": 0.00879,
+            "max_tip_object_gap_m": 0.68523,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "hold",
+              "retries_used": 0,
+              "retry_limit": 2,
+              "event_counts": {},
+              "events": []
+            }
+          },
+          "trajectory_sha256": "feef59256a55b3baecb232f8dd6ea65bead796305eb03a64e5a305645dc7b1de"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 1,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 90.7794423813264,
+          "final_error_xy_m": 0.013847273800172913,
+          "settled_time_fraction": 0.8666666666666667,
+          "mean_squared_torque": 2.9840119754140586,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.2322,
+            "best_error_xy_m": 0.01385,
+            "final_error_xy_m": 0.01385,
+            "max_tip_object_gap_m": 0.56029,
+            "failure_hypotheses": {
+              "stall": 2
+            },
+            "examples": [
+              {
+                "step": 70,
+                "hypothesis": "stall",
+                "goal_error_xy_m": 0.22646,
+                "tip_object_gap_m": 0.01792
+              },
+              {
+                "step": 134,
+                "hypothesis": "stall",
+                "goal_error_xy_m": 0.19835,
+                "tip_object_gap_m": 0.02124
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "hold",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "stall": 2
+              },
+              "events": [
+                {
+                  "step": 71,
+                  "reason": "stall",
+                  "from": "push",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 135,
+                  "reason": "stall",
+                  "from": "push",
+                  "to": "recover_brake"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "79aa748e841c77e28276d25cbdded4601660fb7f296285a9f0b927b5cfb58e7e"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 2,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 95.49059583659572,
+          "final_error_xy_m": 0.003568437418440613,
+          "settled_time_fraction": 0.43666666666666665,
+          "mean_squared_torque": 3.017161380716125,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.23573,
+            "best_error_xy_m": 0.00357,
+            "final_error_xy_m": 0.00357,
+            "max_tip_object_gap_m": 0.62284,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "hold",
+              "retries_used": 0,
+              "retry_limit": 2,
+              "event_counts": {},
+              "events": []
+            }
+          },
+          "trajectory_sha256": "7ff832bcb360c7dd80477ded6a8b76e44eac63b1b35c8a657690923dbfa8c051"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 3,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 94.36574975774451,
+          "final_error_xy_m": 0.004189589389720749,
+          "settled_time_fraction": 0.5466666666666666,
+          "mean_squared_torque": 3.007886516607762,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.29381,
+            "best_error_xy_m": 0.00419,
+            "final_error_xy_m": 0.00419,
+            "max_tip_object_gap_m": 0.6157,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "hold",
+              "retries_used": 0,
+              "retry_limit": 2,
+              "event_counts": {},
+              "events": []
+            }
+          },
+          "trajectory_sha256": "8c189cc575fc28eab1dcee172b2de373a446c560b988df651a2de5f47737f6c6"
+        },
+        {
+          "scenario": "nominal",
+          "seed": 4,
+          "eligible": true,
+          "violations": [],
+          "success": true,
+          "score": 95.56144673663296,
+          "final_error_xy_m": 0.00013049825084257116,
+          "settled_time_fraction": 0.44333333333333336,
+          "mean_squared_torque": 2.3362442886498407,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.20627,
+            "best_error_xy_m": 1e-05,
+            "final_error_xy_m": 0.00013,
+            "max_tip_object_gap_m": 0.5861,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "hold",
+              "retries_used": 0,
+              "retry_limit": 2,
+              "event_counts": {},
+              "events": []
+            }
+          },
+          "trajectory_sha256": "52563759fea5e48dd272b621bc357d13cf6764e105203e7ef834c1185ad7aa3a"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 0,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 3.4261022833975696,
+          "final_error_xy_m": 0.41434744291506076,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 2.187857116532668,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.34666,
+            "best_error_xy_m": 0.00443,
+            "final_error_xy_m": 0.41435,
+            "max_tip_object_gap_m": 0.68523,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "goal_escape": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 44,
+                  "reason": "goal_escape",
+                  "from": "hold",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 95,
+                  "reason": "phase_timeout",
+                  "from": "recover_reapproach",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 142,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_reapproach",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "7a2733595ec62dcd43b3958f510d0408a1027256669dc96f35286669d291189e"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 1,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 17.02667068477558,
+          "final_error_xy_m": 0.07433323288061042,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 1.8710841819284463,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.2322,
+            "best_error_xy_m": 0.00998,
+            "final_error_xy_m": 0.07433,
+            "max_tip_object_gap_m": 0.56029,
+            "failure_hypotheses": {
+              "overshoot": 1
+            },
+            "examples": [
+              {
+                "step": 58,
+                "hypothesis": "overshoot",
+                "goal_error_xy_m": 0.05215,
+                "tip_object_gap_m": 0.10091
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "overshoot": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 59,
+                  "reason": "overshoot",
+                  "from": "hold",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 119,
+                  "reason": "phase_timeout",
+                  "from": "recover_lower",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 163,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_reapproach",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "66db745ea7ea86bcbf5ed315882c51926159fa3b3355535cf398e0f4ff76d63c"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 2,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 1.8291570970074522,
+          "final_error_xy_m": 0.4542710725748137,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 2.260194675870874,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.23573,
+            "best_error_xy_m": 0.00622,
+            "final_error_xy_m": 0.45427,
+            "max_tip_object_gap_m": 0.62284,
+            "failure_hypotheses": {
+              "overshoot": 1
+            },
+            "examples": [
+              {
+                "step": 94,
+                "hypothesis": "overshoot",
+                "goal_error_xy_m": 0.0547,
+                "tip_object_gap_m": 0.16296
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "goal_escape": 1,
+                "overshoot": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 42,
+                  "reason": "goal_escape",
+                  "from": "hold",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 95,
+                  "reason": "overshoot",
+                  "from": "hold",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 143,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_reapproach",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "241091e3240c57207d92a985f215ae39cd4f14909bd4199c475f0ce5638f4f53"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 3,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.864271757338347,
+          "final_error_xy_m": 0.22839320606654137,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 2.581581362813186,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.29381,
+            "best_error_xy_m": 0.018,
+            "final_error_xy_m": 0.22839,
+            "max_tip_object_gap_m": 0.6157,
+            "failure_hypotheses": {
+              "overshoot": 1
+            },
+            "examples": [
+              {
+                "step": 48,
+                "hypothesis": "overshoot",
+                "goal_error_xy_m": 0.05747,
+                "tip_object_gap_m": 0.12595
+              }
+            ],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "overshoot": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 49,
+                  "reason": "overshoot",
+                  "from": "hold",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 95,
+                  "reason": "phase_timeout",
+                  "from": "recover_reapproach",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 139,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_reapproach",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "1dede9c3eeb8b2d5598fe944fc7d529def6e3a3ae2e570850e8b78c12546d30a"
+        },
+        {
+          "scenario": "high_mass",
+          "seed": 4,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.06660277161707,
+          "final_error_xy_m": 0.24833493070957327,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 2.5511850681993593,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.20627,
+            "best_error_xy_m": 0.01855,
+            "final_error_xy_m": 0.24833,
+            "max_tip_object_gap_m": 0.5861,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "approach_timeout": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 65,
+                  "reason": "approach_timeout",
+                  "from": "approach",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 112,
+                  "reason": "phase_timeout",
+                  "from": "recover_reapproach",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 157,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_reapproach",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "6bb671c64aa2221e749d2a9b66920297e5c84a8db4e987a74a343c20db9ea237"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 0,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 6.520901154148834,
+          "final_error_xy_m": 0.33697747114627913,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.6572837069619557,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.34666,
+            "best_error_xy_m": 0.33266,
+            "final_error_xy_m": 0.33698,
+            "max_tip_object_gap_m": 0.68488,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "approach_timeout": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 89,
+                  "reason": "approach_timeout",
+                  "from": "lower",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 132,
+                  "reason": "phase_timeout",
+                  "from": "recover_lift",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 175,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_lift",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "17d24450a09fc858543873419bfeca21056327fdc0f72a72dff1719641339434"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 1,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.716751447186104,
+          "final_error_xy_m": 0.23208121382034744,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.6758633141447823,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.2322,
+            "best_error_xy_m": 0.23208,
+            "final_error_xy_m": 0.23208,
+            "max_tip_object_gap_m": 0.86012,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "approach_timeout": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 65,
+                  "reason": "approach_timeout",
+                  "from": "approach",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 108,
+                  "reason": "phase_timeout",
+                  "from": "recover_lift",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 151,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_lift",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "28f52b7e8a7c4257dc2f6cad9f5024cde5572d9353c085e0a6e54d8a7da9907d"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 2,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 10.497664314569771,
+          "final_error_xy_m": 0.23755839213575566,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.7287208115896555,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.23573,
+            "best_error_xy_m": 0.23573,
+            "final_error_xy_m": 0.23756,
+            "max_tip_object_gap_m": 0.97939,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "approach_timeout": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 65,
+                  "reason": "approach_timeout",
+                  "from": "approach",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 108,
+                  "reason": "phase_timeout",
+                  "from": "recover_lift",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 163,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_reapproach",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "61a94e277cb8c3ae75b173e8b6c71d160eff19651e1b246ed253025327220a84"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 3,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 8.111497896604448,
+          "final_error_xy_m": 0.2972125525848888,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.7705817714911443,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.29381,
+            "best_error_xy_m": 0.29381,
+            "final_error_xy_m": 0.29721,
+            "max_tip_object_gap_m": 1.04701,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "approach_timeout": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 115,
+                  "reason": "approach_timeout",
+                  "from": "lower",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 158,
+                  "reason": "phase_timeout",
+                  "from": "recover_lift",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 201,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_lift",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "814b4ecde2cf2250786ac91a084761923e7c56e5110ea0467a064448440b8613"
+        },
+        {
+          "scenario": "actuator_delay",
+          "seed": 4,
+          "eligible": true,
+          "violations": [],
+          "success": false,
+          "score": 11.983278193845756,
+          "final_error_xy_m": 0.20041804515385606,
+          "settled_time_fraction": 1.0,
+          "mean_squared_torque": 3.6422982705589892,
+          "diagnostics": {
+            "schema": "recovery_diagnostics_v2",
+            "steps": 300,
+            "initial_error_xy_m": 0.20627,
+            "best_error_xy_m": 0.20042,
+            "final_error_xy_m": 0.20042,
+            "max_tip_object_gap_m": 0.88383,
+            "failure_hypotheses": {},
+            "examples": [],
+            "caveat": "Behavioral hypotheses only; separation does not prove physical contact loss.",
+            "recovery": {
+              "phase": "exhausted",
+              "retries_used": 2,
+              "retry_limit": 2,
+              "event_counts": {
+                "approach_timeout": 1,
+                "phase_timeout": 1,
+                "retry_budget_exhausted": 1
+              },
+              "events": [
+                {
+                  "step": 85,
+                  "reason": "approach_timeout",
+                  "from": "lower",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 128,
+                  "reason": "phase_timeout",
+                  "from": "recover_lift",
+                  "to": "recover_brake"
+                },
+                {
+                  "step": 171,
+                  "reason": "retry_budget_exhausted",
+                  "from": "recover_lift",
+                  "to": "exhausted"
+                }
+              ]
+            }
+          },
+          "trajectory_sha256": "2a0c4bf9febdae03d3ff50f5583e5512d96f2c8803414a17af821f5fdefdc4b7"
+        }
+      ]
+    }
+  }
+}

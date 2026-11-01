@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-11-01T09:07:39.931628+00:00",
+  "experiment": "developer_recovery_v2_increment1",
+  "authorship": "developer",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "scenarios": [
+    "nominal",
+    "high_mass",
+    "actuator_delay"
+  ],
+  "scoring": {
+    "version": 1,
+    "horizon": 300,
+    "dt_seconds": 0.05,
+    "goal_tolerance_xy_m": 0.05,
+    "settle_steps": 10,
+    "max_abs_torque": 2.0,
+    "error_normalization_m": 0.5,
+    "weights": {
+      "success": 70,
+      "error": 20,
+      "time": 10
+    },
+    "development_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "development_scenarios": [
+      "nominal",
+      "high_mass",
+      "actuator_delay"
+    ]
+  },
+  "recovery_config": {
+    "window": 24,
+    "min_progress": 0.008,
+    "max_stall_motion": 0.02,
+    "contact_gap": 0.13,
+    "contact_patience": 8,
+    "overshoot_near": 0.065,
+    "overshoot_crossing": 0.015,
+    "overshoot_growth": 0.012,
+    "max_retries": 2,
+    "phase_timeout": 35,
+    "recovery_timeout": 100,
+    "approach_timeout": 65,
+    "brake_steps": 8
+  },
+  "source_sha256": {
+    "control/recovery.py": "a6a152f83da8adfb3d5049d54928df2fbe865da28242005ad4f0b56ba451f5e1",
+    "agent/recovery_diagnostics.py": "0aa066073cd74d712bd00a97ec8e1ee7b95e271fda324aade2516b217426f9f8",
+    "evaluation/recovery_comparison.py": "c7f706e6ab8d4506d8da150b23668b27e65c5d59ddc2c8a1831e2815f6f40ed8"
+  },
+  "protected_sha256_before": {
+    ".runtime/bridge/state.json": "46c414e29896645c9305806f9c920b91bb765f0c95672930615096d305102620",
+    ".runtime/heldout-receipt.json": "ef1eaad41c33f452c03bef9d3ee4309fd64fe24f262db3be974b766e8d3d8ad8",
+    "agent/instructions.md": "50003d57d4ce6a61dddbbd54dd99d81eedc68e4f5d643d41798671acbb130f5d",
+    "agent/tool_bridge.py": "42f163630acfe75d696e7626bdf1afedbb77a1003df2c408c3189a8b01764ff7",
+    "demo/assets/realityshift_demo-01.png": "20c7a2237fb537e7acde5911f5062017a0531a125a0e747032d1a77374d92ec2",
+    "demo/assets/realityshift_demo-02.png": "aae576adca52086a730eaf69caa34c27197ae85f883eae4a058cb02bcba87b04",
+    "demo/assets/realityshift_demo-03.png": "5f29f9faa8015c5ce70e902a802ae8e7a565489b28051856e717a7bfe43539fc",
+    "demo/assets/realityshift_demo-04.png": "cb31a18f196a35670d21e02a84c4335ddc324d6265a79ab770852544ef470f9c",
+    "demo/assets/realityshift_demo-05.png": "7476fdd9ee51f9e9df0b9dcf4a8937dde49688110638c39ee28605826754e7e2",
+    "demo/assets/realityshift_demo-06.png": "c851c377337192a0c4be19f1d3b09cb54052763696329a875009ec4ed02e35d8",
+    "demo/assets/realityshift_demo-07.png": "3f82c158fdc7c296ba5f306bea40616285cdbbd8f4538473ee1c29186c0a08c9",
+    "demo/assets/realityshift_demo.json": "f35367132ae4866578bdc1d476ca44ada0b5d06682d32f5ecbe42acc177e6ae8",
+    "demo/assets/realityshift_demo.mp4": "ef1c4391e4585dfcca90792a06d56ca0ee0cedc71f23c96f485b887df5bda965",
+    "demo/assets/realityshift_trueforge_demo-01.png": "20c7a2237fb537e7acde5911f5062017a0531a125a0e747032d1a77374d92ec2",
+    "demo/assets/realityshift_trueforge_demo-02.png": "aae576adca52086a730eaf69caa34c27197ae85f883eae4a058cb02bcba87b04",
+    "demo/assets/realityshift_trueforge_demo-03.png": "0905fcee3ea0e3e3cd72d0312a4c0510898a8a07d153ed68bcfdfb1c5590eec6",
+    "demo/assets/realityshift_trueforge_demo-04.png": "cb31a18f196a35670d21e02a84c4335ddc324d6265a79ab770852544ef470f9c",
+    "demo/assets/realityshift_trueforge_demo-05.png": "7476fdd9ee51f9e9df0b9dcf4a8937dde49688110638c39ee28605826754e7e2",
+    "demo/assets/realityshift_trueforge_demo-06.png": "c851c377337192a0c4be19f1d3b09cb54052763696329a875009ec4ed02e35d8",
+    "demo/assets/realityshift_trueforge_demo-07.png": "af2a675aeecde357e4e586afe9a1d4e0ac3379b2c9cc101af9a33e587e7f94e9",
+    "demo/assets/realityshift_trueforge_demo.json": "7041e741ed5b0af75ccf11f1220ece6e91421900d1b8885e706d1c662f23eda2",
+    "demo/assets/realityshift_trueforge_demo.mp4": "e617c2cd91874189de0b94ff54d24f4df8ee2d486352ef90cd5c9be7859a7d09",
+    "docs/evidence/nemotron/agent-configuration.json": "9bc27d35752907b35ca6c60276d42d0a812347e7c419a354ddd642837a9cf3fc",
+    "docs/evidence/nemotron/agent-hypotheses.json": "d5a012ab5239d901759147e1c4de4d908f2e96ed5cb6130f5beff9811ee3aa88",
+    "docs/evidence/nemotron/bridge-audit.jsonl": "0a9a643c0860341e646e605cfd172ff7c23f6080a2bf18f54a2804ad06ba13c8",
+    "docs/evidence/nemotron/diagnostic-results.json": "2a6c74aacd193b4ddce9fe382c94be45d1510b7e494f906ee76f9ace380a4efd",
+    "docs/evidence/nemotron/heldout-manifest.json": "39efe8979f8d4d0b5c39c4d0f6eb0ebbff9027730b78e04420456d782bcbf5e0",
+    "docs/evidence/nemotron/heldout-report.json": "f82da707ce985ee5273b5753fc972e8b2710962df55cc2d2c3f32eb439a09bb1",
+    "docs/evidence/nemotron/initial-development.json": "0ca46dc5a39baec0b70b798159f8f27d562de327a731bc777d0b773a12c0b0d9",
+    "docs/evidence/nemotron/model-configuration.json": "3d44a9a24b026b8141f397e5b9d2fb8e138f2a100186c7aea06234cd8104539a",
+    "docs/evidence/nemotron/session-completion.json": "236cd3b047cb3e7d3b67d4c54362c05424f1274f56becdbcee1159ad22def38d",
+    "docs/evidence/nemotron/session-tools.jsonl": "c000ebf84f44ef8763fef069efd1214faac0c682883d2d3505a74166ea45744d",
+    "docs/evidence/nemotron/skill-v1-v4.diff": "00b0ff814d149b09104b1e72b321d35f95e03cca7f298fc11454ea8f12263783",
+    "docs/evidence/nemotron/summary.json": "bfee96a935918e6a8a19e3763bc7d8eb59b3c95c6c6002f82eb1815239143fbb",
+    "docs/evidence/nemotron/trace-archive.json": "d4f6dfbb68f341635f98d4ff8bc78fbd1938289d42ea6bb397b1b56f4d0005a0",
+    "docs/evidence/nemotron/trajectories.zip": "a01c636d7d6f7ca532690f24808ac8a33b1f31fda734b2272ff0181151a17be8",
+    "docs/evidence/nemotron/v0002-development.json": "0de313a69ca48991594d704582601de8b30407476eb0d7fbf131d3d7c045ba51",
+    "docs/evidence/nemotron/v0003-development.json": "d750692af31f29fb82c7cd87e4cd61567b151d849e3892c73b12de8c9fee6f8c",
+    "docs/evidence/nemotron/v0004-development.json": "5a7b06eb89cffea0e2d0c0ffce24bc5e855808333a8d18e78ecbda5ebd6adab1",
+    "evaluation/frozen.json": "08ae261efb1d84d69523b9d210471e7058f6e36610347cbcb3d2a6f08df7993b",
+    "evaluation/heldout_frozen.json": "bdec5e3a6fbdb77c98a81858be67808f81e239d0cba72099f510080bba4a4aca",
+    "skills/initial.yaml": "ff64fb67fa9413202ee51ac944dcf8d4d034b8148f7d6a9e4f73ee686e393807",
+    "skills/versions/v0002.yaml": "34c8a2d7236bebf09e5da926c0b2edcaad246293262ddb9b5dd715569155cb2a",
+    "skills/versions/v0003.yaml": "c6d44b3c42e7fc4340f7f726c921500c5dfd53cd455144a666948ecff7a5386b",
+    "skills/versions/v0004.yaml": "8dfac2236b3050955123318ab75ebb536427fcd34e43196afe9553bd83ab42f6"
+  },
+  "versions": {
+    "gymnasium": "1.4.0",
+    "mujoco": "3.17.0",
+    "numpy": "2.2.6",
+    "scipy": "1.17.1"
+  },
+  "note": "Development comparison only; same initial gains. Not model-driven, held-out or a v1 promotion."
+}

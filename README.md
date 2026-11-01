@@ -19,6 +19,11 @@ Current scope is the TrueForge challenge only; Shelled work is excluded.
 [Submission evidence](docs/TRUEFORGE_EVIDENCE.md) | [Completion report](docs/COMPLETION_REPORT.md).
 [Submission packet and final checklist](docs/SUBMISSION_PACKET.md).
 
+**Developer-only v2 increment:** [bounded recovery and measured limitations](docs/RECOVERY_V2.md)
+adds observation-based failure detection and retries in a separate opt-in controller.
+It preserves v1 and has not been tested in a new TrueForge experiment. On existing
+development cases, score improves to 37.35 but shifted-case successes remain zero.
+
 Investigating skill adaptation across simulated changes in robotic pushing physics.
 This project contains the simulator foundation and a nominal model-based pushing
 controller, paired physics-shift experiments, and a recorded TrueForge/Nemotron
