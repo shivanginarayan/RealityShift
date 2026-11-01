@@ -1,0 +1,106 @@
+{
+  "checked_utc": "2026-11-01T08:31:45.695772+00:00",
+  "authentication_used": false,
+  "repository": {
+    "public": true,
+    "fork": false,
+    "created_at": "2026-11-01T04:47:19Z",
+    "created_after_opening": true,
+    "url": "https://github.com/shivanginarayan/RealityShift",
+    "project_license": null
+  },
+  "links": [
+    {
+      "path": "README.md",
+      "public_api_read": true,
+      "size": 11665,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/README.md",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/README.md"
+    },
+    {
+      "path": "docs/TRUEFORGE_EVIDENCE.md",
+      "public_api_read": true,
+      "size": 4401,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/TRUEFORGE_EVIDENCE.md",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/TRUEFORGE_EVIDENCE.md"
+    },
+    {
+      "path": "docs/COMPLETION_REPORT.md",
+      "public_api_read": true,
+      "size": 4225,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/COMPLETION_REPORT.md",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/COMPLETION_REPORT.md"
+    },
+    {
+      "path": "docs/evidence/nemotron/summary.json",
+      "public_api_read": true,
+      "size": 3272,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/evidence/nemotron/summary.json",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/evidence/nemotron/summary.json"
+    },
+    {
+      "path": "docs/evidence/nemotron/session-tools.jsonl",
+      "public_api_read": true,
+      "size": 54665,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/evidence/nemotron/session-tools.jsonl",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/evidence/nemotron/session-tools.jsonl"
+    },
+    {
+      "path": "docs/evidence/nemotron/trace-archive.json",
+      "public_api_read": true,
+      "size": 11556,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/evidence/nemotron/trace-archive.json",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/evidence/nemotron/trace-archive.json"
+    },
+    {
+      "path": "docs/evidence/nemotron/trajectories.zip",
+      "public_api_read": true,
+      "size": 7316977,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/evidence/nemotron/trajectories.zip",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/evidence/nemotron/trajectories.zip"
+    },
+    {
+      "path": "docs/evidence/nemotron/heldout-report.json",
+      "public_api_read": true,
+      "size": 11180,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/docs/evidence/nemotron/heldout-report.json",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/docs/evidence/nemotron/heldout-report.json"
+    },
+    {
+      "path": "skills/versions/v0004.yaml",
+      "public_api_read": true,
+      "size": 223,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/skills/versions/v0004.yaml",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/skills/versions/v0004.yaml"
+    },
+    {
+      "path": "demo/assets/realityshift_trueforge_demo.mp4",
+      "public_api_read": true,
+      "size": 3182766,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/demo/assets/realityshift_trueforge_demo.mp4",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/demo/assets/realityshift_trueforge_demo.mp4"
+    },
+    {
+      "path": "demo/assets/realityshift_trueforge_demo.json",
+      "public_api_read": true,
+      "size": 1747,
+      "github_url": "https://github.com/shivanginarayan/RealityShift/blob/main/demo/assets/realityshift_trueforge_demo.json",
+      "download_url": "https://raw.githubusercontent.com/shivanginarayan/RealityShift/main/demo/assets/realityshift_trueforge_demo.json"
+    }
+  ],
+  "demo_duration_seconds": 90.0,
+  "demo_within_two_minutes": true,
+  "technical_links_ready": true,
+  "submission_complete": false,
+  "remaining_user_checks": [
+    "Registration/pact/account eligibility",
+    "Final team and project fields",
+    "Proof-of-launch video accepted by portal",
+    "Original-code license decision",
+    "Challenge declaration and final submit; judge confirmation"
+  ],
+  "rules_source": "https://strangerbuilds.com/rules",
+  "deadline_utc": "2026-11-09T02:59:00Z",
+  "deadline_los_angeles": "2026-11-08T18:59:00-08:00",
+  "public_links_keep_available_through": "2026-11-19"
+}

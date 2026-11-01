@@ -17,6 +17,7 @@ nominal success, shifted failure, actual agent skill revision, paired improvemen
 and the full development/held-out results. [Video provenance](docs/DEMO.md).
 Current scope is the TrueForge challenge only; Shelled work is excluded.
 [Submission evidence](docs/TRUEFORGE_EVIDENCE.md) | [Completion report](docs/COMPLETION_REPORT.md).
+[Submission packet and final checklist](docs/SUBMISSION_PACKET.md).
 
 Investigating skill adaptation across simulated changes in robotic pushing physics.
 This project contains the simulator foundation and a nominal model-based pushing
