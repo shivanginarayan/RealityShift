@@ -96,11 +96,12 @@
     "Registration/pact/account eligibility",
     "Final team and project fields",
     "Proof-of-launch video accepted by portal",
-    "Original-code license decision",
+    "Report intentionally unlicensed original-code status",
     "Challenge declaration and final submit; judge confirmation"
   ],
   "rules_source": "https://strangerbuilds.com/rules",
   "deadline_utc": "2026-11-09T02:59:00Z",
   "deadline_los_angeles": "2026-11-08T18:59:00-08:00",
-  "public_links_keep_available_through": "2026-11-19"
+  "public_links_keep_available_through": "2026-11-19",
+  "original_code_license_decision": "intentionally_unlicensed"
 }

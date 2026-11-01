@@ -81,8 +81,8 @@ links. This verifies the repository facts, not all participant eligibility.
 - Confirm registration/pact/account eligibility privately; never publish identity
   documents, credentials or API keys.
 - Confirm your registered display name and final team membership in the portal.
-- Confirm original-code licensing; dependency declarations are inventoried in
-  `DEPENDENCY_LICENSES.md` but do not license the project's own code.
+- Report the original project code as intentionally unlicensed, per the user
+  decision. Dependency declarations in `DEPENDENCY_LICENSES.md` apply separately.
 - Open/declare only the TrueForge challenge and attach its actual evidence.
 - Add the accepted public proof-of-launch video URL and verify playback while
   signed out. Submit English text/captions.

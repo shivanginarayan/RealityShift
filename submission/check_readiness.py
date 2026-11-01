@@ -1,4 +1,4 @@
-﻿"""Read public repository readiness without credentials or experiment execution."""
+"""Read public repository readiness without credentials or experiment execution."""
 import concurrent.futures
 from datetime import datetime, timezone
 import json
@@ -42,9 +42,10 @@ def check():
             'demo_within_two_minutes':local['duration_seconds']<=120,
             'technical_links_ready':not repo['private'] and not repo['fork'] and created>=opening
                                     and all(x['public_api_read'] for x in links) and local['duration_seconds']<=120,
+            'original_code_license_decision':'intentionally_unlicensed',
             'submission_complete':False,
             'remaining_user_checks':['Registration/pact/account eligibility','Final team and project fields',
-                                     'Proof-of-launch video accepted by portal','Original-code license decision',
+                                     'Proof-of-launch video accepted by portal','Report intentionally unlicensed original-code status',
                                      'Challenge declaration and final submit; judge confirmation'],
             'rules_source':'https://strangerbuilds.com/rules',
             'deadline_utc':'2026-11-09T02:59:00Z','deadline_los_angeles':'2026-11-08T18:59:00-08:00',

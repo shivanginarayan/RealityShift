@@ -3,7 +3,7 @@
 Generated from the installed pinned distribution metadata. This table records
 declared license identifiers/classifiers; it is not a grant for original project
 code or an assertion that all vendor notices are reproduced here. The original
-project has no selected license yet. No model weights or dependency binaries
+project is intentionally unlicensed, per the user decision; no license file was added. No model weights or dependency binaries
 are committed. Preserve upstream license/NOTICE files if redistributing them.
 
 | Distribution | Version | Declared license | Upstream |
