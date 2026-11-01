@@ -1,5 +1,7 @@
 # RealityShift
 
+[![Tests](https://github.com/shivanginarayan/RealityShift/actions/workflows/tests.yml/badge.svg)](https://github.com/shivanginarayan/RealityShift/actions/workflows/tests.yml)
+
 Investigating skill adaptation across simulated changes in robotic pushing physics.
 This project contains the simulator foundation and a nominal model-based pushing
 controller, plus paired nominal and shifted-physics experiments. Autonomous
@@ -163,5 +165,13 @@ state. See `docs/BASELINES.md` for sampling, selection and budget limitations.
 Recorded best result: **6/15 successes, 44.6180/100**, versus initial **5/15,
 35.2412/100**. This sets a conventional baseline for the future TrueForge agent;
 it is not evidence of autonomous adaptation or held-out generalization.
+
+## Automated checks
+
+GitHub Actions runs on pushes, pull requests and manual dispatch using Windows
+and Python 3.11. It installs the pinned simulator dependencies, checks dependency
+consistency, verifies the frozen benchmark and runs all tests. It needs no model
+API keys, running TrueForge service, graphical desktop or saved experiment files.
+The workflow does not execute the paid model-driven adaptation loop.
 
 Environment reference: https://gymnasium.farama.org/environments/mujoco/pusher/
