@@ -145,3 +145,17 @@ agents with sandbox capability are rejected, and event export follows pagination
 while marking a failed terminal turn as unsuccessful. API responses in export
 tests are synthetic fixtures, not actual model execution. Real agent evidence
 remains pending provider setup.
+
+## Actual NVIDIA adaptation and final regression
+
+The NVIDIA-backed TrueForge session completed two turns. Initial skill: 5/15,
+35.2412. Agent v2: 4/15, 28.9703; v3: 5/15, 34.6072; v4: 6/15, 41.8346.
+V4 passed the fixed promotion gate. Four full evaluations were consumed, including
+baseline, without resetting budgets. Earlier OpenAI billing failure consumed no
+experiment evaluation. Agent changes were limited to existing numeric controls.
+
+After v4 was frozen, final unseen seeds produced 5/15 for both skills; v1 scored
+36.4483 and v4 scored 34.6993. Final improvement was false. Random search's earlier
+development result also exceeded v4's score. These failures and limitations are
+preserved in docs/AGENT_RESULTS.md and docs/evidence/nemotron/. No final-outcome
+feedback was sent to the agent for additional tuning. All 42 tests passed locally.

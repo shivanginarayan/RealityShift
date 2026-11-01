@@ -5,8 +5,10 @@ with one finalized candidate on fifteen episodes each: five new seeds across the
 same three scenario settings. It measures generalization to unseen initial-state
 seeds, not unseen mass/delay ranges or real hardware.
 
-No actual held-out simulation has been executed. Tests use synthetic observation
-fixtures to check pairing and access controls; those are not experiment results.
+The protocol has now been executed once on frozen agent skill v4, after its
+development budget was exhausted. Initial and v4 each succeeded 5/15; initial
+scored 36.4483 and v4 scored 34.6993. Thus v4 did not improve on unseen seeds.
+Tests separately use synthetic fixtures to check pairing and access controls.
 The agent bridge accepts only development seeds and exposes no held-out tool.
 
 After the actual agent has finalized its candidate and its development evaluation
@@ -34,6 +36,6 @@ requires a new disclosed protocol. Do not use final results for further tuning
 and then describe the same seeds as held out.
 
 Actual TrueForge session provenance must accompany any agent-authorship claim;
-the evaluator does not establish authorship. OpenAI provider configuration and
-the first real adaptation run remain pending. The next core action is to enter
-the OpenAI API key in TrueForge's local Settings → Models page.
+the evaluator does not establish authorship. The recorded session used NVIDIA
+Nemotron; no further OpenAI calls were made after the initial no-credit error.
+See AGENT_RESULTS.md and evidence/nemotron/ for real tool execution and outcomes.

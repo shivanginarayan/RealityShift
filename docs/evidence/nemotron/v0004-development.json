@@ -1,0 +1,184 @@
+{
+  "benchmark_version": 1,
+  "spec_sha256": "70e72d3826d272f44417dcacd6278d59e48196c1ac48787de9ab4349ade9a99e",
+  "skill_sha256": "958115f2e8ba6ae1f8475f0616235a9e4001fed71c43c9202b68538e17073014",
+  "aggregate": {
+    "eligible": true,
+    "episodes": 15,
+    "successes": 6,
+    "success_rate": 0.4,
+    "score": 41.83459518067389,
+    "rank": [
+      0.4,
+      -0.2446857607997849,
+      -2.660092883916433
+    ]
+  },
+  "episodes": [
+    {
+      "scenario": "nominal",
+      "seed": 0,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 6.133485241665431,
+      "final_error_xy_m": 0.34666286895836423,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 2.0154076470841895
+    },
+    {
+      "scenario": "nominal",
+      "seed": 1,
+      "eligible": true,
+      "violations": [],
+      "success": true,
+      "score": 92.31121809738471,
+      "final_error_xy_m": 0.027219547565382335,
+      "settled_time_fraction": 0.66,
+      "mean_squared_torque": 2.4431091661149895
+    },
+    {
+      "scenario": "nominal",
+      "seed": 2,
+      "eligible": true,
+      "violations": [],
+      "success": true,
+      "score": 93.73735244491459,
+      "final_error_xy_m": 0.009899522210468416,
+      "settled_time_fraction": 0.5866666666666667,
+      "mean_squared_torque": 2.4750848824463105
+    },
+    {
+      "scenario": "nominal",
+      "seed": 3,
+      "eligible": true,
+      "violations": [],
+      "success": true,
+      "score": 91.9407256281019,
+      "final_error_xy_m": 0.014815192630785746,
+      "settled_time_fraction": 0.7466666666666667,
+      "mean_squared_torque": 2.443512214764571
+    },
+    {
+      "scenario": "nominal",
+      "seed": 4,
+      "eligible": true,
+      "violations": [],
+      "success": true,
+      "score": 92.77714585052225,
+      "final_error_xy_m": 0.025571353736943945,
+      "settled_time_fraction": 0.62,
+      "mean_squared_torque": 2.125832114489244
+    },
+    {
+      "scenario": "high_mass",
+      "seed": 0,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 6.133485241665431,
+      "final_error_xy_m": 0.34666286895836423,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 2.0154076470841895
+    },
+    {
+      "scenario": "high_mass",
+      "seed": 1,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 0.0,
+      "final_error_xy_m": 0.578665381217861,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 1.4064441631457296
+    },
+    {
+      "scenario": "high_mass",
+      "seed": 2,
+      "eligible": true,
+      "violations": [],
+      "success": true,
+      "score": 97.59035227958988,
+      "final_error_xy_m": 0.025241193010252915,
+      "settled_time_fraction": 0.14,
+      "mean_squared_torque": 2.5025210814958196
+    },
+    {
+      "scenario": "high_mass",
+      "seed": 3,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 0.0,
+      "final_error_xy_m": 0.9945942235316184,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 2.2871098157490044
+    },
+    {
+      "scenario": "high_mass",
+      "seed": 4,
+      "eligible": true,
+      "violations": [],
+      "success": true,
+      "score": 98.16133674942265,
+      "final_error_xy_m": 0.019299914597767334,
+      "settled_time_fraction": 0.10666666666666667,
+      "mean_squared_torque": 1.8463033411978884
+    },
+    {
+      "scenario": "actuator_delay",
+      "seed": 0,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 6.403882638051222,
+      "final_error_xy_m": 0.33990293404871946,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 3.280740315361957
+    },
+    {
+      "scenario": "actuator_delay",
+      "seed": 1,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 10.95583319277985,
+      "final_error_xy_m": 0.2261041701805038,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 3.7494758818156173
+    },
+    {
+      "scenario": "actuator_delay",
+      "seed": 2,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 10.63892239659225,
+      "final_error_xy_m": 0.23402694008519373,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 3.858138147172959
+    },
+    {
+      "scenario": "actuator_delay",
+      "seed": 3,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 8.816901563096181,
+      "final_error_xy_m": 0.2795774609225955,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 3.761253771887281
+    },
+    {
+      "scenario": "actuator_delay",
+      "seed": 4,
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 11.918286386321915,
+      "final_error_xy_m": 0.20204284034195213,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 3.691053068936742
+    }
+  ]
+}

@@ -128,11 +128,13 @@ Observed: six tools discovered by TrueForge; direct MCP status and a case_c,
 seed-0 diagnostic trial completed; 31 tests passed; `pip check` clean. Promotion
 tests use synthetic test fixtures and are not claimed as a real improvement.
 
-The user selected OpenAI but deferred provider configuration. No model is
-configured, no saved adaptation agent has been created, and no TrueForge model
-session or agent-authored candidate has run. The connection test is developer
-integration evidence only. Actual self-improvement and sponsor execution proof
-remain pending.
+The initial OpenAI attempt failed with a no-credit error before experiment tools
+ran. The configured agent was then switched to `nvidia/nemotron-lightning`, backed
+by `nvidia/nemotron-3.5-lightning-30b-a3b` at NVIDIA. It completed two turns,
+evaluated three candidates and promoted v4 on development metrics. Frozen v4
+regressed on the final unseen-seed comparison. See AGENT_RESULTS.md and
+evidence/nemotron/ for actual session IDs, skill hashes and tool traces.
+The API key remains in local TrueForge storage and is not committed.
 
 References:
 

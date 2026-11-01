@@ -31,7 +31,8 @@ better lexicographic ranking: success rate first, then lower mean final error,
 then lower mean squared issued torque. A lower success rate cannot be rescued
 by the scalar score. The current `can_promote` function evaluates this gate;
 the agent bridge now enforces this gate when given two completed evaluation IDs.
-No real candidate promotion has been attempted yet.
+A real TrueForge/Nemotron v4 candidate passed the development gate and was
+promoted. Its final unseen-seed results regressed; see AGENT_RESULTS.md.
 
 ## Freeze and skill boundaries
 

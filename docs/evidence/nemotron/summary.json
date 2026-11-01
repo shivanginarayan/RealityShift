@@ -1,0 +1,97 @@
+{
+  "provider": "nvidia",
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "session_id": "01m6b09r6y75stas7g5nx86bna",
+  "turn_ids": [
+    "01m6b09r83a6ktm9cf7y1k5fj0",
+    "01m6b0ht9s7r5rwyg8xgwf3dg3"
+  ],
+  "evaluations": [
+    {
+      "run_id": "88fa02e106d844099e3e0cdc1f96c53c",
+      "skill_id": "initial",
+      "skill_sha256": "ff64fb67fa9413202ee51ac944dcf8d4d034b8148f7d6a9e4f73ee686e393807",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 35.24115569470959,
+        "rank": [
+          0.3333333333333333,
+          -0.3085628483268962,
+          -3.002590443725983
+        ]
+      },
+      "report_sha256": "d7c8c0c5a7bb4f04c1ab412d46ceb7ced11b10aa2cb813891e47c7394ad29804"
+    },
+    {
+      "run_id": "2410a1d13b6143e7a8404803037713fa",
+      "skill_id": "v0002",
+      "skill_sha256": "3f6b15b32a6a2e09d31239f1b552fe931e5273d8739b62eabe0e1be842798be5",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 4,
+        "success_rate": 0.26666666666666666,
+        "score": 28.970341843273467,
+        "rank": [
+          0.26666666666666666,
+          -0.324952173136885,
+          -2.0665754258560485
+        ]
+      },
+      "report_sha256": "03af2abdf75cad47002d815994929eadf667e30ff4f666fe2efe2ca9ccc440c4"
+    },
+    {
+      "run_id": "bee0ac4529344b47be9da75ff2084ff3",
+      "skill_id": "v0003",
+      "skill_sha256": "ebad778768e39d872425276fb31404430134c53988a40cefb91cfcf5975ccd76",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 34.60717840940445,
+        "rank": [
+          0.3333333333333333,
+          -0.3508007903969302,
+          -2.398798619312587
+        ]
+      },
+      "report_sha256": "bf0eaa464e9020a29d76e7bbce693d7d00880627e0c30be56ed9cd6c31d89a8c"
+    },
+    {
+      "run_id": "536153809c1d4579b1d899503f13959c",
+      "skill_id": "v0004",
+      "skill_sha256": "958115f2e8ba6ae1f8475f0616235a9e4001fed71c43c9202b68538e17073014",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 6,
+        "success_rate": 0.4,
+        "score": 41.83459518067389,
+        "rank": [
+          0.4,
+          -0.2446857607997849,
+          -2.660092883916433
+        ]
+      },
+      "report_sha256": "b99ad328e87faa98cabf1c9c103ecc4d79325dc26b608d7afd9c4bd3115acbf3"
+    }
+  ],
+  "promoted": "v0004",
+  "total_evaluations_used": 4,
+  "total_diagnostic_trials_used": 2,
+  "developer_smoke_trials_included": 1,
+  "candidates_saved": 3,
+  "original_trace_sha256": "aad52b5e3a626a477fc8fc203800cd3c92dcda9491c12fea426970a5287f9383",
+  "published_trace_sha256": "c000ebf84f44ef8763fef069efd1214faac0c682883d2d3505a74166ea45744d",
+  "trace_filter": "Retains tool calls, tool responses and event metadata; excludes model prose, reasoning_content and user message bodies.",
+  "limitations": [
+    "Numeric control revisions only; no implemented new recovery rule.",
+    "Development seeds observed previously.",
+    "Random search scored 44.6180; agent v4 scored 41.8346.",
+    "This is simulated physics adaptation, not real hardware transfer."
+  ]
+}
