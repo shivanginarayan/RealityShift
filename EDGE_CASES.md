@@ -110,3 +110,18 @@ Replay tests confirm that an edited trace fails its hash check and that changing
 only the claimed outcome cannot override the independently scored trajectory.
 A complete non-rendering replay reproduces recorded states without running a
 controller. Full test suite: 34 passed. No benchmark source or skill changed.
+
+## Random-search comparison
+
+Reproduce: `python -s -m evaluation.baselines --sampler-seed 42`.
+Recorded run: `experiments/random_search/20261101T070658694676Z/`.
+Initial skill succeeded 5/15 (35.2412); random candidates succeeded 3/15
+(24.8116), 6/15 (44.6180), and 0/15 (7.9082). The second sampled candidate
+passed selection; it is a developer optimizer output, not an agent revision.
+All three samples were saved before evaluation. No held-out outcomes were used.
+
+New tests confirm reproducible valid sampling, an exact four-evaluation budget,
+and rejection of scalar-score improvements that reduce task success. Selection
+also rejects a candidate with equal success but worse final error, even if its
+scalar score is higher. These selection edge checks use synthetic fixtures.
+Full suite: 36 tests passed. Agent budgets and active skill state were untouched.

@@ -1,0 +1,125 @@
+{
+  "kind": "conventional_random_search_not_agent_authored",
+  "sampler_seed": 42,
+  "evaluation_budget": 4,
+  "evaluations_completed": 4,
+  "benchmark_version": 1,
+  "spec_sha256": "70e72d3826d272f44417dcacd6278d59e48196c1ac48787de9ab4349ade9a99e",
+  "selected": "random_2",
+  "improved_over_initial": true,
+  "selection": "Retain incumbent only when strict score and lexicographic gates both improve",
+  "records": [
+    {
+      "label": "initial",
+      "skill": {
+        "name": "adaptive_pushing",
+        "version": 1,
+        "proportional_gain": 60.0,
+        "damping_gain": 4.0,
+        "max_torque": 2.0,
+        "approach_offset": 0.09,
+        "approach_height": -0.16,
+        "push_offset": 0.025,
+        "stop_distance": 0.05,
+        "action_smoothing": 1.0
+      },
+      "skill_sha256": "ff64fb67fa9413202ee51ac944dcf8d4d034b8148f7d6a9e4f73ee686e393807",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 35.24115569470959,
+        "rank": [
+          0.3333333333333333,
+          -0.3085628483268962,
+          -3.002590443725983
+        ]
+      }
+    },
+    {
+      "label": "random_1",
+      "skill": {
+        "name": "adaptive_pushing",
+        "version": 2,
+        "proportional_gain": 67.99324925486822,
+        "damping_gain": 3.4258399984174592,
+        "max_torque": 1.4992953069116235,
+        "approach_offset": 0.0912543977553679,
+        "approach_height": -0.19699870937327998,
+        "push_offset": 0.053530774062290724,
+        "stop_distance": 0.016085718284059133,
+        "action_smoothing": 0.6466382624887261
+      },
+      "skill_sha256": "539afd54db3a3810f0a8d4dd6e162cab60c7fbe330e1f322be4902addf93da93",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 3,
+        "success_rate": 0.2,
+        "score": 24.811638825209222,
+        "rank": [
+          0.2,
+          -0.2393394296391787,
+          -1.0173777674369668
+        ]
+      }
+    },
+    {
+      "label": "random_2",
+      "skill": {
+        "name": "adaptive_pushing",
+        "version": 3,
+        "proportional_gain": 20.6849274179782,
+        "damping_gain": 7.6297937927401,
+        "max_torque": 0.15041834239934088,
+        "approach_offset": 0.0827956962205405,
+        "approach_height": -0.19642433366743156,
+        "push_offset": 0.03899306626677139,
+        "stop_distance": 0.04814590364222517,
+        "action_smoothing": 0.43348338329156505
+      },
+      "skill_sha256": "76bdcddd42fed0dd82fb3143514e2d4680387f48c0892999bd8f764fd1f53fc0",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 6,
+        "success_rate": 0.4,
+        "score": 44.61803335507034,
+        "rank": [
+          0.4,
+          -0.10438249945657495,
+          -0.008920649050965493
+        ]
+      }
+    },
+    {
+      "label": "random_3",
+      "skill": {
+        "name": "adaptive_pushing",
+        "version": 4,
+        "proportional_gain": 70.11580010383446,
+        "damping_gain": 0.19683151920310915,
+        "max_torque": 1.631056578482335,
+        "approach_offset": 0.17141456850167403,
+        "approach_height": -0.12928811793489098,
+        "push_offset": 0.02041503099107951,
+        "stop_distance": 0.02088356498682471,
+        "action_smoothing": 0.23603180959988276
+      },
+      "skill_sha256": "0b50dda7ca63173076cddd4d375de9441b2d53cfd29762aa577d3e82e6335139",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 0,
+        "success_rate": 0.0,
+        "score": 7.908226336235461,
+        "rank": [
+          0.0,
+          -0.31896436073487705,
+          -1.0868475123630248
+        ]
+      }
+    }
+  ]
+}

@@ -149,4 +149,19 @@ Generated example: `experiments/demo/nominal_vs_delay.mp4`, 15 seconds at 20 fps
 Seed 0 ends at 0.0111 m nominal error versus 0.3415 m with delayed commands.
 This demonstrates the failure under a shift; it does not show agent adaptation.
 
+## Conventional random-search comparison
+
+```powershell
+python -s -m evaluation.baselines --sampler-seed 42
+```
+
+This evaluates v1 plus three randomly sampled skills under the unchanged frozen
+benchmark: four full evaluations, matching the agent's full-evaluation allowance.
+All samples are recorded before outcomes are observed. These developer-run
+optimizer results are separate from agent candidates and never change promotion
+state. See `docs/BASELINES.md` for sampling, selection and budget limitations.
+Recorded best result: **6/15 successes, 44.6180/100**, versus initial **5/15,
+35.2412/100**. This sets a conventional baseline for the future TrueForge agent;
+it is not evidence of autonomous adaptation or held-out generalization.
+
 Environment reference: https://gymnasium.farama.org/environments/mujoco/pusher/
