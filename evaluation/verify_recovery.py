@@ -12,6 +12,14 @@ from evaluation.metrics import aggregate, score_episode
 DIRECTORY = ROOT / "docs/evidence/recovery-v2"
 
 
+def text_hash_matches(path, expected):
+    """Accept Git checkout newline conversion without changing stored evidence."""
+    data = Path(path).read_bytes()
+    canonical = data.replace(b"\r\n", b"\n")
+    return any(hashlib.sha256(value).hexdigest() == expected for value in
+               (data, canonical, canonical.replace(b"\n", b"\r\n")))
+
+
 def verify(directory=DIRECTORY):
     spec, _, _, _ = verify_protocol()
     directory = Path(directory)
@@ -25,7 +33,7 @@ def verify(directory=DIRECTORY):
             manifest_path = directory / run / "manifest.json"
             report_path = directory / run / "report.json"
             for path in (manifest_path, report_path):
-                if hashlib.sha256(path.read_bytes()).hexdigest() != index["files_sha256"][path.relative_to(directory).as_posix()]:
+                if not text_hash_matches(path, index["files_sha256"][path.relative_to(directory).as_posix()]):
                     raise ValueError("Recovery report/manifest changed")
             manifest = json.loads(manifest_path.read_text())
             report = json.loads(report_path.read_text())

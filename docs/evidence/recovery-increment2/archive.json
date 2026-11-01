@@ -1,0 +1,10 @@
+{
+  "authorship": "developer",
+  "new_episodes": 30,
+  "reused_baseline_episodes": 30,
+  "sha256": {
+    "manifest.json": "2f6330faede5d9a68c98644f513a7f9a778f4380cad8903165749192dd95ae50",
+    "report.json": "0133253fd2e34a4ca7fa46bdfb89cffb466fcc9a93646b60461cd995041ad76c",
+    "trajectories.zip": "97fa78e854fe9f35094f63b9cfbea04fc3c73ea34ade505dc89b00c441390b01"
+  }
+}

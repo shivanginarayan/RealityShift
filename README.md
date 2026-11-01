@@ -24,6 +24,11 @@ adds observation-based failure detection and retries in a separate opt-in contro
 It preserves v1 and has not been tested in a new TrueForge experiment. On existing
 development cases, score improves to 37.35 but shifted-case successes remain zero.
 
+[Increment 2 developer ablation](docs/RECOVERY_INCREMENT2.md) adds confirmed stalls
+and bounded nominal-model tracking: 8/15 development successes, score 54.70, with
+a nominal regression to 3/5. These opt-in strategies remain outside the active
+TrueForge bridge and have no new agent or unseen-condition result.
+
 Investigating skill adaptation across simulated changes in robotic pushing physics.
 This project contains the simulator foundation and a nominal model-based pushing
 controller, paired physics-shift experiments, and a recorded TrueForge/Nemotron

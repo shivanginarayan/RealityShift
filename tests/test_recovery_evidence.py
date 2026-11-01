@@ -1,8 +1,20 @@
 import json
+import hashlib
 import zipfile
 
 from control.recovery import FailureDetector
 from evaluation.verify_recovery import DIRECTORY, verify
+
+
+def test_evidence_hashing_accepts_only_newline_conversion(tmp_path):
+    from evaluation.verify_recovery import text_hash_matches
+    path = tmp_path / 'report.json'
+    original = b'{"value": 1}\r\n'
+    expected = hashlib.sha256(original).hexdigest()
+    path.write_bytes(original.replace(b'\r\n', b'\n'))
+    assert text_hash_matches(path, expected)
+    path.write_bytes(b'{"value": 2}\n')
+    assert not text_hash_matches(path, expected)
 
 
 def test_developer_comparison_is_reproducible_from_original_bytes():
