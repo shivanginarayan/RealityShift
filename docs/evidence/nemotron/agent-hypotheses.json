@@ -1,0 +1,20 @@
+[
+  {
+    "turn_id": "01m6b0ht9s7r5rwyg8xgwf3dg3",
+    "tool_call_id": "call-0c20787b-ec2e-4ed7-9087-0b9a7d49aaf7",
+    "hypothesis": "Increase proportional gain to 68 and push_offset to 0.04 while raising action_smoothing to 0.95. This combines the higher force from v2 with more damping to prevent the case_a seed0 failure observed with v2's smoothing of 0.8. The goal is to improve case_b/case_c success without harming case_a.",
+    "skill_yaml": "name: adaptive_pushing\nversion: 4\ncontrol:\n  proportional_gain: 68.0\n  damping_gain: 4.0\n  max_torque: 2.0\n  approach_offset: 0.12\n  approach_height: -0.14\n  push_offset: 0.04\n  stop_distance: 0.04\n  action_smoothing: 0.95"
+  },
+  {
+    "turn_id": "01m6b0ht9s7r5rwyg8xgwf3dg3",
+    "tool_call_id": "call-7eb976c2-9254-42dc-a3b6-ad7e885631bc",
+    "hypothesis": "Moderate proportional gain (65) combined with a slightly higher smoothing (0.9) and modest increases in approach_offset, push_offset, and stop_distance aims to increase pushing force while maintaining enough damping stability. This should improve success on case_b and case_c without breaking case_a seed0.",
+    "skill_yaml": "name: adaptive_pushing\nversion: 3\ncontrol:\n  proportional_gain: 65.0\n  damping_gain: 4.0\n  max_torque: 2.0\n  approach_offset: 0.11\n  approach_height: -0.15\n  push_offset: 0.035\n  stop_distance: 0.045\n  action_smoothing: 0.9"
+  },
+  {
+    "turn_id": "01m6b09r83a6ktm9cf7y1k5fj0",
+    "tool_call_id": "call-64209e4b-238c-478b-8eb1-5802c5b9d292",
+    "hypothesis": "Increase proportional gain to 70, raise approach_offset and push_offset, lower approach_height magnitude, and reduce action_smoothing to 0.8. This should increase torque application and reduce excessive damping, improving success on opaque cases case_b and case_c where the fingertip struggles to push the object.",
+    "skill_yaml": "name: adaptive_pushing\nversion: 2\ncontrol:\n  proportional_gain: 70.0\n  damping_gain: 4.0\n  max_torque: 2.0\n  approach_offset: 0.12\n  approach_height: -0.14\n  push_offset: 0.04\n  stop_distance: 0.04\n  action_smoothing: 0.8"
+  }
+]

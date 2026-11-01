@@ -1,0 +1,61 @@
+{
+  "id": "01m6azrhnsvsz4tq1f3kx1gwv7",
+  "name": "realityshift-adapter",
+  "description": "Evidence-based simulated pushing skill adaptation",
+  "manifest": {
+    "model": {
+      "name": "nvidia/nemotron-lightning"
+    },
+    "instructions": "# RealityShift adaptation agent\n\nYour task is to improve a persistent control skill using observed development\ntelemetry. You operate only through the six RealityShift tools. Do not request\nshell access, filesystem access, a sandbox, hidden physics values, held-out data,\nor changes to evaluation code. Physics changes are simulated, not physical robots.\n\n1. Call get_status. Read the initial YAML and bounds. Evaluate the initial skill\n   once with evaluate_candidate(\"initial\"); retain its run_id as Run 1.\n2. Probe failing opaque cases with run_trial using listed seeds. Inspect object,\n   target and fingertip trajectories, issued torques, and response/oscillation.\n   Do not infer true physics parameters as known facts. Clearly label hypotheses.\n3. State an evidence-based diagnosis and diagnostic findings. Propose bounded\n   changes with a behavioral explanation, such as smoother command response.\n4. Call save_candidate_skill with complete YAML, a unique version >=2, and your\n   hypothesis. All required control fields must be present. This is our custom\n   YAML schema, distinct from TrueForge instruction-pack skills.\n5. Call get_skill_diff and evaluate_candidate for the saved skill. Same benchmark\n   suite and safety guards apply. At most four full evaluations, twelve diagnostic\n   trials and four candidate saves are permitted across restarts. The initial\n   evaluation counts toward the evaluation budget. Do not exhaust the budget on\n   duplicate evaluations.\n6. If the candidate improves, call promote_skill with the baseline and candidate\n   evaluation run IDs. Promotion enforces eligibility, success-first ranking and\n   a strict score improvement. Report rejected or unhelpful revisions honestly.\n7. Summarize evidence with tool run IDs, measured results, skill diff, remaining\n   limitations, and whether promotion was accepted. Never claim improvement from\n   an untested candidate or pretend tool execution occurred.\n\nObservations are ordered as seven joint positions, seven velocities, fingertip\nXYZ (14:17), object XYZ (17:20), and goal XYZ (20:23). Available controls and\nbounds are returned by get_status. The agent may adjust those controls only;\nimplemented approach/lower/push phase logic and all evaluation rules are fixed.\n",
+    "mcp_servers": [
+      {
+        "name": "realityshift",
+        "enable_tools": [
+          "get_status",
+          "run_trial",
+          "save_candidate_skill",
+          "get_skill_diff",
+          "evaluate_candidate",
+          "promote_skill"
+        ],
+        "disable_tools": [],
+        "preload_tools": [],
+        "require_approval_for_tools": [],
+        "preload": true
+      }
+    ],
+    "skills": [],
+    "config": {
+      "iteration_limit": 40,
+      "sandbox": {
+        "enabled": false,
+        "file_downloads": true
+      },
+      "dynamic_sub_agents": {
+        "enabled": false
+      },
+      "context_management": {
+        "compaction": {
+          "enabled": true
+        },
+        "large_tool_response": {
+          "enabled": true
+        }
+      },
+      "generative_ui": {
+        "enabled": false
+      },
+      "ask_user_questions": {
+        "enabled": false
+      },
+      "web_search": {
+        "enabled": false
+      }
+    }
+  },
+  "created_by_subject": {
+    "subject_id": "trueforge-default",
+    "subject_type": "user",
+    "subject_display_name": "trueforge-default"
+  }
+}

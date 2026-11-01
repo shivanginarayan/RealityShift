@@ -85,10 +85,15 @@ class ToolBridge:
                 metrics = score_episode(rows, spec)
                 # Explicit allowlist: no applied commands, physics manifest, or source paths.
                 telemetry = [{"step": row["step"], "phase": row["phase"],
-                              "observation": row["observation_after"], "issued_action": row["action"]}
-                             for row in rows[::10] + rows[-1:]]
+                              "observation": [round(v, 6) for v in row["observation_after"]],
+                              "issued_action": [round(v, 6) for v in row["action"]]}
+                             for row in rows[::15] + rows[-1:]]
                 result = {"run_id": run_id, "case_id": case_id, "seed": seed,
-                          "metrics": metrics, "telemetry": telemetry}
+                          "metrics": metrics, "telemetry": telemetry,
+                          "telemetry_precision_decimals": 6,
+                          "note": "Displayed telemetry is sampled/rounded; metrics use the full recorded trajectory."}
+                if len(json.dumps(result, indent=2)) > 16000:
+                    raise ValueError("Diagnostic response exceeds the bounded display size")
                 self._audit("trial_completed", {"run_id": run_id, "skill_id": skill_id,
                                                 "case_id": case_id, "seed": seed})
                 return result

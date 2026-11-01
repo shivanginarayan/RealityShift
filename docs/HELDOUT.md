@@ -39,3 +39,10 @@ Actual TrueForge session provenance must accompany any agent-authorship claim;
 the evaluator does not establish authorship. The recorded session used NVIDIA
 Nemotron; no further OpenAI calls were made after the initial no-credit error.
 See AGENT_RESULTS.md and evidence/nemotron/ for real tool execution and outcomes.
+
+The first final report and all thirty original final trajectories are preserved
+in `evidence/nemotron/`. Offline verification re-scores those bytes; it does not
+consume another final evaluation or expose further feedback to the agent.
+Mean issued squared torque was 2.8379475194 for v1 versus 2.6765368776 for v4;
+both had zero ineligible episodes. This effort reduction did not compensate for
+worse target error and score. The generalization improvement gate failed.

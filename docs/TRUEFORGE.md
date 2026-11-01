@@ -32,9 +32,22 @@ connector URLs by default; the exception is needed for this local MCP endpoint.
 TrueForge also initializes its normal application-data directory. It may need
 permission to create that directory on first startup. Do not expose either port.
 
-Open `http://127.0.0.1:8790`. Under Settings → Models configure OpenAI using your
-API key. Enter credentials only in that local settings UI. Runtime databases,
-logs and provider settings are ignored by Git under `.runtime/`.
+Open `http://127.0.0.1:8790`. Under Settings > Models add a Custom provider:
+
+| Field | Value |
+| --- | --- |
+| Provider name | `nvidia` |
+| Base URL | `https://integrate.api.nvidia.com/v1` |
+| API key | Enter the NVIDIA Build key privately in this local UI |
+| Model ID | `nvidia/nemotron-3.5-lightning-30b-a3b` |
+| Model alias | `nemotron-lightning` |
+| Optional capability properties | `{}` is accepted; omit unsupported reasoning-effort settings |
+
+The model ID is not the endpoint URL. The recorded configuration used a
+1,000,000-token context metadata value and a 16,384-token output limit. Inspect
+the provider's currently available free allowance before running a replication;
+no paid provider fallback is configured. Runtime credentials/databases stay
+under ignored `.runtime/` storage. Never enter a key in chat or commit it.
 
 ## Configure the agent
 
@@ -46,11 +59,10 @@ This registers or verifies the connector, checks all six tools and lists availab
 configured models. Once a provider is configured, use its exact model reference:
 
 ```powershell
-python -s -m agent.configure_trueforge --model PROVIDER/MODEL
+python -s -m agent.configure_trueforge --model nvidia/nemotron-lightning
 ```
 
-Replace `PROVIDER/MODEL` with an actual configured name from TrueForge. The server
-validates it. This creates `realityshift-adapter` with the project instructions,
+The server validates the exact configured model name. This creates `realityshift-adapter` with the project instructions,
 six explicit MCP tools, no sandbox, no web search, no dynamic subagents, and a
 40-iteration turn limit. These bounded tools run without extra approval prompts.
 An existing agent is not silently overwritten. Its record is saved locally at
@@ -125,7 +137,7 @@ TrueForge connector discovery is saved at
 `.runtime/bridge/trueforge-tool-discovery.json`.
 
 Observed: six tools discovered by TrueForge; direct MCP status and a case_c,
-seed-0 diagnostic trial completed; 31 tests passed; `pip check` clean. Promotion
+seed-0 diagnostic trial completed; the current full suite and `pip check` pass. Promotion
 tests use synthetic test fixtures and are not claimed as a real improvement.
 
 The initial OpenAI attempt failed with a no-credit error before experiment tools
@@ -142,3 +154,26 @@ References:
 - https://trueforge.dev/quickstart
 - https://trueforge.dev/mcp-servers
 - https://github.com/modelcontextprotocol/python-sdk/tree/v1.x
+
+## Audit findings and closed experiment
+
+The actual agent's `run_trial` response was 26,896 characters, exceeding the
+harness's 24,000-character limit. The saved session faithfully contains its size
+limit notice. The simulator trial ran, but the agent did not receive its full
+telemetry. It did receive complete per-episode baseline/candidate evaluation
+results, generated three skills and successfully requested promotion of v4.
+Do not describe the original diagnostic telemetry as fully observed by the model.
+
+Future diagnostic responses now sample 21 states, round displayed values to six
+decimals and enforce a 16,000-character pretty-printed size bound. Full metrics
+still come from the original unrounded trajectory. This bridge-only fix does not
+modify frozen scoring/controller files or rewrite historical tool responses.
+
+The recorded budget is exhausted. The launcher now refuses another model session
+when local state already shows four full evaluations. No budgets were reset and
+no new adaptation or held-out simulation was run during the audit. Use
+`python -s -m evaluation.verify_evidence` to inspect the original result offline.
+
+Published configuration, hypotheses, diagnostics, diff, promotion audit and raw
+trajectory archive are indexed in TRUEFORGE_EVIDENCE.md. This scope excludes
+Shelled; historical Shelled plans are retained only as archived context.

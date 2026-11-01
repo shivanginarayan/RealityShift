@@ -1,8 +1,8 @@
 # Recorded final demonstration
 
-Video: [realityshift_demo.mp4](../demo/assets/realityshift_demo.mp4).
-Duration: 88 seconds, 1280×720, 20 fps, captioned without narration.
-Evidence manifest: `demo/assets/realityshift_demo.json`.
+Video: [realityshift_trueforge_demo.mp4](../demo/assets/realityshift_trueforge_demo.mp4).
+Duration: 90 seconds, 1280×720, 20 fps, captioned without narration.
+Evidence manifest: `demo/assets/realityshift_trueforge_demo.json`.
 
 ## Storyboard
 
@@ -10,11 +10,11 @@ Evidence manifest: `demo/assets/realityshift_demo.json`.
 | --- | --- | --- |
 | 0–8 s | Question and simulation scope | Recorded-data disclosure |
 | 8–23 s | Nominal success versus high-mass failure | Initial v1, development seed 2 |
-| 23–35 s | TrueForge's actual tool workflow | Session ID and saved tool calls/responses |
-| 35–47 s | Persistent v1-to-v4 skill changes | Agent-generated YAML values |
-| 47–62 s | Same high-mass case, v1 versus v4 | Synchronized seed-2 replays |
-| 62–74 s | Complete development suite and random search | Scores 35.24, 41.83 and 44.62 |
-| 74–88 s | First unseen-seed results and limitations | Held-out regression; Shelled pending |
+| 23–37 s | TrueForge's actual tool workflow | Session ID and saved tool calls/responses |
+| 37–49 s | Persistent v1-to-v4 skill changes | Agent-generated YAML values |
+| 49–64 s | Same high-mass case, v1 versus v4 | Synchronized seed-2 replays |
+| 64–76 s | Complete development suite and random search | Scores 35.24, 41.83 and 44.62 |
+| 76–90 s | First unseen-seed results and limitations | Held-out regression; TrueForge-only scope |
 
 The development seed is selected to illustrate an actual improvement, and the
 video explicitly discloses this selection. The selected run is not presented as
@@ -45,10 +45,16 @@ trajectory directories under `.runtime/bridge/evaluations/`. The original raw
 recordings are required for an exact rebuild. Running new evaluations is a
 replication, not the original sponsor session, and must be labeled accordingly.
 
-## Remaining sponsor requirement
+## Current scope and historical artifacts
 
-The demo is developer-produced. Genuine Shelled implementation work and real PR
-provenance remain incomplete because the workspace is not accessible in this
-session. See `SHELLED_TASKS.md` and its two ready-to-run briefs. Do not submit the
-project as having completed Shelled's PR requirements until real run/PR/merge
-evidence has been collected.
+This demonstration focuses exclusively on TrueForge. Shelled is not required by
+the current user instructions, and no Shelled service was used in this audit.
+The previous 88-second `realityshift_demo.mp4` remains preserved as a historical
+artifact; use the new TrueForge-only video for the current submission.
+
+The updated tool-workflow panel explicitly discloses that the original diagnostic
+telemetry was truncated by the harness. The original trace is unchanged. The
+compact-response fix applies only to future experiments. Raw original trajectories
+are now published in `docs/evidence/nemotron/trajectories.zip` for offline scoring
+verification. See TRUEFORGE_EVIDENCE.md for technical criteria and remaining portal
+checks; this video does not establish organizer eligibility or acceptance.

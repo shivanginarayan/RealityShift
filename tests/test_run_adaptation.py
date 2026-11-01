@@ -25,6 +25,22 @@ def test_agent_with_shell_capability_is_rejected():
         runner.validate_agent(agent)
 
 
+def test_exhausted_experiment_never_starts_another_model_session(tmp_path, monkeypatch):
+    state = tmp_path / ".runtime/bridge/state.json"
+    state.parent.mkdir(parents=True)
+    state.write_text(json.dumps({"evaluations": 4}))
+    monkeypatch.setattr(runner, "ROOT", tmp_path)
+    calls = []
+    def fake_request(path, body=None):
+        calls.append(path)
+        return {"data": [{"name": "nvidia/nemotron-lightning"}]}
+    monkeypatch.setattr(runner, "request", fake_request)
+    with pytest.raises(ValueError, match="budget is exhausted"):
+        runner.start(tmp_path / "run")
+    assert calls == ["/models"]
+    assert not (tmp_path / "run").exists()
+
+
 def test_trace_export_paginates_and_marks_failed_turn_honestly(tmp_path, monkeypatch):
     (tmp_path / "run.json").write_text(json.dumps({"session_id": "s1", "turn_id": "t1"}))
     def fake_request(path, body=None):

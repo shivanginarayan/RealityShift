@@ -17,7 +17,7 @@ adaptation with limited evidence, not real-hardware transfer.
 | Conventional random-search best | 6/15 | 44.6180 | Higher than agent score |
 
 The agent used four full evaluations total, including initial. One diagnostic
-episode was agent-requested; one earlier developer smoke trial is also counted in
+episode was agent-requested (its telemetry response was truncated by the harness); one earlier developer smoke trial is also counted in
 bridge state. Budgets were never reset. The failed first candidate was preserved.
 A developer follow-up asked the same session to use its remaining budget, without
 supplying candidate parameter values. All three candidate YAML files were written
@@ -68,4 +68,12 @@ python -s -m pytest -q
 Final evaluation intentionally refuses repeat execution in the original workspace.
 Fresh-checkout reproduction can follow HELDOUT.md; it is replication, not a new
 unseen test. The frozen evaluator, thresholds and original skill remain unchanged.
-Shelled implementation provenance and event-submission compliance remain pending.
+Shelled is excluded from the current scope. Event-submission rules, portal fields
+and the final upload still require organizer/user verification.
+
+The audit published secret-free agent/model configuration, explicit hypotheses,
+the final skill diff, bridge audit and 92 original trajectories. Run
+`python -s -m evaluation.verify_evidence` to re-score all outcomes and cross-check
+agent tool responses without invoking a model or simulator. The original
+diagnostic truncation remains visible; the later compact-response fix was not
+retroactively applied to the experiment.

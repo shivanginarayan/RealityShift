@@ -1,0 +1,112 @@
+{
+  "tests": {
+    "passed": 46,
+    "failed": 0,
+    "command": "python -s -m pytest -q"
+  },
+  "offline_evidence": {
+    "verified": true,
+    "original_episodes_rescored": 92,
+    "api_calls": 0,
+    "new_simulation_trials": 0,
+    "development": {
+      "initial": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 35.24115569470959,
+        "rank": [
+          0.3333333333333333,
+          -0.3085628483268962,
+          -3.002590443725983
+        ]
+      },
+      "v0002": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 4,
+        "success_rate": 0.26666666666666666,
+        "score": 28.970341843273467,
+        "rank": [
+          0.26666666666666666,
+          -0.324952173136885,
+          -2.0665754258560485
+        ]
+      },
+      "v0003": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 34.60717840940445,
+        "rank": [
+          0.3333333333333333,
+          -0.3508007903969302,
+          -2.398798619312587
+        ]
+      },
+      "v0004": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 6,
+        "success_rate": 0.4,
+        "score": 41.83459518067389,
+        "rank": [
+          0.4,
+          -0.2446857607997849,
+          -2.660092883916433
+        ]
+      }
+    },
+    "heldout": {
+      "initial": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 36.44826168051508,
+        "rank": [
+          0.3333333333333333,
+          -0.22995710304430234,
+          -2.8379475194072703
+        ]
+      },
+      "candidate": {
+        "eligible": true,
+        "episodes": 15,
+        "successes": 5,
+        "success_rate": 0.3333333333333333,
+        "score": 34.699281447916924,
+        "rank": [
+          0.3333333333333333,
+          -0.30496096897645375,
+          -2.67653687757553
+        ]
+      }
+    },
+    "development_promotion_verified": true,
+    "heldout_improvement": false
+  },
+  "live_runtime": {
+    "mcp_tools": 6,
+    "model": "nvidia/nemotron-lightning",
+    "completed_turns": 2
+  },
+  "frozen_benchmark_verified": true,
+  "frozen_heldout_protocol_verified": true,
+  "original_budget_unchanged": true,
+  "heldout_report_unchanged": true,
+  "demo": {
+    "duration_seconds": 90,
+    "decoded_frames": 1800,
+    "fps": 20,
+    "size": [
+      1280,
+      720
+    ]
+  },
+  "shelled_used": false,
+  "new_model_runs_during_audit": 0,
+  "new_heldout_evaluations_during_audit": 0
+}

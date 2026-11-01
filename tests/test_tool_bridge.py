@@ -48,7 +48,9 @@ def test_only_development_cases_and_seeds_allowed(bridge):
 
 def test_real_trial_filters_hidden_metadata(bridge):
     result = bridge.run_trial("initial", "case_c", 0)
-    assert len(result["telemetry"]) == 31
+    assert len(result["telemetry"]) == 21
+    assert len(json.dumps(result, indent=2)) < 16000
+    assert result["telemetry_precision_decimals"] == 6
     serialized = json.dumps(result)
     for forbidden in ("developer_physics_manifest", "mass_scale", "delay_steps", "applied_action", "actuator_delay"):
         assert forbidden not in serialized

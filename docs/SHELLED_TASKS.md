@@ -1,3 +1,5 @@
+> Archived: excluded by the current TrueForge-only instructions. Do not execute these tasks for this scope.
+
 # Shelled work that remains
 
 Status: not started in Shelled. No Shelled-authored PRs or run IDs exist yet.

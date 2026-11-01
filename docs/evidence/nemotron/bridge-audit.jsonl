@@ -1,0 +1,19 @@
+{"utc": "2026-11-01T06:46:40.813910+00:00", "operation": "reserve_budget", "kind": "trials", "used": 1}
+{"utc": "2026-11-01T06:46:42.094596+00:00", "operation": "trial_completed", "run_id": "0e64846f5ee94ff1bffbd202f220e1ca", "skill_id": "initial", "case_id": "case_c", "seed": 0}
+{"utc": "2026-11-01T07:32:33.860365+00:00", "operation": "reserve_budget", "kind": "evaluations", "used": 1}
+{"utc": "2026-11-01T07:32:49.693423+00:00", "operation": "evaluation_completed", "run_id": "88fa02e106d844099e3e0cdc1f96c53c", "skill_id": "initial"}
+{"utc": "2026-11-01T07:32:55.726716+00:00", "operation": "reserve_budget", "kind": "trials", "used": 2}
+{"utc": "2026-11-01T07:32:56.619491+00:00", "operation": "trial_completed", "run_id": "9fdf7b61229e48e09db858e5e438dc38", "skill_id": "initial", "case_id": "case_b", "seed": 0}
+{"utc": "2026-11-01T07:33:11.946021+00:00", "operation": "reserve_budget", "kind": "candidates", "used": 1}
+{"utc": "2026-11-01T07:33:11.956025+00:00", "operation": "candidate_saved", "skill_id": "v0002", "hypothesis": "Increase proportional gain to 70, raise approach_offset and push_offset, lower approach_height magnitude, and reduce action_smoothing to 0.8. This should increase torque application and reduce excessive damping, improving success on opaque cases case_b and case_c where the fingertip struggles to push the object.", "skill_sha256": "3f6b15b32a6a2e09d31239f1b552fe931e5273d8739b62eabe0e1be842798be5"}
+{"utc": "2026-11-01T07:33:12.984016+00:00", "operation": "reserve_budget", "kind": "evaluations", "used": 2}
+{"utc": "2026-11-01T07:33:27.327478+00:00", "operation": "evaluation_completed", "run_id": "2410a1d13b6143e7a8404803037713fa", "skill_id": "v0002"}
+{"utc": "2026-11-01T07:35:39.830597+00:00", "operation": "reserve_budget", "kind": "candidates", "used": 2}
+{"utc": "2026-11-01T07:35:39.839238+00:00", "operation": "candidate_saved", "skill_id": "v0003", "hypothesis": "Moderate proportional gain (65) combined with a slightly higher smoothing (0.9) and modest increases in approach_offset, push_offset, and stop_distance aims to increase pushing force while maintaining enough damping stability. This should improve success on case_b and case_c without breaking case_a seed0.", "skill_sha256": "ebad778768e39d872425276fb31404430134c53988a40cefb91cfcf5975ccd76"}
+{"utc": "2026-11-01T07:35:40.514265+00:00", "operation": "reserve_budget", "kind": "evaluations", "used": 3}
+{"utc": "2026-11-01T07:35:56.588251+00:00", "operation": "evaluation_completed", "run_id": "bee0ac4529344b47be9da75ff2084ff3", "skill_id": "v0003"}
+{"utc": "2026-11-01T07:36:00.965443+00:00", "operation": "reserve_budget", "kind": "candidates", "used": 3}
+{"utc": "2026-11-01T07:36:00.973126+00:00", "operation": "candidate_saved", "skill_id": "v0004", "hypothesis": "Increase proportional gain to 68 and push_offset to 0.04 while raising action_smoothing to 0.95. This combines the higher force from v2 with more damping to prevent the case_a seed0 failure observed with v2's smoothing of 0.8. The goal is to improve case_b/case_c success without harming case_a.", "skill_sha256": "958115f2e8ba6ae1f8475f0616235a9e4001fed71c43c9202b68538e17073014"}
+{"utc": "2026-11-01T07:36:01.561247+00:00", "operation": "reserve_budget", "kind": "evaluations", "used": 4}
+{"utc": "2026-11-01T07:36:14.127634+00:00", "operation": "evaluation_completed", "run_id": "536153809c1d4579b1d899503f13959c", "skill_id": "v0004"}
+{"utc": "2026-11-01T07:36:18.273895+00:00", "operation": "promotion_decision", "baseline_run_id": "88fa02e106d844099e3e0cdc1f96c53c", "candidate_run_id": "536153809c1d4579b1d899503f13959c", "accepted": true}

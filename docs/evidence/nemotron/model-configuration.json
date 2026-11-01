@@ -1,0 +1,19 @@
+{
+  "captured_utc": "2026-11-01T08:16:00.298049+00:00",
+  "manifest": {
+    "type": "custom",
+    "name": "nvidia",
+    "base_url": "https://integrate.api.nvidia.com/v1",
+    "models": [
+      {
+        "model_id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "name": "nemotron-lightning",
+        "properties": {
+          "context_length": 1000000,
+          "max_output_tokens": 16384
+        }
+      }
+    ]
+  },
+  "credentials": "Omitted; stored locally in TrueForge, never in this file."
+}

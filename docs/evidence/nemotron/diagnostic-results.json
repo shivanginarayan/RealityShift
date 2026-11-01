@@ -1,0 +1,38 @@
+[
+  {
+    "utc": "2026-11-01T06:46:42.094596+00:00",
+    "operation": "trial_completed",
+    "run_id": "0e64846f5ee94ff1bffbd202f220e1ca",
+    "skill_id": "initial",
+    "case_id": "case_c",
+    "seed": 0,
+    "metrics": {
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 6.341877577166441,
+      "final_error_xy_m": 0.34145306057083896,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 3.668795283571579
+    },
+    "origin": "developer_connection_check"
+  },
+  {
+    "utc": "2026-11-01T07:32:56.619491+00:00",
+    "operation": "trial_completed",
+    "run_id": "9fdf7b61229e48e09db858e5e438dc38",
+    "skill_id": "initial",
+    "case_id": "case_b",
+    "seed": 0,
+    "metrics": {
+      "eligible": true,
+      "violations": [],
+      "success": false,
+      "score": 0.0,
+      "final_error_xy_m": 0.9545569744237186,
+      "settled_time_fraction": 1.0,
+      "mean_squared_torque": 2.8769481550645035
+    },
+    "origin": "TrueForge_agent_tool_call"
+  }
+]

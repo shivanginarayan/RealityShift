@@ -9,7 +9,7 @@ import imageio.v2 as imageio
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-from control.skill_schema import load_skill
+from control.skill_schema import load_skill, skill_text
 from demo.render_replay import Replay
 from evaluation.benchmark import ROOT, source_hash, verify_frozen
 
@@ -75,6 +75,9 @@ def build(output, bridge_directory=None):
     random_report = json.loads((ROOT / "docs/RANDOM_SEARCH_V1.json").read_text())
     initial = load_skill(ROOT / "skills/initial.yaml")
     revised = load_skill(ROOT / "skills/versions/v0004.yaml")
+    for name, skill in (("initial", initial), ("v0004", revised)):
+        if hashlib.sha256(skill_text(skill).encode()).hexdigest() != runs[name]["skill_sha256"]:
+            raise ValueError("Saved skill differs from evaluated agent evidence")
     changes = [f"{key}: {getattr(initial, key)}  ->  {getattr(revised, key)}"
                for key in ("proportional_gain", "approach_offset", "approach_height", "push_offset",
                            "stop_distance", "action_smoothing")]
@@ -127,9 +130,10 @@ def build(output, bridge_directory=None):
                 "NVIDIA Nemotron: get_status -> evaluate_candidate(initial)",
                 "run_trial -> save_candidate_skill -> evaluate_candidate",
                 "v2 failed. v3 failed. v4 passed the fixed promotion gate.",
+                "Original diagnostic telemetry was truncated by the harness.",
                 f"Session: {evidence['session_id']}",
                 "Saved tool calls and responses: docs/evidence/nemotron/", 
-                "Four evaluations total; budgets and evaluator never reset."], 12)
+                "Four evaluations total; budgets and evaluator never reset."], 14)
             still("3 / The agent's persistent skill revision", changes + [
                 "Agent-generated YAML; numeric controls only, no new recovery algorithm."], 12)
             pair(base_dir / "high_mass/seed2", adapted_dir / "high_mass/seed2",
@@ -147,7 +151,7 @@ def build(output, bridge_directory=None):
                 f"Frozen v4: {h1['successes']}/15 | score {h1['score']:.2f}",
                 "Final results preserved. No further tuning against these seeds.",
                 "Measured development adaptation; held-out regression disclosed.",
-                "Shelled-authored PR evidence is still pending."], 14)
+                "Scope: TrueForge only. No real-world robot validation."], 14)
         temporary.replace(output)
     except Exception:
         if temporary.exists():
@@ -166,6 +170,6 @@ def build(output, bridge_directory=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "demo/assets/realityshift_demo.mp4")
+    parser.add_argument("--output", type=Path, default=ROOT / "demo/assets/realityshift_trueforge_demo.mp4")
     args = parser.parse_args()
     build(args.output)

@@ -35,6 +35,9 @@ def start(output=None, agent_record=None):
     _, frozen = verify_frozen()
     if not request("/models")["data"]:
         raise ValueError("No model configured. Configure OpenAI in TrueForge Settings → Models first.")
+    budget_path = ROOT / ".runtime/bridge/state.json"
+    if budget_path.is_file() and json.loads(budget_path.read_text())["evaluations"] >= 4:
+        raise ValueError("The recorded experiment's four-evaluation budget is exhausted; no new model session started.")
     record_path = Path(agent_record) if agent_record else ROOT / ".runtime/bridge/trueforge-agent.json"
     if not record_path.is_file():
         raise ValueError("Create the saved agent with python -s -m agent.configure_trueforge --model PROVIDER/MODEL")

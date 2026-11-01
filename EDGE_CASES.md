@@ -159,3 +159,23 @@ After v4 was frozen, final unseen seeds produced 5/15 for both skills; v1 scored
 development result also exceeded v4's score. These failures and limitations are
 preserved in docs/AGENT_RESULTS.md and docs/evidence/nemotron/. No final-outcome
 feedback was sent to the agent for additional tuning. All 42 tests passed locally.
+
+## TrueForge integration audit
+
+The actual session reveals an omitted failure: the agent-requested diagnostic
+returned 26,896 characters and TrueForge substituted its 24,000-character response
+limit notice. The trial executed, but the agent did not see its full telemetry.
+The initial/candidate evaluation results and promotion responses were delivered.
+The original notice is preserved in session-tools.jsonl.
+
+Future bridge responses now provide 21 sampled observations/actions rounded to
+six decimals and enforce a 16,000-character pretty-printed output bound. Tests
+verify this bound and hidden-metadata filtering. Scoring still uses all original
+unrounded observations; no original episode or outcome was rewritten.
+
+New evidence checks recompute all 92 original recorded episodes, match tool
+evaluation responses and the promotion decision, reject changed archive bytes
+and incorrect per-trace hashes, and reject another model-run launch after the
+local four-evaluation budget is exhausted. See audit-validation.json under docs
+for final test counts. The current project scope is TrueForge only; earlier
+Shelled plans are historical and no Shelled work was performed during this audit.

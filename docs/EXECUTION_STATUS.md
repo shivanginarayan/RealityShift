@@ -1,21 +1,19 @@
-# Execution priorities status
+# TrueForge execution status
 
-| Priority | Status | Evidence |
+Current scope: the TrueForge self-improving-agent challenge only. Shelled is
+excluded; earlier plans and task briefs are retained as historical artifacts.
+
+| Phase | Status | Evidence |
 | --- | --- | --- |
-| Configure TrueForge model and saved agent | Completed with NVIDIA Nemotron | `TRUEFORGE.md`; recorded session metadata |
-| Real autonomous skill revision and evaluation | Completed; developer follow-up used remaining budget | `AGENT_RESULTS.md`; `evidence/nemotron/session-tools.jsonl` |
-| Real substantive Shelled PRs | Blocked on signed-in workspace/tool access | `SHELLED_TASKS.md`; no PR claims made |
-| Finalize candidate then perform held-out evaluation | Completed once; original results retained | `evidence/nemotron/heldout-manifest.json` and `heldout-report.json` |
-| Demonstrate nominal success, shift failure, actual revision, measured improvement | Completed as an 88-second recorded video | `DEMO.md`; `demo/assets/realityshift_demo.mp4` |
+| Existing implementation audit | Complete | COMPLETION_REPORT.md; audit-validation.json |
+| Runtime, six tools and saved model | Verified live | Agent/model configuration; local MCP connection check |
+| Real autonomous revision and improvement | Recorded and independently re-scored | 35.2412 to 41.8346; session tool calls and original trajectories |
+| Hypotheses, candidate skills, diff and promotion | Published without secrets | evidence/nemotron/ |
+| First held-out evaluation after finalization | Completed once; improvement gate failed | Preserved manifest/report and thirty original trajectories |
+| Concise simulation demonstration | Complete | 90-second TrueForge-only MP4 and provenance manifest |
+| Organizer/portal submission | Pending external verification | Final rules, deadline, fields and video upload/link checks |
 
-The baseline score was 35.2412; the agent's promoted v4 scored 41.8346, with
-development success increasing from 5/15 to 6/15. The initial failed candidate and
-all subsequent outcomes are preserved. No evaluator or experiment budget reset
-was used to obtain the result. Random search scored higher, and held-out v4
-regressed. Those facts are visible in the demo and README.
-
-The four-evaluation adaptation experiment is closed. Do not tune on the final
-results. Further development can improve diagnostics, artifact handling and demo
-usability while preserving this experiment's evidence and limits. Genuine
-Shelled PR work is the remaining execution priority; service access and a
-no-additional-cost workflow must be established before starting it.
+The four-evaluation experiment remains closed. No new model session or final
+simulation was started during this audit. Re-scoring original bytes is an evidence
+check, not an additional experiment. The diagnostic-size issue was fixed for
+future bridge calls while preserving the original harness-limit response.

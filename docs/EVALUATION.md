@@ -3,7 +3,8 @@
 This benchmark is fixed before attempting agent-authored improvements. It uses
 five existing development seeds (0–4) in nominal, high-mass and four-step-delay
 scenarios. These seeds have been observed during development and are not held out.
-No final held-out evaluation has been run or claimed.
+The final unseen-seed evaluation has now run once on frozen agent skill v4;
+it regressed and is reported in AGENT_RESULTS.md.
 
 ## Fixed rules
 
@@ -70,3 +71,7 @@ Observed: 5/15 successes, score 35.24115569470959, all episodes eligible.
 Initial-skill actions and observations matched the previous recorded controller
 experiment exactly on all 15 episodes. Full test suite: 25 passed. This is a
 developer baseline, not TrueForge execution or evidence of self-improvement.
+
+Original scores can now be recomputed from the published raw trajectory archive
+with `python -s -m evaluation.verify_evidence`, without a model or simulator call.
+The verifier is outside the frozen scorer and does not alter experiment rules.
