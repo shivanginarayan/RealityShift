@@ -1,0 +1,54 @@
+{
+  "kind": "recorded_final_demonstration",
+  "fps": 20,
+  "frames": 1760,
+  "duration_seconds": 88.0,
+  "timeline": [
+    {
+      "start_seconds": 0.0,
+      "title": "A controller works. The physics changes.",
+      "seconds": 8
+    },
+    {
+      "start_seconds": 8.0,
+      "title": "1 / Same controller, shifted physics",
+      "seconds": 15.0,
+      "left_trace_sha256": "12adc9cae265cf56e53f9118bc8d7f06bb40b282f752e524918a77708da6ed32",
+      "right_trace_sha256": "25889ad166560251d0fd87dce9a7c7115feed527d4740b6f9b373301fb525a83"
+    },
+    {
+      "start_seconds": 23.0,
+      "title": "2 / Actual TrueForge tool execution",
+      "seconds": 12
+    },
+    {
+      "start_seconds": 35.0,
+      "title": "3 / The agent's persistent skill revision",
+      "seconds": 12
+    },
+    {
+      "start_seconds": 47.0,
+      "title": "4 / Same shift and seed, revised skill",
+      "seconds": 15.0,
+      "left_trace_sha256": "25889ad166560251d0fd87dce9a7c7115feed527d4740b6f9b373301fb525a83",
+      "right_trace_sha256": "43bc2530fea7f8169b509fefcdcee8e7457fd8db914a77c3c644e995d607b72c"
+    },
+    {
+      "start_seconds": 62.0,
+      "title": "5 / Full development results",
+      "seconds": 12
+    },
+    {
+      "start_seconds": 74.0,
+      "title": "6 / Unseen seeds: improvement did not generalize",
+      "seconds": 14
+    }
+  ],
+  "session_id": "01m6b09r6y75stas7g5nx86bna",
+  "selected_seed": 2,
+  "selection_disclosure": "Seed 2 illustrates a known development improvement; full suites shown.",
+  "video_sha256": "ef1c4391e4585dfcca90792a06d56ca0ee0cedc71f23c96f485b887df5bda965",
+  "source_sha256": "aba4a38376256c443f18f40f1feb416c34c76d6ae1d1228971a807a06e0da534",
+  "heldout_results_changed": false,
+  "new_simulation_trials": 0
+}

@@ -12,6 +12,11 @@ agent on development (**44.62**). This is a measured development improvement
 with a held-out regression, not robust generalization or real-hardware transfer.
 See [results and limitations](docs/AGENT_RESULTS.md) and the recorded tool evidence.
 
+**[Watch the 88-second demonstration](demo/assets/realityshift_demo.mp4)**:
+nominal success, shifted failure, actual agent skill revision, paired improvement,
+and the full development/held-out results. [Video provenance](docs/DEMO.md).
+Genuine Shelled-authored PRs remain pending; [prepared tasks and access status](docs/SHELLED_TASKS.md).
+
 Investigating skill adaptation across simulated changes in robotic pushing physics.
 This project contains the simulator foundation and a nominal model-based pushing
 controller, paired physics-shift experiments, and a recorded TrueForge/Nemotron

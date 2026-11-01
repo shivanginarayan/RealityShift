@@ -78,7 +78,8 @@ class Replay:
         draw.text((16, 10), f"{scenario.upper()}  |  seed {self.summary['seed']}", fill="white")
         draw.text((16, 30), f"t={self.index * self.env.unwrapped.dt:.2f}s  |  target error={error:.3f}m", fill="white")
         label = "Recorded outcome: SUCCESS" if self.summary["success"] else "Recorded outcome: FAILURE"
-        draw.text((16, 50), f"{label}  |  fixed controller v1", fill="#86efac" if self.summary["success"] else "#fca5a5")
+        version = self.summary.get("skill_version", 1)
+        draw.text((16, 50), f"{label}  |  skill v{version}", fill="#86efac" if self.summary["success"] else "#fca5a5")
         return np.asarray(canvas)
 
     def close(self):
