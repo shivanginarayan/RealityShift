@@ -60,6 +60,37 @@ Start a session with the saved agent and ask it to follow its instructions to
 diagnose failures, write a candidate, evaluate it and attempt promotion. Preserve
 the TrueForge session/turn IDs and export the real tool trace for sponsor evidence.
 
+Alternatively, start the real run from the command line after configuration:
+
+```powershell
+python -s -m agent.run_adaptation
+```
+
+The launcher checks model availability, the saved agent's current server-side
+configuration, the six-tool allowlist and the frozen benchmark before starting
+a turn. It rejects sandbox, dynamic-subagent, web-search and external skill
+capabilities. No configured model means no session is created and no model call
+is attempted. A start command with a configured provider uses that provider's API
+and may incur normal model charges.
+
+It saves agent configuration, benchmark fingerprints, session ID and turn ID
+under `.runtime/agent_runs/<timestamp>/`, then returns while TrueForge executes.
+Export persisted evidence using the printed directory:
+
+```powershell
+python -s -m agent.run_adaptation --collect .runtime/agent_runs/RUN_DIRECTORY
+```
+
+The collector saves all paginated session events (newest first), their original
+pages, current turn state, a trace hash and an evidence receipt. Running/paused
+turns are labeled incomplete; error/cancelled turns are not labeled successful.
+Collect again after completion to capture the final trace. Inspect actual skill
+evaluation and promotion tool results before claiming improvement: a completed
+model turn alone does not establish it. Keep raw traces local and review them
+before publishing sponsor evidence. A failed turn-start request may leave a
+session record without a confirmed turn ID; inspect that session rather than
+blindly launching another paid run.
+
 ## Tool boundaries
 
 Tools: `get_status`, `run_trial`, `save_candidate_skill`, `get_skill_diff`,

@@ -135,3 +135,13 @@ simulation or provide actual held-out outcomes. Initial and final skills use the
 same scoring rules, scenarios and seeds within each paired comparison. The final
 protocol and runner are separately fingerprinted. Real held-out evaluation remains
 unexecuted until the agent's candidate is finalized.
+
+## Model-run launcher and evidence export
+
+The launcher was invoked against the local TrueForge instance while no models
+were configured. It stopped at preflight without creating a model session.
+Tests additionally confirm that missing-provider checks perform no session POST,
+agents with sandbox capability are rejected, and event export follows pagination
+while marking a failed terminal turn as unsuccessful. API responses in export
+tests are synthetic fixtures, not actual model execution. Real agent evidence
+remains pending provider setup.

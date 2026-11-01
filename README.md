@@ -183,4 +183,10 @@ the final development skill hash and reserves access before running. No real
 held-out outcomes have been generated. See `docs/HELDOUT.md` for the final command
 and limitations. The next core step still requires configuring OpenAI in TrueForge.
 
+The real adaptation run now has a CLI launcher and paginated trace exporter.
+After configuring the model and saved agent, use `python -s -m agent.run_adaptation`.
+It prints the follow-up command for exporting session evidence and preserves
+failed/incomplete statuses. No model session has run yet; the missing-provider
+preflight was verified without starting a session.
+
 Environment reference: https://gymnasium.farama.org/environments/mujoco/pusher/
