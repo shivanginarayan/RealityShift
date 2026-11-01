@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "protocol": "unseen_seeds_same_shift_values",
+  "seeds": [100, 101, 102, 103, 104],
+  "scenarios": ["nominal", "high_mass", "actuator_delay"],
+  "episodes_per_skill": 15
+}

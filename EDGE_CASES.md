@@ -125,3 +125,13 @@ and rejection of scalar-score improvements that reduce task success. Selection
 also rejects a candidate with equal success but worse final error, even if its
 scalar score is higher. These selection edge checks use synthetic fixtures.
 Full suite: 36 tests passed. Agent budgets and active skill state were untouched.
+
+## Held-out protocol readiness
+
+Three additional tests validate separate seed sets, rejection of mismatched final
+skill hashes before reservation, pairing of thirty synthetic episodes, and
+refusal of repeated final access. The synthetic runner does not execute held-out
+simulation or provide actual held-out outcomes. Initial and final skills use the
+same scoring rules, scenarios and seeds within each paired comparison. The final
+protocol and runner are separately fingerprinted. Real held-out evaluation remains
+unexecuted until the agent's candidate is finalized.

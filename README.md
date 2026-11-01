@@ -174,4 +174,13 @@ consistency, verifies the frozen benchmark and runs all tests. It needs no model
 API keys, running TrueForge service, graphical desktop or saved experiment files.
 The workflow does not execute the paid model-driven adaptation loop.
 
+## Final evaluation readiness
+
+The held-out protocol is prepared and separately fingerprinted. It evaluates
+one finalized candidate and the initial skill on 15 episodes each, using unseen
+seeds with the same physics shift values and unchanged scoring rules. It requires
+the final development skill hash and reserves access before running. No real
+held-out outcomes have been generated. See `docs/HELDOUT.md` for the final command
+and limitations. The next core step still requires configuring OpenAI in TrueForge.
+
 Environment reference: https://gymnasium.farama.org/environments/mujoco/pusher/
