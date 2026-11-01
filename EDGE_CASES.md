@@ -64,3 +64,49 @@ observations. Full suite: 11 tests passed.
 Friction coefficients are deliberately not presented as a working shift: stock
 Pusher's `condim=1` contact model is frictionless. Implementing surface friction
 requires redesign and recalibration rather than relabeling coefficient changes.
+
+## Skill and evaluator validation
+
+Reproduce with `python -s -m pytest -q` (25 tests passed). Observed checks:
+
+- Duplicate skill keys, unknown fields, boolean numeric fields, NaN values,
+  excessive torque, invalid smoothing and modified scorer fields are rejected.
+- Candidate v1 is rejected; candidate v2 is saved to its versioned location;
+  saving the same version again raises rather than overwriting it.
+- Changing claimed rewards or error fields does not alter independently computed
+  scores. A late goal-distance excursion fails the settling criterion.
+- Incomplete episodes, NaN observations and excessive applied torque are
+  ineligible. Unsafe or equally performing candidates fail the promotion gate.
+- A modified frozen source file is detected before evaluation.
+
+Benchmark v1 initial skill: 5/15 successes, score 35.2412, all episodes eligible.
+Exact observation/action comparisons against the prior fixed controller matched
+for all 15 paired episodes. No agent-authored candidate has been evaluated yet.
+
+## Agent bridge checks
+
+The suite now has 31 passing tests. Additional checks reject path-like skill
+identifiers, unknown cases, non-development seeds, candidate overwrites and
+evaluation IDs that never completed. Trial budgets survive bridge restarts.
+A real diagnostic test confirms returned telemetry excludes physics manifests,
+mass scales, inserted delay values and applied actions. Promotion tests use
+synthetic fixtures to verify acceptance persistence and reject altered report
+evidence; they do not establish a measured candidate improvement.
+
+TrueForge initially rejected the loopback connector URL. Its supported
+`OUTBOUND_URL_ALLOWED_HOSTS` exception for `127.0.0.1` allowed registration and
+discovery of all six tools. A direct MCP protocol check executed one real trial.
+No configured model/provider or TrueForge model-driven run exists yet.
+
+## Replay verification
+
+Generated `experiments/demo/nominal_vs_delay.mp4` from the recorded seed-0 nominal
+and actuator-delay runs. All 300 observations and applied actions on each side
+were reproduced before accepting the video. At 20 fps this gives 15 synchronized
+seconds; annotations identify the fixed controller, seed, simulated time, target
+error and recorded outcome. The final frame was visually inspected.
+
+Replay tests confirm that an edited trace fails its hash check and that changing
+only the claimed outcome cannot override the independently scored trajectory.
+A complete non-rendering replay reproduces recorded states without running a
+controller. Full test suite: 34 passed. No benchmark source or skill changed.

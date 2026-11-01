@@ -11,6 +11,7 @@ import numpy as np
 
 from control.controller import PushingController
 from simulation.environment import ShiftedPusher
+from control.skill_schema import load_skill, skill_text
 
 
 # Development acceptance criteria, set before the ten-seed verification.
@@ -19,7 +20,8 @@ HORIZON = 300
 GOAL_TOLERANCE = 0.05
 
 
-def run_episode(seed: int, output: Path, scenario_id="nominal") -> dict:
+def run_episode(seed: int, output: Path, scenario_id="nominal", skill_path=None) -> dict:
+    skill = load_skill(skill_path or Path(__file__).parents[1] / "skills/initial.yaml")
     output.mkdir(parents=True, exist_ok=True)
     env = ShiftedPusher(scenario_id, horizon=HORIZON)
     # Reference kinematics comes from an independent nominal model, so the
@@ -27,7 +29,7 @@ def run_episode(seed: int, output: Path, scenario_id="nominal") -> dict:
     reference_env = gym.make("Pusher-v5")
     try:
         obs, _ = env.reset(seed=seed)
-        controller = PushingController(reference_env.unwrapped.model)
+        controller = PushingController(reference_env.unwrapped.model, skill)
         initial = float(np.linalg.norm(obs[17:19] - obs[20:22]))
         total_reward = 0.0
         max_action = 0.0
@@ -62,6 +64,8 @@ def run_episode(seed: int, output: Path, scenario_id="nominal") -> dict:
             "environment": "Pusher-v5", "scenario": scenario_id,
             "developer_physics_manifest": env.developer_manifest(),
             "controller": "developer_ik_reference_v1", "seed": seed,
+            "skill_version": skill.version,
+            "skill_sha256": hashlib.sha256(skill_text(skill).encode()).hexdigest(),
             "horizon": HORIZON, "steps": step,
             "goal_tolerance_xy_m": GOAL_TOLERANCE, "settle_steps": 10,
             "success": success, "initial_error_xy_m": initial,

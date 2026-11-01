@@ -3,5 +3,7 @@ __pycache__/
 .pytest_cache/
 .env
 .venv/
+.runtime/
+node_modules/
 experiments/*/
 !experiments/.gitkeep

@@ -2,10 +2,14 @@
 import mujoco
 import numpy as np
 from scipy.optimize import least_squares
+from pathlib import Path
+from control.skill_schema import load_skill
 
 
 class PushingController:
-    def __init__(self, model):
+    def __init__(self, model, skill=None):
+        self.skill = skill or load_skill(Path(__file__).parents[1] / 'skills/initial.yaml')
+        self.previous_action = np.zeros(7)
         self.model = model
         self.kinematics = mujoco.MjData(model)
         self.tip_id = model.body('tips_arm').id
@@ -18,10 +22,10 @@ class PushingController:
         distance = np.linalg.norm(direction)
         direction /= max(distance, 1e-9)
         behind = obj.copy()
-        behind[:2] -= .09 * direction
+        behind[:2] -= self.skill.approach_offset * direction
         if self.phase == 'approach':
             target = behind.copy()
-            target[2] = -.16
+            target[2] = self.skill.approach_height
             if np.linalg.norm(tip - target) < .04:
                 self.phase = 'lower'
         elif self.phase == 'lower':
@@ -30,8 +34,8 @@ class PushingController:
                 self.phase = 'push'
         else:
             target = obj.copy()
-            target[:2] -= .025 * direction
-            if distance < .05:
+            target[:2] -= self.skill.push_offset * direction
+            if distance < self.skill.stop_distance:
                 target = tip.copy()
         def residual(q):
             self.kinematics.qpos[:7] = q
@@ -45,7 +49,12 @@ class PushingController:
                                          self.model.jnt_range[:7, 1] - .001),
                                  max_nfev=60)
         self.reference = solution.x
-        return np.clip(60 * (self.reference - observation[:7]) - 4 * observation[7:14], -2, 2)
+        raw = np.clip(self.skill.proportional_gain * (self.reference - observation[:7])
+                      - self.skill.damping_gain * observation[7:14],
+                      -self.skill.max_torque, self.skill.max_torque)
+        alpha = self.skill.action_smoothing
+        self.previous_action = alpha * raw + (1 - alpha) * self.previous_action
+        return self.previous_action.copy()
 
 
 

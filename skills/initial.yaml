@@ -1,0 +1,11 @@
+name: adaptive_pushing
+version: 1
+control:
+  proportional_gain: 60.0
+  damping_gain: 4.0
+  max_torque: 2.0
+  approach_offset: 0.09
+  approach_height: -0.16
+  push_offset: 0.025
+  stop_distance: 0.05
+  action_smoothing: 1.0

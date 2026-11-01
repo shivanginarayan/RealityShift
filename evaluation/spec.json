@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "horizon": 300,
+  "dt_seconds": 0.05,
+  "goal_tolerance_xy_m": 0.05,
+  "settle_steps": 10,
+  "max_abs_torque": 2.0,
+  "error_normalization_m": 0.5,
+  "weights": {"success": 70, "error": 20, "time": 10},
+  "development_seeds": [0, 1, 2, 3, 4],
+  "development_scenarios": ["nominal", "high_mass", "actuator_delay"]
+}

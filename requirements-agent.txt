@@ -1,0 +1,2 @@
+# Install after requirements-lock.txt; kept separate from frozen simulator setup.
+mcp==1.30.0
