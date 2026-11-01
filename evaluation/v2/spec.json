@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "name": "recovery_strategy_development_v2",
+  "horizon": 300,
+  "dt_seconds": 0.05,
+  "goal_tolerance_xy_m": 0.05,
+  "settle_steps": 10,
+  "max_abs_torque": 2.0,
+  "error_normalization_m": 0.5,
+  "weights": {"success": 70, "error": 20, "time": 10},
+  "development_seeds": [0, 1, 2, 3, 4],
+  "cases": {
+    "case_a": {"scenario": "nominal", "seeds": [0, 1, 2, 3, 4], "intervention": null},
+    "case_b": {"scenario": "high_mass", "seeds": [0, 1, 2, 3, 4], "intervention": null},
+    "case_c": {"scenario": "actuator_delay", "seeds": [0, 1, 2, 3, 4], "intervention": null},
+    "case_d": {"scenario": "nominal", "seeds": [0, 1], "intervention": "contact_interrupt"},
+    "case_e": {"scenario": "nominal", "seeds": [0, 1], "intervention": "object_stall"},
+    "case_f": {"scenario": "nominal", "seeds": [0, 1], "intervention": "goal_crossing"}
+  },
+  "probe_step": 90,
+  "stall_steps": 40,
+  "contact_interrupt_m": 0.14,
+  "goal_crossing_m": 0.10,
+  "agent_budgets": {"evaluations": 6, "trials": 12, "candidates": 4},
+  "developer_stability_gate": {
+    "all_eligible": true,
+    "nominal_successes": 5,
+    "mass_successes_at_least": 2,
+    "delay_successes_at_least": 3,
+    "probe_successes_with_retry_at_least_each": 1
+  }
+}

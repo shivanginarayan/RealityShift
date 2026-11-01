@@ -1,0 +1,91 @@
+{
+  "kind": "developer_MCP_connection_only_not_model_authorship",
+  "tools": [
+    "get_status",
+    "run_trial",
+    "save_candidate_strategy",
+    "get_strategy_diff",
+    "evaluate_candidate",
+    "promote_strategy"
+  ],
+  "status": {
+    "benchmark_version": 2,
+    "enabled": false,
+    "blocked_reason": "Developer stability gate or v2 freeze verification has not passed",
+    "initial_strategy": "name: recovery_strategy_v2\nversion: 1\nstrategies:\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n",
+    "strategy_choices": {
+      "approach": [
+        "direct",
+        "stabilized",
+        "adaptive"
+      ],
+      "stall": [
+        "reapproach",
+        "controlled_repush"
+      ],
+      "overshoot": [
+        "reapproach",
+        "reposition_correct"
+      ],
+      "contact": [
+        "reapproach",
+        "stabilized_reacquire"
+      ]
+    },
+    "cases": {
+      "case_a": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "case_b": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "case_c": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "case_d": {
+        "seeds": [
+          0,
+          1
+        ]
+      },
+      "case_e": {
+        "seeds": [
+          0,
+          1
+        ]
+      },
+      "case_f": {
+        "seeds": [
+          0,
+          1
+        ]
+      }
+    },
+    "remaining": {
+      "evaluations": 6,
+      "trials": 12,
+      "candidates": 4
+    },
+    "promoted": "initial"
+  },
+  "experiment_tools_called": 0,
+  "model_calls": 0
+}

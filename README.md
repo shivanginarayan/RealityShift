@@ -29,6 +29,13 @@ and bounded nominal-model tracking: 8/15 development successes, score 54.70, wit
 a nominal regression to 3/5. These opt-in strategies remain outside the active
 TrueForge bridge and have no new agent or unseen-condition result.
 
+[Distinct recovery strategies and failure diagnosis](docs/STRATEGY_RECOVERY_V2.md)
+now separate target tracking, contact acquisition, pushing/settling, oscillation
+and nominal IK residuals. All 252 developer ablation outcomes are preserved.
+The [strict v2 TrueForge strategy interface](docs/TRUEFORGE_V2.md) is implemented
+but remains gated: developer stability criteria have not passed, so no v2 model
+run or unseen-condition improvement is claimed.
+
 Investigating skill adaptation across simulated changes in robotic pushing physics.
 This project contains the simulator foundation and a nominal model-based pushing
 controller, paired physics-shift experiments, and a recorded TrueForge/Nemotron

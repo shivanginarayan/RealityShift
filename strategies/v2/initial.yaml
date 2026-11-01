@@ -1,0 +1,7 @@
+name: recovery_strategy_v2
+version: 1
+strategies:
+  approach: adaptive
+  stall: controlled_repush
+  overshoot: reposition_correct
+  contact: stabilized_reacquire

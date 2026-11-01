@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "checks": {
+    "all_eligible": true,
+    "nominal_5_of_5": true,
+    "mass_at_least_2_of_5": false,
+    "delay_at_least_3_of_5": true,
+    "case_d_successful_post_interruption_retry": false,
+    "case_e_successful_post_interruption_retry": true,
+    "case_f_successful_post_interruption_retry": true
+  },
+  "note": "Developer stability only, not unseen generalization. No model run unless every check passes."
+}

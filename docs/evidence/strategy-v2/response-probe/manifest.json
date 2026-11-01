@@ -1,0 +1,185 @@
+{
+  "created_utc": "2026-11-01T10:48:03.368035+00:00",
+  "authorship": "developer",
+  "experiment": "distinct_recovery_strategies_first_ablation",
+  "spec": {
+    "version": 2,
+    "name": "recovery_strategy_development_v2",
+    "horizon": 300,
+    "dt_seconds": 0.05,
+    "goal_tolerance_xy_m": 0.05,
+    "settle_steps": 10,
+    "max_abs_torque": 2.0,
+    "error_normalization_m": 0.5,
+    "weights": {
+      "success": 70,
+      "error": 20,
+      "time": 10
+    },
+    "development_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "cases": {
+      "case_a": {
+        "scenario": "nominal",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "intervention": null
+      },
+      "case_b": {
+        "scenario": "high_mass",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "intervention": null
+      },
+      "case_c": {
+        "scenario": "actuator_delay",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "intervention": null
+      },
+      "case_d": {
+        "scenario": "nominal",
+        "seeds": [
+          0,
+          1
+        ],
+        "intervention": "contact_interrupt"
+      },
+      "case_e": {
+        "scenario": "nominal",
+        "seeds": [
+          0,
+          1
+        ],
+        "intervention": "object_stall"
+      },
+      "case_f": {
+        "scenario": "nominal",
+        "seeds": [
+          0,
+          1
+        ],
+        "intervention": "goal_crossing"
+      }
+    },
+    "probe_step": 90,
+    "stall_steps": 40,
+    "contact_interrupt_m": 0.14,
+    "goal_crossing_m": 0.1,
+    "agent_budgets": {
+      "evaluations": 6,
+      "trials": 12,
+      "candidates": 4
+    },
+    "developer_stability_gate": {
+      "all_eligible": true,
+      "nominal_successes": 5,
+      "mass_successes_at_least": 2,
+      "delay_successes_at_least": 3,
+      "probe_successes_with_retry_at_least_each": 1
+    }
+  },
+  "variants": {
+    "full": "name: recovery_strategy_v2\nversion: 1\nstrategies:\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n",
+    "without_stabilization": "name: recovery_strategy_v2\nversion: 1\nstrategies:\n  approach: direct\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: reapproach\n",
+    "without_repush": "name: recovery_strategy_v2\nversion: 1\nstrategies:\n  approach: adaptive\n  stall: reapproach\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n",
+    "without_correction": "name: recovery_strategy_v2\nversion: 1\nstrategies:\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reapproach\n  contact: stabilized_reacquire\n"
+  },
+  "source_sha256": {
+    "evaluation/v2/spec.json": "e5fe42a37f1d3a49fbe3ee2c144126ab931a673317276a18ae85a1aa304e5e0e",
+    "evaluation/v2/benchmark.py": "215befe717b323b37ae413fdaab5b261a9c51660feeebbffe115ca735f60e2a7",
+    "control/strategies.py": "ef68cadbe5d5068325d2436ad7c35d2f552d0f860bfb90b5bd9001d33dd688c8",
+    "control/strategy_schema.py": "6a7bf360d8d6ed2fbebd9b0caaa17ae988317217e1fef99434278f1ab09b6c84",
+    "agent/strategy_diagnostics.py": "de565d6babf7b8941aad66ebedc554dd4e1ae79d49b546ad58ff3cf55266f941",
+    "control/recovery.py": "a6a152f83da8adfb3d5049d54928df2fbe865da28242005ad4f0b56ba451f5e1",
+    "control/settled_recovery.py": "12dcd3c0adb19df4aaf3f9444ed60c94f720d6306159e4c6f558bbc0afd9ced1",
+    "strategies/v2/initial.yaml": "d5b5c17eb1ac7e93207ce6663d9372e0c3407c7cc10eec2304eae842d3942279",
+    "evaluation/strategy_ablation.py": "762eee6f5b303e5bb8795f883fcb141272c1c279bc268ebb1e06d3f8b161dd0f"
+  },
+  "protected_sha256_before": {
+    ".runtime/bridge/state.json": "46c414e29896645c9305806f9c920b91bb765f0c95672930615096d305102620",
+    ".runtime/heldout-receipt.json": "ef1eaad41c33f452c03bef9d3ee4309fd64fe24f262db3be974b766e8d3d8ad8",
+    "agent/instructions.md": "50003d57d4ce6a61dddbbd54dd99d81eedc68e4f5d643d41798671acbb130f5d",
+    "agent/tool_bridge.py": "42f163630acfe75d696e7626bdf1afedbb77a1003df2c408c3189a8b01764ff7",
+    "demo/assets/realityshift_demo-01.png": "20c7a2237fb537e7acde5911f5062017a0531a125a0e747032d1a77374d92ec2",
+    "demo/assets/realityshift_demo-02.png": "aae576adca52086a730eaf69caa34c27197ae85f883eae4a058cb02bcba87b04",
+    "demo/assets/realityshift_demo-03.png": "5f29f9faa8015c5ce70e902a802ae8e7a565489b28051856e717a7bfe43539fc",
+    "demo/assets/realityshift_demo-04.png": "cb31a18f196a35670d21e02a84c4335ddc324d6265a79ab770852544ef470f9c",
+    "demo/assets/realityshift_demo-05.png": "7476fdd9ee51f9e9df0b9dcf4a8937dde49688110638c39ee28605826754e7e2",
+    "demo/assets/realityshift_demo-06.png": "c851c377337192a0c4be19f1d3b09cb54052763696329a875009ec4ed02e35d8",
+    "demo/assets/realityshift_demo-07.png": "3f82c158fdc7c296ba5f306bea40616285cdbbd8f4538473ee1c29186c0a08c9",
+    "demo/assets/realityshift_demo.json": "f35367132ae4866578bdc1d476ca44ada0b5d06682d32f5ecbe42acc177e6ae8",
+    "demo/assets/realityshift_demo.mp4": "ef1c4391e4585dfcca90792a06d56ca0ee0cedc71f23c96f485b887df5bda965",
+    "demo/assets/realityshift_trueforge_demo-01.png": "20c7a2237fb537e7acde5911f5062017a0531a125a0e747032d1a77374d92ec2",
+    "demo/assets/realityshift_trueforge_demo-02.png": "aae576adca52086a730eaf69caa34c27197ae85f883eae4a058cb02bcba87b04",
+    "demo/assets/realityshift_trueforge_demo-03.png": "0905fcee3ea0e3e3cd72d0312a4c0510898a8a07d153ed68bcfdfb1c5590eec6",
+    "demo/assets/realityshift_trueforge_demo-04.png": "cb31a18f196a35670d21e02a84c4335ddc324d6265a79ab770852544ef470f9c",
+    "demo/assets/realityshift_trueforge_demo-05.png": "7476fdd9ee51f9e9df0b9dcf4a8937dde49688110638c39ee28605826754e7e2",
+    "demo/assets/realityshift_trueforge_demo-06.png": "c851c377337192a0c4be19f1d3b09cb54052763696329a875009ec4ed02e35d8",
+    "demo/assets/realityshift_trueforge_demo-07.png": "af2a675aeecde357e4e586afe9a1d4e0ac3379b2c9cc101af9a33e587e7f94e9",
+    "demo/assets/realityshift_trueforge_demo.json": "7041e741ed5b0af75ccf11f1220ece6e91421900d1b8885e706d1c662f23eda2",
+    "demo/assets/realityshift_trueforge_demo.mp4": "e617c2cd91874189de0b94ff54d24f4df8ee2d486352ef90cd5c9be7859a7d09",
+    "docs/evidence/nemotron/agent-configuration.json": "9bc27d35752907b35ca6c60276d42d0a812347e7c419a354ddd642837a9cf3fc",
+    "docs/evidence/nemotron/agent-hypotheses.json": "d5a012ab5239d901759147e1c4de4d908f2e96ed5cb6130f5beff9811ee3aa88",
+    "docs/evidence/nemotron/bridge-audit.jsonl": "0a9a643c0860341e646e605cfd172ff7c23f6080a2bf18f54a2804ad06ba13c8",
+    "docs/evidence/nemotron/diagnostic-results.json": "2a6c74aacd193b4ddce9fe382c94be45d1510b7e494f906ee76f9ace380a4efd",
+    "docs/evidence/nemotron/heldout-manifest.json": "39efe8979f8d4d0b5c39c4d0f6eb0ebbff9027730b78e04420456d782bcbf5e0",
+    "docs/evidence/nemotron/heldout-report.json": "f82da707ce985ee5273b5753fc972e8b2710962df55cc2d2c3f32eb439a09bb1",
+    "docs/evidence/nemotron/initial-development.json": "0ca46dc5a39baec0b70b798159f8f27d562de327a731bc777d0b773a12c0b0d9",
+    "docs/evidence/nemotron/model-configuration.json": "3d44a9a24b026b8141f397e5b9d2fb8e138f2a100186c7aea06234cd8104539a",
+    "docs/evidence/nemotron/session-completion.json": "236cd3b047cb3e7d3b67d4c54362c05424f1274f56becdbcee1159ad22def38d",
+    "docs/evidence/nemotron/session-tools.jsonl": "c000ebf84f44ef8763fef069efd1214faac0c682883d2d3505a74166ea45744d",
+    "docs/evidence/nemotron/skill-v1-v4.diff": "00b0ff814d149b09104b1e72b321d35f95e03cca7f298fc11454ea8f12263783",
+    "docs/evidence/nemotron/summary.json": "bfee96a935918e6a8a19e3763bc7d8eb59b3c95c6c6002f82eb1815239143fbb",
+    "docs/evidence/nemotron/trace-archive.json": "d4f6dfbb68f341635f98d4ff8bc78fbd1938289d42ea6bb397b1b56f4d0005a0",
+    "docs/evidence/nemotron/trajectories.zip": "a01c636d7d6f7ca532690f24808ac8a33b1f31fda734b2272ff0181151a17be8",
+    "docs/evidence/nemotron/v0002-development.json": "0de313a69ca48991594d704582601de8b30407476eb0d7fbf131d3d7c045ba51",
+    "docs/evidence/nemotron/v0003-development.json": "d750692af31f29fb82c7cd87e4cd61567b151d849e3892c73b12de8c9fee6f8c",
+    "docs/evidence/nemotron/v0004-development.json": "5a7b06eb89cffea0e2d0c0ffce24bc5e855808333a8d18e78ecbda5ebd6adab1",
+    "docs/evidence/recovery-increment2/archive.json": "280c10907398f3ca19f0c054ac9541fd2c66e8929d86f49e322b64bb2df9bf69",
+    "docs/evidence/recovery-increment2/manifest.json": "2f6330faede5d9a68c98644f513a7f9a778f4380cad8903165749192dd95ae50",
+    "docs/evidence/recovery-increment2/report.json": "0133253fd2e34a4ca7fa46bdfb89cffb466fcc9a93646b60461cd995041ad76c",
+    "docs/evidence/recovery-increment2/trajectories.zip": "97fa78e854fe9f35094f63b9cfbea04fc3c73ea34ade505dc89b00c441390b01",
+    "docs/evidence/recovery-v2/archive.json": "6b9676b852b40ba2baddd49b87cb50d4c98b29214fcd7b2217e069c77f4a8f65",
+    "docs/evidence/recovery-v2/contact-fix/manifest.json": "be6ddc180894db1fb1a043c067cad2fcce69a2af449c6b8286e79116147f39b9",
+    "docs/evidence/recovery-v2/contact-fix/report.json": "a7240512f50558f2137a388fe4ff0716fbdba36996dbd709515ade48ac2d28fc",
+    "docs/evidence/recovery-v2/final/manifest.json": "a3a3551a2eb37bb48f227befdd0c1b61a9f75a1f47c44c1309a4e5674b77eb18",
+    "docs/evidence/recovery-v2/final/report.json": "7d7d45e74886e920fafbb38aac6af9fbee79653ba11f9a99f6dcb7f86e89179a",
+    "docs/evidence/recovery-v2/first/manifest.json": "a9faf42eee50e7ea37fc0fe547a3dc1e4239d79e967f0182b4b9c479be057d46",
+    "docs/evidence/recovery-v2/first/report.json": "145fd34e35fb2c0cc19f000e10a47190a47a9a9bd3eb92f99d13af6c4e47a070",
+    "docs/evidence/recovery-v2/trajectories.zip": "4f1738b0b95b16d4c2cc2a5aac8110d73e7d5ded7ca3f83e34eb7bd67696ae53",
+    "docs/evidence/strategy-v2/diagnosis-before.json": "f393646fa1a05710cc27e35b574d6c63dabefee5048ca7df75b09b6977b161fb",
+    "docs/evidence/strategy-v2/first/archive.json": "3d6d30026c3d27bf3cb6efe9cb983aa09a2af75f55f3d9f64e93d264e47b6ce5",
+    "docs/evidence/strategy-v2/first/manifest.json": "5f49120637ee43d3c168fd9d38cfd44717a66520d9eea2ed3641d74d0d6e4b80",
+    "docs/evidence/strategy-v2/first/report.json": "97da0a37480dcc47dea55e1ca2f601b0f9ca6c771826894077715d6625e65885",
+    "docs/evidence/strategy-v2/first/stability.json": "f36e3ce76f9bc502da1b5e388fdca337f287c3d18fb34b5c5810e0b42e9dcc2f",
+    "docs/evidence/strategy-v2/first/trajectories.zip": "44f59bafbbd483dd8f6ca938a64f0d11dfc40a9a15241b149b7bd50dce289dee",
+    "evaluation/frozen.json": "08ae261efb1d84d69523b9d210471e7058f6e36610347cbcb3d2a6f08df7993b",
+    "evaluation/heldout_frozen.json": "bdec5e3a6fbdb77c98a81858be67808f81e239d0cba72099f510080bba4a4aca",
+    "skills/initial.yaml": "ff64fb67fa9413202ee51ac944dcf8d4d034b8148f7d6a9e4f73ee686e393807",
+    "skills/versions/v0002.yaml": "34c8a2d7236bebf09e5da926c0b2edcaad246293262ddb9b5dd715569155cb2a",
+    "skills/versions/v0003.yaml": "c6d44b3c42e7fc4340f7f726c921500c5dfd53cd455144a666948ecff7a5386b",
+    "skills/versions/v0004.yaml": "8dfac2236b3050955123318ab75ebb536427fcd34e43196afe9553bd83ab42f6"
+  },
+  "note": "All 84 outcomes retained. Scripted probe interventions are explicit development tests, not unseen physics."
+}

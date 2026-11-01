@@ -1,0 +1,4795 @@
+{
+  "method": "Exact controller replay from recorded observations, nominal model only, no simulator steps",
+  "model_calls": 0,
+  "new_simulation_trials": 0,
+  "episodes": [
+    {
+      "case_id": "case_f",
+      "seed": 0,
+      "median_ik_error_m": 0.09583032984333856,
+      "median_actual_error_m": 0.09683645511856645,
+      "samples": [
+        {
+          "step": 1,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789922570052,
+          "actual_target_error_m": 0.6622095483708738
+        },
+        {
+          "step": 2,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789896486533,
+          "actual_target_error_m": 0.6622131646840055
+        },
+        {
+          "step": 3,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789896480987,
+          "actual_target_error_m": 0.662356520785389
+        },
+        {
+          "step": 4,
+          "stage": "approach",
+          "ik_target_error_m": 0.0126727898964811,
+          "actual_target_error_m": 0.6626164031441371
+        },
+        {
+          "step": 5,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6629401063941247
+        },
+        {
+          "step": 6,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6632656188823034
+        },
+        {
+          "step": 7,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6635241370319174
+        },
+        {
+          "step": 8,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6639255418393645
+        },
+        {
+          "step": 9,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6613111592879178
+        },
+        {
+          "step": 10,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6465823428469237
+        },
+        {
+          "step": 11,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6081618675554306
+        },
+        {
+          "step": 12,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5357522124676369
+        },
+        {
+          "step": 13,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.4315668325381398
+        },
+        {
+          "step": 14,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.310169586151366
+        },
+        {
+          "step": 15,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.20358978169376044
+        },
+        {
+          "step": 16,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.1450720874900885
+        },
+        {
+          "step": 17,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.13082381542276003
+        },
+        {
+          "step": 18,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.1091472422948414
+        },
+        {
+          "step": 19,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.08741269253202243
+        },
+        {
+          "step": 20,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.07146516514256696
+        },
+        {
+          "step": 21,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.050539169588437974
+        },
+        {
+          "step": 22,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.03170526669082328
+        },
+        {
+          "step": 23,
+          "stage": "lower",
+          "ik_target_error_m": 0.057793734313523144,
+          "actual_target_error_m": 0.11350222796355697
+        },
+        {
+          "step": 24,
+          "stage": "lower",
+          "ik_target_error_m": 0.057793734308284085,
+          "actual_target_error_m": 0.10217390309053101
+        },
+        {
+          "step": 25,
+          "stage": "lower",
+          "ik_target_error_m": 0.057793734308147625,
+          "actual_target_error_m": 0.08107049559711293
+        },
+        {
+          "step": 26,
+          "stage": "lower",
+          "ik_target_error_m": 0.05777023415711928,
+          "actual_target_error_m": 0.06144743900621171
+        },
+        {
+          "step": 27,
+          "stage": "lower",
+          "ik_target_error_m": 0.057326774589475014,
+          "actual_target_error_m": 0.06181149126628612
+        },
+        {
+          "step": 28,
+          "stage": "lower",
+          "ik_target_error_m": 0.05634337206575553,
+          "actual_target_error_m": 0.06750011902591438
+        },
+        {
+          "step": 29,
+          "stage": "lower",
+          "ik_target_error_m": 0.055073645094646774,
+          "actual_target_error_m": 0.06625779583218626
+        },
+        {
+          "step": 30,
+          "stage": "lower",
+          "ik_target_error_m": 0.05373292257137131,
+          "actual_target_error_m": 0.057526147533870274
+        },
+        {
+          "step": 31,
+          "stage": "lower",
+          "ik_target_error_m": 0.052563573868674975,
+          "actual_target_error_m": 0.05438331371258303
+        },
+        {
+          "step": 32,
+          "stage": "lower",
+          "ik_target_error_m": 0.051480279805001125,
+          "actual_target_error_m": 0.056973490480517044
+        },
+        {
+          "step": 33,
+          "stage": "lower",
+          "ik_target_error_m": 0.05040729003562876,
+          "actual_target_error_m": 0.05395654586542671
+        },
+        {
+          "step": 34,
+          "stage": "lower",
+          "ik_target_error_m": 0.049397758379241506,
+          "actual_target_error_m": 0.051457437512960676
+        },
+        {
+          "step": 35,
+          "stage": "lower",
+          "ik_target_error_m": 0.04842138771728591,
+          "actual_target_error_m": 0.049179357495167
+        },
+        {
+          "step": 36,
+          "stage": "push",
+          "ik_target_error_m": 2.4929016898628226e-07,
+          "actual_target_error_m": 0.034971206133719505
+        },
+        {
+          "step": 37,
+          "stage": "push",
+          "ik_target_error_m": 1.5662998997636383e-08,
+          "actual_target_error_m": 0.024370306855840657
+        },
+        {
+          "step": 38,
+          "stage": "push",
+          "ik_target_error_m": 1.978986554059222e-08,
+          "actual_target_error_m": 0.022977918420427314
+        },
+        {
+          "step": 39,
+          "stage": "push",
+          "ik_target_error_m": 2.226928687577212e-08,
+          "actual_target_error_m": 0.012509639210519029
+        },
+        {
+          "step": 40,
+          "stage": "push",
+          "ik_target_error_m": 2.1950371045936225e-08,
+          "actual_target_error_m": 0.004323643284937937
+        },
+        {
+          "step": 41,
+          "stage": "push",
+          "ik_target_error_m": 2.218329338108072e-08,
+          "actual_target_error_m": 0.006533863337280028
+        },
+        {
+          "step": 42,
+          "stage": "push",
+          "ik_target_error_m": 2.15528261555617e-08,
+          "actual_target_error_m": 0.006770819125858373
+        },
+        {
+          "step": 43,
+          "stage": "push",
+          "ik_target_error_m": 2.153604633457293e-08,
+          "actual_target_error_m": 0.0047409361039215826
+        },
+        {
+          "step": 44,
+          "stage": "push",
+          "ik_target_error_m": 2.0331671357983295e-08,
+          "actual_target_error_m": 0.006881745091997807
+        },
+        {
+          "step": 45,
+          "stage": "push",
+          "ik_target_error_m": 2.0232499322520112e-08,
+          "actual_target_error_m": 0.004347512036624087
+        },
+        {
+          "step": 46,
+          "stage": "push",
+          "ik_target_error_m": 1.963661458390389e-08,
+          "actual_target_error_m": 0.005064373370746926
+        },
+        {
+          "step": 47,
+          "stage": "push",
+          "ik_target_error_m": 1.9894587280643212e-08,
+          "actual_target_error_m": 0.004220596063781589
+        },
+        {
+          "step": 48,
+          "stage": "push",
+          "ik_target_error_m": 1.9110002177676325e-08,
+          "actual_target_error_m": 0.005708307530324309
+        },
+        {
+          "step": 49,
+          "stage": "push",
+          "ik_target_error_m": 1.91727051128383e-08,
+          "actual_target_error_m": 0.0048140492048192604
+        },
+        {
+          "step": 50,
+          "stage": "push",
+          "ik_target_error_m": 1.8426725364784352e-08,
+          "actual_target_error_m": 0.006777374072450257
+        },
+        {
+          "step": 51,
+          "stage": "push",
+          "ik_target_error_m": 1.8469600089448288e-08,
+          "actual_target_error_m": 0.006222000922061339
+        },
+        {
+          "step": 52,
+          "stage": "push",
+          "ik_target_error_m": 1.7632096038936946e-08,
+          "actual_target_error_m": 0.008110399607781902
+        },
+        {
+          "step": 53,
+          "stage": "push",
+          "ik_target_error_m": 1.7625951181933855e-08,
+          "actual_target_error_m": 0.006869605461976943
+        },
+        {
+          "step": 54,
+          "stage": "push",
+          "ik_target_error_m": 1.6935170136305287e-08,
+          "actual_target_error_m": 0.008340019712290137
+        },
+        {
+          "step": 55,
+          "stage": "push",
+          "ik_target_error_m": 1.6999533578198223e-08,
+          "actual_target_error_m": 0.006642702478125769
+        },
+        {
+          "step": 56,
+          "stage": "push",
+          "ik_target_error_m": 1.6287982447727813e-08,
+          "actual_target_error_m": 0.008346704855580271
+        },
+        {
+          "step": 57,
+          "stage": "push",
+          "ik_target_error_m": 1.632636282309446e-08,
+          "actual_target_error_m": 0.006687323741629405
+        },
+        {
+          "step": 58,
+          "stage": "push",
+          "ik_target_error_m": 1.5632865982868704e-08,
+          "actual_target_error_m": 0.008758663350597171
+        },
+        {
+          "step": 59,
+          "stage": "push",
+          "ik_target_error_m": 1.568378782513306e-08,
+          "actual_target_error_m": 0.006896763545121748
+        },
+        {
+          "step": 60,
+          "stage": "push",
+          "ik_target_error_m": 1.510868815709497e-08,
+          "actual_target_error_m": 0.008518837455890486
+        },
+        {
+          "step": 61,
+          "stage": "push",
+          "ik_target_error_m": 1.5272104700734035e-08,
+          "actual_target_error_m": 0.006586034762296509
+        },
+        {
+          "step": 62,
+          "stage": "push",
+          "ik_target_error_m": 1.4766302103944298e-08,
+          "actual_target_error_m": 0.007960197888964812
+        },
+        {
+          "step": 63,
+          "stage": "push",
+          "ik_target_error_m": 1.493111723448922e-08,
+          "actual_target_error_m": 0.0062562791040414335
+        },
+        {
+          "step": 64,
+          "stage": "push",
+          "ik_target_error_m": 1.4426439417061913e-08,
+          "actual_target_error_m": 0.007665248310200114
+        },
+        {
+          "step": 65,
+          "stage": "push",
+          "ik_target_error_m": 1.4563384691491142e-08,
+          "actual_target_error_m": 0.0063028830060176165
+        },
+        {
+          "step": 66,
+          "stage": "push",
+          "ik_target_error_m": 1.4053685222645539e-08,
+          "actual_target_error_m": 0.007807085335370625
+        },
+        {
+          "step": 67,
+          "stage": "push",
+          "ik_target_error_m": 1.4168168926339834e-08,
+          "actual_target_error_m": 0.0065124928530580425
+        },
+        {
+          "step": 68,
+          "stage": "push",
+          "ik_target_error_m": 1.3668600171422706e-08,
+          "actual_target_error_m": 0.007788055117422857
+        },
+        {
+          "step": 69,
+          "stage": "push",
+          "ik_target_error_m": 1.3774769741342544e-08,
+          "actual_target_error_m": 0.006351522944194454
+        },
+        {
+          "step": 70,
+          "stage": "push",
+          "ik_target_error_m": 1.3273803383647394e-08,
+          "actual_target_error_m": 0.00782960368086695
+        },
+        {
+          "step": 71,
+          "stage": "push",
+          "ik_target_error_m": 1.3361467635642604e-08,
+          "actual_target_error_m": 0.006444732292773343
+        },
+        {
+          "step": 72,
+          "stage": "push",
+          "ik_target_error_m": 1.2861050246601885e-08,
+          "actual_target_error_m": 0.008244713185838018
+        },
+        {
+          "step": 73,
+          "stage": "push",
+          "ik_target_error_m": 1.2939594893246296e-08,
+          "actual_target_error_m": 0.006684921587675536
+        },
+        {
+          "step": 74,
+          "stage": "push",
+          "ik_target_error_m": 1.2461616510902445e-08,
+          "actual_target_error_m": 0.00831230812361442
+        },
+        {
+          "step": 75,
+          "stage": "push",
+          "ik_target_error_m": 1.2549956522207804e-08,
+          "actual_target_error_m": 0.006427651569237758
+        },
+        {
+          "step": 76,
+          "stage": "push",
+          "ik_target_error_m": 1.2084781718439267e-08,
+          "actual_target_error_m": 0.008382652983778747
+        },
+        {
+          "step": 77,
+          "stage": "push",
+          "ik_target_error_m": 1.2187297814970598e-08,
+          "actual_target_error_m": 0.006251789684873166
+        },
+        {
+          "step": 78,
+          "stage": "push",
+          "ik_target_error_m": 1.1967472025289375e-08,
+          "actual_target_error_m": 0.007622959342698934
+        },
+        {
+          "step": 79,
+          "stage": "push",
+          "ik_target_error_m": 1.2079694313145326e-08,
+          "actual_target_error_m": 0.0056922579178393315
+        },
+        {
+          "step": 80,
+          "stage": "push",
+          "ik_target_error_m": 1.1693476906777783e-08,
+          "actual_target_error_m": 0.007226007430027081
+        },
+        {
+          "step": 81,
+          "stage": "push",
+          "ik_target_error_m": 1.188208450248163e-08,
+          "actual_target_error_m": 0.006021735490743904
+        },
+        {
+          "step": 82,
+          "stage": "push",
+          "ik_target_error_m": 1.1592211142169368e-08,
+          "actual_target_error_m": 0.0075136484149218455
+        },
+        {
+          "step": 83,
+          "stage": "push",
+          "ik_target_error_m": 1.1850796863015224e-08,
+          "actual_target_error_m": 0.006690389573920272
+        },
+        {
+          "step": 84,
+          "stage": "push",
+          "ik_target_error_m": 1.1351976614596223e-08,
+          "actual_target_error_m": 0.008052062485862025
+        },
+        {
+          "step": 85,
+          "stage": "push",
+          "ik_target_error_m": 1.1501586349006244e-08,
+          "actual_target_error_m": 0.007030999079114364
+        },
+        {
+          "step": 86,
+          "stage": "push",
+          "ik_target_error_m": 1.1171908485366164e-08,
+          "actual_target_error_m": 0.007544707772966476
+        },
+        {
+          "step": 87,
+          "stage": "push",
+          "ik_target_error_m": 1.1328709968874693e-08,
+          "actual_target_error_m": 0.006109150985885973
+        },
+        {
+          "step": 88,
+          "stage": "push",
+          "ik_target_error_m": 1.0994697886438167e-08,
+          "actual_target_error_m": 0.00666239492967618
+        },
+        {
+          "step": 89,
+          "stage": "push",
+          "ik_target_error_m": 1.1133703205644135e-08,
+          "actual_target_error_m": 0.005327278287090072
+        },
+        {
+          "step": 90,
+          "stage": "stabilize",
+          "ik_target_error_m": 6.014657440120734e-09,
+          "actual_target_error_m": 0.0
+        },
+        {
+          "step": 91,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.0008908279793568054
+        },
+        {
+          "step": 92,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.001368401238773855
+        },
+        {
+          "step": 93,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.001966589857727349
+        },
+        {
+          "step": 94,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.000527781333732382
+        },
+        {
+          "step": 95,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.003512923238251061
+        },
+        {
+          "step": 96,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.002226832893363558
+        },
+        {
+          "step": 97,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.005086134346497092
+        },
+        {
+          "step": 98,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.0035852143114326706
+        },
+        {
+          "step": 99,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.005941254344989576
+        },
+        {
+          "step": 100,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.00440079395223389
+        },
+        {
+          "step": 101,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.0065912472319449595
+        },
+        {
+          "step": 102,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.1070183202792133e-13,
+          "actual_target_error_m": 0.005237284391451477
+        },
+        {
+          "step": 103,
+          "stage": "recover_lift",
+          "ik_target_error_m": 2.8217804910575637e-07,
+          "actual_target_error_m": 0.117978324669403
+        },
+        {
+          "step": 104,
+          "stage": "recover_lift",
+          "ik_target_error_m": 1.56322863530699e-11,
+          "actual_target_error_m": 0.1031768646981411
+        },
+        {
+          "step": 105,
+          "stage": "recover_lift",
+          "ik_target_error_m": 1.56322863530699e-11,
+          "actual_target_error_m": 0.0688824271403381
+        },
+        {
+          "step": 106,
+          "stage": "recover_lift",
+          "ik_target_error_m": 1.56322863530699e-11,
+          "actual_target_error_m": 0.0362738023851907
+        },
+        {
+          "step": 107,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646702682399,
+          "actual_target_error_m": 0.4782706453322766
+        },
+        {
+          "step": 108,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646701588518,
+          "actual_target_error_m": 0.466660848050478
+        },
+        {
+          "step": 109,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264670073934,
+          "actual_target_error_m": 0.437310405063937
+        },
+        {
+          "step": 110,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646700741192,
+          "actual_target_error_m": 0.3933599885507131
+        },
+        {
+          "step": 111,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646698773775,
+          "actual_target_error_m": 0.3425906346248029
+        },
+        {
+          "step": 112,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264669625806,
+          "actual_target_error_m": 0.2907695133681054
+        },
+        {
+          "step": 113,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646693718981,
+          "actual_target_error_m": 0.24753488899999435
+        },
+        {
+          "step": 114,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646693720914,
+          "actual_target_error_m": 0.2313752278544959
+        },
+        {
+          "step": 115,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646693473268,
+          "actual_target_error_m": 0.2509905474637055
+        },
+        {
+          "step": 116,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646692473949,
+          "actual_target_error_m": 0.26936801088615453
+        },
+        {
+          "step": 117,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646692533049,
+          "actual_target_error_m": 0.22107927649411627
+        },
+        {
+          "step": 118,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264669486758,
+          "actual_target_error_m": 0.1776352316039453
+        },
+        {
+          "step": 119,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646694993437,
+          "actual_target_error_m": 0.13807520012896143
+        },
+        {
+          "step": 120,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646694446062,
+          "actual_target_error_m": 0.11052239999509372
+        },
+        {
+          "step": 121,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646693788549,
+          "actual_target_error_m": 0.10290377468371069
+        },
+        {
+          "step": 122,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646692694524,
+          "actual_target_error_m": 0.11237565562215444
+        },
+        {
+          "step": 123,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646691620539,
+          "actual_target_error_m": 0.13068791258466295
+        },
+        {
+          "step": 124,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646690019417,
+          "actual_target_error_m": 0.14107094298613648
+        },
+        {
+          "step": 125,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646688756276,
+          "actual_target_error_m": 0.1474907245666096
+        },
+        {
+          "step": 126,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264668952996,
+          "actual_target_error_m": 0.15357044849964321
+        },
+        {
+          "step": 127,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646688064506,
+          "actual_target_error_m": 0.1482251108898583
+        },
+        {
+          "step": 128,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646687948633,
+          "actual_target_error_m": 0.1414445362995475
+        },
+        {
+          "step": 129,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646686665157,
+          "actual_target_error_m": 0.13389560239133314
+        },
+        {
+          "step": 130,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646684875717,
+          "actual_target_error_m": 0.1225658337611973
+        },
+        {
+          "step": 131,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646684031865,
+          "actual_target_error_m": 0.11337641976911479
+        },
+        {
+          "step": 132,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646684038998,
+          "actual_target_error_m": 0.1069254306051915
+        },
+        {
+          "step": 133,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646682809592,
+          "actual_target_error_m": 0.1013520416037772
+        },
+        {
+          "step": 134,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646681531759,
+          "actual_target_error_m": 0.09690811585881327
+        },
+        {
+          "step": 135,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646680414021,
+          "actual_target_error_m": 0.09592554459048741
+        },
+        {
+          "step": 136,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646680415847,
+          "actual_target_error_m": 0.09746109239604386
+        },
+        {
+          "step": 137,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264667815836,
+          "actual_target_error_m": 0.09863759905483262
+        },
+        {
+          "step": 138,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264667587097,
+          "actual_target_error_m": 0.0993413653639961
+        },
+        {
+          "step": 139,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646674905368,
+          "actual_target_error_m": 0.0986735497354152
+        },
+        {
+          "step": 140,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646674907204,
+          "actual_target_error_m": 0.0971615085108579
+        },
+        {
+          "step": 141,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646673513535,
+          "actual_target_error_m": 0.0957091824468424
+        },
+        {
+          "step": 142,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646673388248,
+          "actual_target_error_m": 0.09494113749906491
+        },
+        {
+          "step": 143,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646671299766,
+          "actual_target_error_m": 0.09491618707043045
+        },
+        {
+          "step": 144,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646669279933,
+          "actual_target_error_m": 0.09525125911818844
+        },
+        {
+          "step": 145,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646667625307,
+          "actual_target_error_m": 0.09565149244716237
+        },
+        {
+          "step": 146,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646665758612,
+          "actual_target_error_m": 0.09564557576102102
+        },
+        {
+          "step": 147,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646663550236,
+          "actual_target_error_m": 0.0955209137869162
+        },
+        {
+          "step": 148,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646661268102,
+          "actual_target_error_m": 0.09516249656880006
+        },
+        {
+          "step": 149,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646658837189,
+          "actual_target_error_m": 0.09495745170267653
+        },
+        {
+          "step": 150,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646657730782,
+          "actual_target_error_m": 0.09483390594199466
+        },
+        {
+          "step": 151,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646657446239,
+          "actual_target_error_m": 0.09484872831164401
+        },
+        {
+          "step": 152,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646656091757,
+          "actual_target_error_m": 0.09491037740748502
+        },
+        {
+          "step": 153,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646654488266,
+          "actual_target_error_m": 0.09494662314523296
+        },
+        {
+          "step": 154,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646654490119,
+          "actual_target_error_m": 0.09495629837568872
+        },
+        {
+          "step": 155,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646652312414,
+          "actual_target_error_m": 0.09491012035809497
+        },
+        {
+          "step": 156,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646652141873,
+          "actual_target_error_m": 0.09488169253514646
+        },
+        {
+          "step": 157,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646650561317,
+          "actual_target_error_m": 0.09483538379281951
+        },
+        {
+          "step": 158,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646648329922,
+          "actual_target_error_m": 0.09482721184040875
+        },
+        {
+          "step": 159,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264664729236,
+          "actual_target_error_m": 0.09483764870289206
+        },
+        {
+          "step": 160,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646647294082,
+          "actual_target_error_m": 0.09484401370228161
+        },
+        {
+          "step": 161,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646647294082,
+          "actual_target_error_m": 0.0948639278950405
+        },
+        {
+          "step": 162,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646647294082,
+          "actual_target_error_m": 0.09490583749567086
+        },
+        {
+          "step": 163,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646647294082,
+          "actual_target_error_m": 0.09496062308327895
+        },
+        {
+          "step": 164,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646647294084,
+          "actual_target_error_m": 0.09502009098175837
+        },
+        {
+          "step": 165,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0948264664625123,
+          "actual_target_error_m": 0.09507798019436288
+        },
+        {
+          "step": 166,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646646125166,
+          "actual_target_error_m": 0.09512974093262257
+        },
+        {
+          "step": 167,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646646126996,
+          "actual_target_error_m": 0.09517231172970309
+        },
+        {
+          "step": 168,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646645350855,
+          "actual_target_error_m": 0.09520390084698226
+        },
+        {
+          "step": 169,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646644279746,
+          "actual_target_error_m": 0.09522377521957749
+        },
+        {
+          "step": 170,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09482646644281602,
+          "actual_target_error_m": 0.09523206707002513
+        },
+        {
+          "step": 171,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.9316877387338154e-06,
+          "actual_target_error_m": 0.0
+        },
+        {
+          "step": 172,
+          "stage": "stabilize",
+          "ik_target_error_m": 2.6763210560709292e-08,
+          "actual_target_error_m": 9.921290459763466e-05
+        },
+        {
+          "step": 173,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.00018503036335058037
+        },
+        {
+          "step": 174,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0002592675757144559
+        },
+        {
+          "step": 175,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0003234930499112146
+        },
+        {
+          "step": 176,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.00037906176080367243
+        },
+        {
+          "step": 177,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.000427144128064045
+        },
+        {
+          "step": 178,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0004687512129808194
+        },
+        {
+          "step": 179,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0005047565490528969
+        },
+        {
+          "step": 180,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0005359150097290111
+        },
+        {
+          "step": 181,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0005628790891343909
+        },
+        {
+          "step": 182,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0005862129366450557
+        },
+        {
+          "step": 183,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.653788926955053e-10,
+          "actual_target_error_m": 0.0006064044488771867
+        },
+        {
+          "step": 184,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.0043278689267624276,
+          "actual_target_error_m": 0.02107357520820918
+        },
+        {
+          "step": 185,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.004327868926820922,
+          "actual_target_error_m": 0.02098248487028671
+        },
+        {
+          "step": 186,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.004327868926176252,
+          "actual_target_error_m": 0.020690303739279367
+        },
+        {
+          "step": 187,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419326493735,
+          "actual_target_error_m": 0.09691586653222407
+        },
+        {
+          "step": 188,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419326485103,
+          "actual_target_error_m": 0.09690453456235625
+        },
+        {
+          "step": 189,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419324599929,
+          "actual_target_error_m": 0.09689606403127236
+        },
+        {
+          "step": 190,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419323628742,
+          "actual_target_error_m": 0.09688958141088488
+        },
+        {
+          "step": 191,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0968341932210701,
+          "actual_target_error_m": 0.09688447786555153
+        },
+        {
+          "step": 192,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419320708808,
+          "actual_target_error_m": 0.09688034374093343
+        },
+        {
+          "step": 193,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419318723271,
+          "actual_target_error_m": 0.09687691012251715
+        },
+        {
+          "step": 194,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419316623681,
+          "actual_target_error_m": 0.09687400109964076
+        },
+        {
+          "step": 195,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419315579687,
+          "actual_target_error_m": 0.09687149818989994
+        },
+        {
+          "step": 196,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0968341931517083,
+          "actual_target_error_m": 0.09686931698600414
+        },
+        {
+          "step": 197,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419313546,
+          "actual_target_error_m": 0.0968673923586253
+        },
+        {
+          "step": 198,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419312755827,
+          "actual_target_error_m": 0.09686566850102067
+        },
+        {
+          "step": 199,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419310333247,
+          "actual_target_error_m": 0.09686409475512513
+        },
+        {
+          "step": 200,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419308807473,
+          "actual_target_error_m": 0.09686262504042045
+        },
+        {
+          "step": 201,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419307901463,
+          "actual_target_error_m": 0.09686121800926344
+        },
+        {
+          "step": 202,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419305749964,
+          "actual_target_error_m": 0.0968598390497881
+        },
+        {
+          "step": 203,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0968341930416743,
+          "actual_target_error_m": 0.09685846045200495
+        },
+        {
+          "step": 204,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419303298184,
+          "actual_target_error_m": 0.09685706192330353
+        },
+        {
+          "step": 205,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419301261757,
+          "actual_target_error_m": 0.0968556312701235
+        },
+        {
+          "step": 206,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419299007039,
+          "actual_target_error_m": 0.0968541638222598
+        },
+        {
+          "step": 207,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419296643436,
+          "actual_target_error_m": 0.09685266175908838
+        },
+        {
+          "step": 208,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419296645293,
+          "actual_target_error_m": 0.09685113340758929
+        },
+        {
+          "step": 209,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419294190695,
+          "actual_target_error_m": 0.09684899386150127
+        },
+        {
+          "step": 210,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0968341929419263,
+          "actual_target_error_m": 0.09684619166565214
+        },
+        {
+          "step": 211,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419292051508,
+          "actual_target_error_m": 0.0968438312472926
+        },
+        {
+          "step": 212,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419289733904,
+          "actual_target_error_m": 0.09684187512151425
+        },
+        {
+          "step": 213,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419287077481,
+          "actual_target_error_m": 0.09684028160777189
+        },
+        {
+          "step": 214,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419286167373,
+          "actual_target_error_m": 0.09683900698411954
+        },
+        {
+          "step": 215,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419284762491,
+          "actual_target_error_m": 0.0968380073318756
+        },
+        {
+          "step": 216,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419284764315,
+          "actual_target_error_m": 0.09683724003747378
+        },
+        {
+          "step": 217,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419282460588,
+          "actual_target_error_m": 0.09683666496221367
+        },
+        {
+          "step": 218,
+          "stage": "reposition",
+          "ik_target_error_m": 0.096834192807297,
+          "actual_target_error_m": 0.09683624527491921
+        },
+        {
+          "step": 219,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419278490352,
+          "actual_target_error_m": 0.096835947998393
+        },
+        {
+          "step": 220,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419277933604,
+          "actual_target_error_m": 0.09683574426839826
+        },
+        {
+          "step": 221,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419277046484,
+          "actual_target_error_m": 0.09683560941345871
+        },
+        {
+          "step": 222,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419276600862,
+          "actual_target_error_m": 0.0968355228631496
+        },
+        {
+          "step": 223,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419273693626,
+          "actual_target_error_m": 0.09683546793770659
+        },
+        {
+          "step": 224,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419271597216,
+          "actual_target_error_m": 0.09683543152785941
+        },
+        {
+          "step": 225,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419271475402,
+          "actual_target_error_m": 0.09683540371145923
+        },
+        {
+          "step": 226,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419271477153,
+          "actual_target_error_m": 0.09683537732987588
+        },
+        {
+          "step": 227,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419270982542,
+          "actual_target_error_m": 0.09683534756520201
+        },
+        {
+          "step": 228,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419269672812,
+          "actual_target_error_m": 0.09683531152841314
+        },
+        {
+          "step": 229,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419268003156,
+          "actual_target_error_m": 0.09683526786331484
+        },
+        {
+          "step": 230,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265985314,
+          "actual_target_error_m": 0.09683521638271285
+        },
+        {
+          "step": 231,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683515774155177
+        },
+        {
+          "step": 232,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.0968350931604398
+        },
+        {
+          "step": 233,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683502419105858
+        },
+        {
+          "step": 234,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683495253367046
+        },
+        {
+          "step": 235,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.0968348798911641
+        },
+        {
+          "step": 236,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683480786108006
+        },
+        {
+          "step": 237,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.096834737861033
+        },
+        {
+          "step": 238,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.0968346710826187
+        },
+        {
+          "step": 239,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683460846883889
+        },
+        {
+          "step": 240,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683455071023916
+        },
+        {
+          "step": 241,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683449825530242
+        },
+        {
+          "step": 242,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683445133107109
+        },
+        {
+          "step": 243,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683440997049993
+        },
+        {
+          "step": 244,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683437404358392
+        },
+        {
+          "step": 245,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683434328983802
+        },
+        {
+          "step": 246,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683431735024524
+        },
+        {
+          "step": 247,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683429579725784
+        },
+        {
+          "step": 248,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683427816186582
+        },
+        {
+          "step": 249,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683426395711899
+        },
+        {
+          "step": 250,
+          "stage": "reposition",
+          "ik_target_error_m": 0.09683419265987171,
+          "actual_target_error_m": 0.09683425269780588
+        }
+      ]
+    },
+    {
+      "case_id": "case_b",
+      "seed": 1,
+      "median_ik_error_m": 0.05431291325578994,
+      "median_actual_error_m": 0.08936057096272047,
+      "samples": [
+        {
+          "step": 1,
+          "stage": "approach",
+          "ik_target_error_m": 4.34154616243854e-06,
+          "actual_target_error_m": 0.400614172374356
+        },
+        {
+          "step": 2,
+          "stage": "approach",
+          "ik_target_error_m": 1.81911489773716e-09,
+          "actual_target_error_m": 0.398965968095373
+        },
+        {
+          "step": 3,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.3933314443292497
+        },
+        {
+          "step": 4,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.38421218253877926
+        },
+        {
+          "step": 5,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.3721028799361559
+        },
+        {
+          "step": 6,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.35746459279813725
+        },
+        {
+          "step": 7,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.3407246220416637
+        },
+        {
+          "step": 8,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.32434174115727415
+        },
+        {
+          "step": 9,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.31509501254905536
+        },
+        {
+          "step": 10,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.3113511669656396
+        },
+        {
+          "step": 11,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.29763643770416326
+        },
+        {
+          "step": 12,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.2694249156583573
+        },
+        {
+          "step": 13,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.23150150502894745
+        },
+        {
+          "step": 14,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.18765446487348006
+        },
+        {
+          "step": 15,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.1420097712173235
+        },
+        {
+          "step": 16,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.10611452044764008
+        },
+        {
+          "step": 17,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.07383996124975936
+        },
+        {
+          "step": 18,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.04371699723015413
+        },
+        {
+          "step": 19,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.04262230398349428
+        },
+        {
+          "step": 20,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.059004979537413085
+        },
+        {
+          "step": 21,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.07649713427494483
+        },
+        {
+          "step": 22,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.09818204697417306
+        },
+        {
+          "step": 23,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.11066421086327265
+        },
+        {
+          "step": 24,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.11748711642453549
+        },
+        {
+          "step": 25,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.11986394106775367
+        },
+        {
+          "step": 26,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.11955149107258227
+        },
+        {
+          "step": 27,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.11644907830085591
+        },
+        {
+          "step": 28,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.1066546639964363
+        },
+        {
+          "step": 29,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.09288455059745185
+        },
+        {
+          "step": 30,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.07840059293710548
+        },
+        {
+          "step": 31,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.05732758147064978
+        },
+        {
+          "step": 32,
+          "stage": "approach",
+          "ik_target_error_m": 8.766179784793686e-13,
+          "actual_target_error_m": 0.03617249548013012
+        },
+        {
+          "step": 33,
+          "stage": "lower",
+          "ik_target_error_m": 0.013626156645207492,
+          "actual_target_error_m": 0.1125861938448148
+        },
+        {
+          "step": 34,
+          "stage": "lower",
+          "ik_target_error_m": 0.0136261566393639,
+          "actual_target_error_m": 0.10501940388622766
+        },
+        {
+          "step": 35,
+          "stage": "lower",
+          "ik_target_error_m": 0.013626156639098917,
+          "actual_target_error_m": 0.08600638468773908
+        },
+        {
+          "step": 36,
+          "stage": "lower",
+          "ik_target_error_m": 0.013626156638111406,
+          "actual_target_error_m": 0.05693609108694397
+        },
+        {
+          "step": 37,
+          "stage": "lower",
+          "ik_target_error_m": 0.013626156635714204,
+          "actual_target_error_m": 0.03528363825336907
+        },
+        {
+          "step": 38,
+          "stage": "push",
+          "ik_target_error_m": 1.7660703315626268e-06,
+          "actual_target_error_m": 0.10365866043405825
+        },
+        {
+          "step": 39,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.11796460227443957
+        },
+        {
+          "step": 40,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.14176944825116938
+        },
+        {
+          "step": 41,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.16405727501603073
+        },
+        {
+          "step": 42,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.17016504598000212
+        },
+        {
+          "step": 43,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.16088261808101034
+        },
+        {
+          "step": 44,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.14415974197213846
+        },
+        {
+          "step": 45,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.1268200983783699
+        },
+        {
+          "step": 46,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.10762275355209827
+        },
+        {
+          "step": 47,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.08631951933638937
+        },
+        {
+          "step": 48,
+          "stage": "push",
+          "ik_target_error_m": 1.3791286036943925e-10,
+          "actual_target_error_m": 0.06373321799815569
+        },
+        {
+          "step": 49,
+          "stage": "push",
+          "ik_target_error_m": 3.09356495227274e-07,
+          "actual_target_error_m": 0.050119739538362254
+        },
+        {
+          "step": 50,
+          "stage": "push",
+          "ik_target_error_m": 2.9070464465928374e-07,
+          "actual_target_error_m": 0.04999941722281611
+        },
+        {
+          "step": 51,
+          "stage": "push",
+          "ik_target_error_m": 1.8391102833833906e-07,
+          "actual_target_error_m": 0.05056169660132844
+        },
+        {
+          "step": 52,
+          "stage": "push",
+          "ik_target_error_m": 1.508414666845225e-07,
+          "actual_target_error_m": 0.052653502748734794
+        },
+        {
+          "step": 53,
+          "stage": "push",
+          "ik_target_error_m": 1.4736806311388135e-07,
+          "actual_target_error_m": 0.0524681308124518
+        },
+        {
+          "step": 54,
+          "stage": "push",
+          "ik_target_error_m": 1.2377674896768765e-07,
+          "actual_target_error_m": 0.051247261437397024
+        },
+        {
+          "step": 55,
+          "stage": "push",
+          "ik_target_error_m": 6.552684723093008e-08,
+          "actual_target_error_m": 0.04993692181913693
+        },
+        {
+          "step": 56,
+          "stage": "push",
+          "ik_target_error_m": 7.520298793230273e-08,
+          "actual_target_error_m": 0.049460044551252906
+        },
+        {
+          "step": 57,
+          "stage": "hold",
+          "ik_target_error_m": 4.510721701976751e-08,
+          "actual_target_error_m": 0.0
+        },
+        {
+          "step": 58,
+          "stage": "hold",
+          "ik_target_error_m": 1.1698013123126597e-07,
+          "actual_target_error_m": 0.020948173682993607
+        },
+        {
+          "step": 59,
+          "stage": "hold",
+          "ik_target_error_m": 1.8202466268916894e-07,
+          "actual_target_error_m": 0.04549470081835023
+        },
+        {
+          "step": 60,
+          "stage": "hold",
+          "ik_target_error_m": 9.397231385897091e-08,
+          "actual_target_error_m": 0.06253831932375101
+        },
+        {
+          "step": 61,
+          "stage": "hold",
+          "ik_target_error_m": 1.2183152051101143e-08,
+          "actual_target_error_m": 0.07464350608272838
+        },
+        {
+          "step": 62,
+          "stage": "stabilize",
+          "ik_target_error_m": 2.4664759378253203e-07,
+          "actual_target_error_m": 0.0
+        },
+        {
+          "step": 63,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.822239522067744e-08,
+          "actual_target_error_m": 0.005310597396010817
+        },
+        {
+          "step": 64,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.0942012054266352e-08,
+          "actual_target_error_m": 0.006378906968584462
+        },
+        {
+          "step": 65,
+          "stage": "stabilize",
+          "ik_target_error_m": 7.2081115282622534e-09,
+          "actual_target_error_m": 0.006770522556111763
+        },
+        {
+          "step": 66,
+          "stage": "stabilize",
+          "ik_target_error_m": 5.0115806715268626e-09,
+          "actual_target_error_m": 0.008144405564947194
+        },
+        {
+          "step": 67,
+          "stage": "stabilize",
+          "ik_target_error_m": 3.623060913544343e-09,
+          "actual_target_error_m": 0.005479501125634156
+        },
+        {
+          "step": 68,
+          "stage": "stabilize",
+          "ik_target_error_m": 2.6898715444117316e-09,
+          "actual_target_error_m": 0.007539729291429586
+        },
+        {
+          "step": 69,
+          "stage": "stabilize",
+          "ik_target_error_m": 2.0373221989118894e-09,
+          "actual_target_error_m": 0.005457880708743819
+        },
+        {
+          "step": 70,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.566611466918237e-09,
+          "actual_target_error_m": 0.004298712575218099
+        },
+        {
+          "step": 71,
+          "stage": "stabilize",
+          "ik_target_error_m": 1.2187431241417123e-09,
+          "actual_target_error_m": 0.0012519462944166916
+        },
+        {
+          "step": 72,
+          "stage": "stabilize",
+          "ik_target_error_m": 9.567243636328926e-10,
+          "actual_target_error_m": 0.0009230840258089289
+        },
+        {
+          "step": 73,
+          "stage": "stabilize",
+          "ik_target_error_m": 7.56377222179204e-10,
+          "actual_target_error_m": 0.004189589730617346
+        },
+        {
+          "step": 74,
+          "stage": "stabilize",
+          "ik_target_error_m": 6.013417130804319e-10,
+          "actual_target_error_m": 0.005279698754401468
+        },
+        {
+          "step": 75,
+          "stage": "recover_lift",
+          "ik_target_error_m": 6.232045375418005e-07,
+          "actual_target_error_m": 0.11253523172998092
+        },
+        {
+          "step": 76,
+          "stage": "recover_lift",
+          "ik_target_error_m": 8.754240102872045e-11,
+          "actual_target_error_m": 0.10657023951011202
+        },
+        {
+          "step": 77,
+          "stage": "recover_lift",
+          "ik_target_error_m": 4.058315798990812e-11,
+          "actual_target_error_m": 0.08895828541529666
+        },
+        {
+          "step": 78,
+          "stage": "recover_lift",
+          "ik_target_error_m": 3.268923133981188e-11,
+          "actual_target_error_m": 0.06135625375568944
+        },
+        {
+          "step": 79,
+          "stage": "recover_lift",
+          "ik_target_error_m": 2.6379568839603708e-11,
+          "actual_target_error_m": 0.03556127332812366
+        },
+        {
+          "step": 80,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006868509374349381,
+          "actual_target_error_m": 0.24868160173351989
+        },
+        {
+          "step": 81,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006868383059528282,
+          "actual_target_error_m": 0.236772580612962
+        },
+        {
+          "step": 82,
+          "stage": "reposition",
+          "ik_target_error_m": 0.000686927293362923,
+          "actual_target_error_m": 0.22489417467487974
+        },
+        {
+          "step": 83,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006870050985198262,
+          "actual_target_error_m": 0.21561185526420876
+        },
+        {
+          "step": 84,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006870684078340595,
+          "actual_target_error_m": 0.20127492997192353
+        },
+        {
+          "step": 85,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006871197743896575,
+          "actual_target_error_m": 0.17820565284533463
+        },
+        {
+          "step": 86,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006871678912644496,
+          "actual_target_error_m": 0.1534831200847044
+        },
+        {
+          "step": 87,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006872016787616343,
+          "actual_target_error_m": 0.12953945985441223
+        },
+        {
+          "step": 88,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006872282431576944,
+          "actual_target_error_m": 0.10166290270735794
+        },
+        {
+          "step": 89,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0006872495934718721,
+          "actual_target_error_m": 0.0741080717838788
+        },
+        {
+          "step": 90,
+          "stage": "reposition",
+          "ik_target_error_m": 0.000687266965958894,
+          "actual_target_error_m": 0.03941351568494691
+        },
+        {
+          "step": 91,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.00024813793068294363,
+          "actual_target_error_m": 0.11425165540827631
+        },
+        {
+          "step": 92,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.00024685849544007934,
+          "actual_target_error_m": 0.11302825816149964
+        },
+        {
+          "step": 93,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002468769391440549,
+          "actual_target_error_m": 0.12703293174922362
+        },
+        {
+          "step": 94,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002468950410467989,
+          "actual_target_error_m": 0.14826284997053532
+        },
+        {
+          "step": 95,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.00024691521447918984,
+          "actual_target_error_m": 0.17050671870534234
+        },
+        {
+          "step": 96,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.00024692621881469473,
+          "actual_target_error_m": 0.17617060214953995
+        },
+        {
+          "step": 97,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469350824111132,
+          "actual_target_error_m": 0.16540220859733973
+        },
+        {
+          "step": 98,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.00024694228266281307,
+          "actual_target_error_m": 0.15377184371388214
+        },
+        {
+          "step": 99,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469481162239072,
+          "actual_target_error_m": 0.1526781927426716
+        },
+        {
+          "step": 100,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469528907489234,
+          "actual_target_error_m": 0.14979716202620771
+        },
+        {
+          "step": 101,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469567482383982,
+          "actual_target_error_m": 0.13535998735172694
+        },
+        {
+          "step": 102,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.00024695992329573326,
+          "actual_target_error_m": 0.12092074719533442
+        },
+        {
+          "step": 103,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469624901582048,
+          "actual_target_error_m": 0.10530961180223072
+        },
+        {
+          "step": 104,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469645610430739,
+          "actual_target_error_m": 0.09083668702314653
+        },
+        {
+          "step": 105,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469662467305966,
+          "actual_target_error_m": 0.0861024624815023
+        },
+        {
+          "step": 106,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002469676275140677,
+          "actual_target_error_m": 0.08535772821318972
+        },
+        {
+          "step": 107,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0002803673738171633,
+          "actual_target_error_m": 0.07546910025939652
+        },
+        {
+          "step": 108,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0011443315472062293,
+          "actual_target_error_m": 0.07945153096213503
+        },
+        {
+          "step": 109,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.01091678293561217,
+          "actual_target_error_m": 0.09394395208603029
+        },
+        {
+          "step": 110,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.021710094481927757,
+          "actual_target_error_m": 0.11118994394936552
+        },
+        {
+          "step": 111,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.030646735730257925,
+          "actual_target_error_m": 0.12997971287531268
+        },
+        {
+          "step": 112,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.037960196684738094,
+          "actual_target_error_m": 0.13527748076170898
+        },
+        {
+          "step": 113,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.043902087061167494,
+          "actual_target_error_m": 0.12066589711064618
+        },
+        {
+          "step": 114,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.048710195180683424,
+          "actual_target_error_m": 0.10230672476200561
+        },
+        {
+          "step": 115,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0525934982125278,
+          "actual_target_error_m": 0.09123910950968112
+        },
+        {
+          "step": 116,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05572809362910132,
+          "actual_target_error_m": 0.09268355997580718
+        },
+        {
+          "step": 117,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05825882237743124,
+          "actual_target_error_m": 0.09685714395209961
+        },
+        {
+          "step": 118,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.060303221133930274,
+          "actual_target_error_m": 0.10230818005963914
+        },
+        {
+          "step": 119,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.061956004323285775,
+          "actual_target_error_m": 0.10813509051895391
+        },
+        {
+          "step": 120,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06329325783068969,
+          "actual_target_error_m": 0.11015200298815978
+        },
+        {
+          "step": 121,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06437605043734014,
+          "actual_target_error_m": 0.10740437553085043
+        },
+        {
+          "step": 122,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06525341679938754,
+          "actual_target_error_m": 0.10448877108253538
+        },
+        {
+          "step": 123,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06596477017887861,
+          "actual_target_error_m": 0.0993837067576501
+        },
+        {
+          "step": 124,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06654183165674595,
+          "actual_target_error_m": 0.09461016385577876
+        },
+        {
+          "step": 125,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06701016663260043,
+          "actual_target_error_m": 0.09087114788927607
+        },
+        {
+          "step": 126,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06739040663181094,
+          "actual_target_error_m": 0.09155733125989199
+        },
+        {
+          "step": 127,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06769922162973131,
+          "actual_target_error_m": 0.09310594958543345
+        },
+        {
+          "step": 128,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06795009512991405,
+          "actual_target_error_m": 0.09479061261251867
+        },
+        {
+          "step": 129,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06815394340021985,
+          "actual_target_error_m": 0.09446206832441015
+        },
+        {
+          "step": 130,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06831961126511564,
+          "actual_target_error_m": 0.09375500486498053
+        },
+        {
+          "step": 131,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06845426997869919,
+          "actual_target_error_m": 0.09310890080577996
+        },
+        {
+          "step": 132,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0685637371724487,
+          "actual_target_error_m": 0.09214428823292523
+        },
+        {
+          "step": 133,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06865273450668634,
+          "actual_target_error_m": 0.09189051055810558
+        },
+        {
+          "step": 134,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06872509573957068,
+          "actual_target_error_m": 0.09151207720884867
+        },
+        {
+          "step": 135,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06878393488020063,
+          "actual_target_error_m": 0.0922799816365226
+        },
+        {
+          "step": 136,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06883178084154458,
+          "actual_target_error_m": 0.09235811926407565
+        },
+        {
+          "step": 137,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06887068952155546,
+          "actual_target_error_m": 0.09208348857494128
+        },
+        {
+          "step": 138,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06890233149709134,
+          "actual_target_error_m": 0.09209106296431578
+        },
+        {
+          "step": 139,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06892806468508873,
+          "actual_target_error_m": 0.09164160489540205
+        },
+        {
+          "step": 140,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0689489929905606,
+          "actual_target_error_m": 0.09206648225978026
+        },
+        {
+          "step": 141,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06896601391489372,
+          "actual_target_error_m": 0.09255432256650518
+        },
+        {
+          "step": 142,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06897985719567329,
+          "actual_target_error_m": 0.09297498316836353
+        },
+        {
+          "step": 143,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06899111622583759,
+          "actual_target_error_m": 0.09292904219245493
+        },
+        {
+          "step": 144,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06900027351854549,
+          "actual_target_error_m": 0.09320550932665789
+        },
+        {
+          "step": 145,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06900772147718631,
+          "actual_target_error_m": 0.09244191438570175
+        },
+        {
+          "step": 146,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06901377921609794,
+          "actual_target_error_m": 0.09170736450685381
+        },
+        {
+          "step": 147,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06901870594895015,
+          "actual_target_error_m": 0.0910250649494081
+        },
+        {
+          "step": 148,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0690227134425087,
+          "actual_target_error_m": 0.09040521882068549
+        },
+        {
+          "step": 149,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06902597298800879,
+          "actual_target_error_m": 0.08985032318380393
+        },
+        {
+          "step": 150,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06902862408147571,
+          "actual_target_error_m": 0.08936057096272047
+        },
+        {
+          "step": 151,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0690307803764722,
+          "actual_target_error_m": 0.08893530220563016
+        },
+        {
+          "step": 152,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06746203034074301,
+          "actual_target_error_m": 0.08764590145515455
+        },
+        {
+          "step": 153,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06510657476532983,
+          "actual_target_error_m": 0.0860253651154774
+        },
+        {
+          "step": 154,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.06315597653120486,
+          "actual_target_error_m": 0.08480033288160026
+        },
+        {
+          "step": 155,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00020782581450178847,
+          "actual_target_error_m": 0.0
+        },
+        {
+          "step": 156,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00021404006078877677,
+          "actual_target_error_m": 0.0001462372412231264
+        },
+        {
+          "step": 157,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00021918833990537914,
+          "actual_target_error_m": 0.00028470231785171545
+        },
+        {
+          "step": 158,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00022342310677398773,
+          "actual_target_error_m": 0.0004065086779070024
+        },
+        {
+          "step": 159,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00022690081656513475,
+          "actual_target_error_m": 0.0005136555707670746
+        },
+        {
+          "step": 160,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00022975014938423998,
+          "actual_target_error_m": 0.0006078905467995538
+        },
+        {
+          "step": 161,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00023208126800118448,
+          "actual_target_error_m": 0.0006907633421917717
+        },
+        {
+          "step": 162,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00023398622386070124,
+          "actual_target_error_m": 0.0007636409561053752
+        },
+        {
+          "step": 163,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.0002355414925430668,
+          "actual_target_error_m": 0.0008277273136002176
+        },
+        {
+          "step": 164,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00023681034412729212,
+          "actual_target_error_m": 0.0008840820097604874
+        },
+        {
+          "step": 165,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.0002378449017685711,
+          "actual_target_error_m": 0.0009336372856096237
+        },
+        {
+          "step": 166,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.0002386880596975955,
+          "actual_target_error_m": 0.0009772131736232154
+        },
+        {
+          "step": 167,
+          "stage": "stabilize",
+          "ik_target_error_m": 0.00023937495931274257,
+          "actual_target_error_m": 0.0010155309205285555
+        },
+        {
+          "step": 168,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.010453809742399088,
+          "actual_target_error_m": 0.0407768321603782
+        },
+        {
+          "step": 169,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.010453827299533978,
+          "actual_target_error_m": 0.04057631351116735
+        },
+        {
+          "step": 170,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.01045384240302753,
+          "actual_target_error_m": 0.039951907561290294
+        },
+        {
+          "step": 171,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.010453854705392396,
+          "actual_target_error_m": 0.038960858978607495
+        },
+        {
+          "step": 172,
+          "stage": "recover_lift",
+          "ik_target_error_m": 0.01045386473836447,
+          "actual_target_error_m": 0.03765904417696231
+        },
+        {
+          "step": 173,
+          "stage": "reposition",
+          "ik_target_error_m": 0.02158301058719458,
+          "actual_target_error_m": 0.048774646978056
+        },
+        {
+          "step": 174,
+          "stage": "reposition",
+          "ik_target_error_m": 0.021583013808823714,
+          "actual_target_error_m": 0.04708673527465679
+        },
+        {
+          "step": 175,
+          "stage": "reposition",
+          "ik_target_error_m": 0.02158301644217945,
+          "actual_target_error_m": 0.04517126725902427
+        },
+        {
+          "step": 176,
+          "stage": "reposition",
+          "ik_target_error_m": 0.021583018558815493,
+          "actual_target_error_m": 0.04308924421809277
+        },
+        {
+          "step": 177,
+          "stage": "reposition",
+          "ik_target_error_m": 0.021583020292226147,
+          "actual_target_error_m": 0.040899094152003254
+        },
+        {
+          "step": 178,
+          "stage": "reposition",
+          "ik_target_error_m": 0.0215830217216173,
+          "actual_target_error_m": 0.03865637348522902
+        },
+        {
+          "step": 179,
+          "stage": "reposition",
+          "ik_target_error_m": 0.021583022877108515,
+          "actual_target_error_m": 0.03641350584088904
+        },
+        {
+          "step": 180,
+          "stage": "reposition",
+          "ik_target_error_m": 0.02158302380661404,
+          "actual_target_error_m": 0.03421949349996391
+        },
+        {
+          "step": 181,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05434713162677956,
+          "actual_target_error_m": 0.10147970796037023
+        },
+        {
+          "step": 182,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05434074014069239,
+          "actual_target_error_m": 0.10330199952721494
+        },
+        {
+          "step": 183,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054335541691437346,
+          "actual_target_error_m": 0.10403839666976847
+        },
+        {
+          "step": 184,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0543313129607227,
+          "actual_target_error_m": 0.10379507778638963
+        },
+        {
+          "step": 185,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0543278734080284,
+          "actual_target_error_m": 0.10268818537807876
+        },
+        {
+          "step": 186,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05432507574692302,
+          "actual_target_error_m": 0.10083881297468732
+        },
+        {
+          "step": 187,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05432280019063951,
+          "actual_target_error_m": 0.09836960542703659
+        },
+        {
+          "step": 188,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05432094930505006,
+          "actual_target_error_m": 0.09540235859761872
+        },
+        {
+          "step": 189,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054319443844113684,
+          "actual_target_error_m": 0.09205625078515664
+        },
+        {
+          "step": 190,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431821934538094,
+          "actual_target_error_m": 0.0884464684727984
+        },
+        {
+          "step": 191,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431722337038533,
+          "actual_target_error_m": 0.08683474709700223
+        },
+        {
+          "step": 192,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431641327474653,
+          "actual_target_error_m": 0.08719267071119795
+        },
+        {
+          "step": 193,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431575436610714,
+          "actual_target_error_m": 0.08740190054050138
+        },
+        {
+          "step": 194,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431521842849222,
+          "actual_target_error_m": 0.08755970827655907
+        },
+        {
+          "step": 195,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054314782517167315,
+          "actual_target_error_m": 0.08768777106503398
+        },
+        {
+          "step": 196,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431442795915736,
+          "actual_target_error_m": 0.08779152297253917
+        },
+        {
+          "step": 197,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431413957232158,
+          "actual_target_error_m": 0.08787323458398263
+        },
+        {
+          "step": 198,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054313905008970105,
+          "actual_target_error_m": 0.08793450213998318
+        },
+        {
+          "step": 199,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054313714219627655,
+          "actual_target_error_m": 0.0879768256156527
+        },
+        {
+          "step": 200,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431355904055373,
+          "actual_target_error_m": 0.08800172840845581
+        },
+        {
+          "step": 201,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0543134328223661,
+          "actual_target_error_m": 0.08801076825126534
+        },
+        {
+          "step": 202,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431333015671037,
+          "actual_target_error_m": 0.08800552336181512
+        },
+        {
+          "step": 203,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054313246659729704,
+          "actual_target_error_m": 0.08798757402051932
+        },
+        {
+          "step": 204,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431317874217249,
+          "actual_target_error_m": 0.08795848443550006
+        },
+        {
+          "step": 205,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431312349732094,
+          "actual_target_error_m": 0.08791978608557059
+        },
+        {
+          "step": 206,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431307856666585,
+          "actual_target_error_m": 0.08787296283586046
+        },
+        {
+          "step": 207,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431304201982726,
+          "actual_target_error_m": 0.08781943792811604
+        },
+        {
+          "step": 208,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431301229672095,
+          "actual_target_error_m": 0.08776056288350778
+        },
+        {
+          "step": 209,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431298811812634,
+          "actual_target_error_m": 0.08769760832134343
+        },
+        {
+          "step": 210,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.0543129684514088,
+          "actual_target_error_m": 0.0876317566822955
+        },
+        {
+          "step": 211,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431295245620233,
+          "actual_target_error_m": 0.08756409680620972
+        },
+        {
+          "step": 212,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312939447761284,
+          "actual_target_error_m": 0.08749562029413539
+        },
+        {
+          "step": 213,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312928865646155,
+          "actual_target_error_m": 0.08742721955063008
+        },
+        {
+          "step": 214,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431292025831513,
+          "actual_target_error_m": 0.08735968738036601
+        },
+        {
+          "step": 215,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431291325578994,
+          "actual_target_error_m": 0.0872937179894398
+        },
+        {
+          "step": 216,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431290756256422,
+          "actual_target_error_m": 0.08722990923197008
+        },
+        {
+          "step": 217,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431290293511489,
+          "actual_target_error_m": 0.08716876592768974
+        },
+        {
+          "step": 218,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431289916252918,
+          "actual_target_error_m": 0.08711070407827608
+        },
+        {
+          "step": 219,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312896102888135,
+          "actual_target_error_m": 0.08705605580995575
+        },
+        {
+          "step": 220,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431289360906949,
+          "actual_target_error_m": 0.08700507487054963
+        },
+        {
+          "step": 221,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312891583220446,
+          "actual_target_error_m": 0.08695794253663061
+        },
+        {
+          "step": 222,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288993515993,
+          "actual_target_error_m": 0.08691477377537013
+        },
+        {
+          "step": 223,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312888594232,
+          "actual_target_error_m": 0.08687562354343295
+        },
+        {
+          "step": 224,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312887502967845,
+          "actual_target_error_m": 0.0868404931051122
+        },
+        {
+          "step": 225,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312886615303015,
+          "actual_target_error_m": 0.08680933627630069
+        },
+        {
+          "step": 226,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312885891844936,
+          "actual_target_error_m": 0.08678206551324298
+        },
+        {
+          "step": 227,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312885307997404,
+          "actual_target_error_m": 0.08675855778093045
+        },
+        {
+          "step": 228,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312884829648474,
+          "actual_target_error_m": 0.08673866014873179
+        },
+        {
+          "step": 229,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288444059489,
+          "actual_target_error_m": 0.08672219507636501
+        },
+        {
+          "step": 230,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288412494403,
+          "actual_target_error_m": 0.08670896535818566
+        },
+        {
+          "step": 231,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288386590284,
+          "actual_target_error_m": 0.08669875870877988
+        },
+        {
+          "step": 232,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288366108059,
+          "actual_target_error_m": 0.0866913519792273
+        },
+        {
+          "step": 233,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312883486326693,
+          "actual_target_error_m": 0.0866865149977128
+        },
+        {
+          "step": 234,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288335237249,
+          "actual_target_error_m": 0.08668401404054607
+        },
+        {
+          "step": 235,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288323712902,
+          "actual_target_error_m": 0.08668361492938881
+        },
+        {
+          "step": 236,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288314408608,
+          "actual_target_error_m": 0.08668508577840134
+        },
+        {
+          "step": 237,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288307175204,
+          "actual_target_error_m": 0.08668819938947327
+        },
+        {
+          "step": 238,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288301134611,
+          "actual_target_error_m": 0.08669273532059091
+        },
+        {
+          "step": 239,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312882963333656,
+          "actual_target_error_m": 0.08669848163891809
+        },
+        {
+          "step": 240,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288292328579,
+          "actual_target_error_m": 0.08670523637566371
+        },
+        {
+          "step": 241,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288288969207,
+          "actual_target_error_m": 0.0867128087039911
+        },
+        {
+          "step": 242,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312882863145166,
+          "actual_target_error_m": 0.08672101985855368
+        },
+        {
+          "step": 243,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.05431288284007801,
+          "actual_target_error_m": 0.0867297038143388
+        },
+        {
+          "step": 244,
+          "stage": "correct_lower",
+          "ik_target_error_m": 0.054312882823158964,
+          "actual_target_error_m": 0.08673870774598096
+        }
+      ]
+    },
+    {
+      "case_id": "case_c",
+      "seed": 0,
+      "median_ik_error_m": null,
+      "median_actual_error_m": null,
+      "samples": [
+        {
+          "step": 1,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789922570052,
+          "actual_target_error_m": 0.6622095483708738
+        },
+        {
+          "step": 2,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789896486533,
+          "actual_target_error_m": 0.6621495924241789
+        },
+        {
+          "step": 3,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789896480987,
+          "actual_target_error_m": 0.6620800171197936
+        },
+        {
+          "step": 4,
+          "stage": "approach",
+          "ik_target_error_m": 0.0126727898964811,
+          "actual_target_error_m": 0.6620147919642445
+        },
+        {
+          "step": 5,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6619537894094043
+        },
+        {
+          "step": 6,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6619633974771997
+        },
+        {
+          "step": 7,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.662135371916985
+        },
+        {
+          "step": 8,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6624558181492124
+        },
+        {
+          "step": 9,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6629131623269581
+        },
+        {
+          "step": 10,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6635007303825928
+        },
+        {
+          "step": 11,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6642058395487823
+        },
+        {
+          "step": 12,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6649945095356942
+        },
+        {
+          "step": 13,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6658180389347006
+        },
+        {
+          "step": 14,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.666613924481968
+        },
+        {
+          "step": 15,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6673067572583329
+        },
+        {
+          "step": 16,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6678100355083604
+        },
+        {
+          "step": 17,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6680295294520989
+        },
+        {
+          "step": 18,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6678667132898287
+        },
+        {
+          "step": 19,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6672221215561465
+        },
+        {
+          "step": 20,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6659985648359994
+        },
+        {
+          "step": 21,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6641040210550212
+        },
+        {
+          "step": 22,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.661454062560065
+        },
+        {
+          "step": 23,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6579738627818098
+        },
+        {
+          "step": 24,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.653599822994485
+        },
+        {
+          "step": 25,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.648280873442902
+        },
+        {
+          "step": 26,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6420901621379926
+        },
+        {
+          "step": 27,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6346860330677095
+        },
+        {
+          "step": 28,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6257502553571933
+        },
+        {
+          "step": 29,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6153072547661637
+        },
+        {
+          "step": 30,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.6033935360792325
+        },
+        {
+          "step": 31,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5901397745329704
+        },
+        {
+          "step": 32,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5757014563457167
+        },
+        {
+          "step": 33,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5599122977300236
+        },
+        {
+          "step": 34,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5430013678854194
+        },
+        {
+          "step": 35,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5250210802741726
+        },
+        {
+          "step": 36,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.5060520673511549
+        },
+        {
+          "step": 37,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.48619389706936755
+        },
+        {
+          "step": 38,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.4655558600272151
+        },
+        {
+          "step": 39,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.444247810398833
+        },
+        {
+          "step": 40,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.4223952344124498
+        },
+        {
+          "step": 41,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.39977650050531105
+        },
+        {
+          "step": 42,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.3753888005133741
+        },
+        {
+          "step": 43,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.3508538131276733
+        },
+        {
+          "step": 44,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.3264221816434025
+        },
+        {
+          "step": 45,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.30228318610493554
+        },
+        {
+          "step": 46,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.2786806328875272
+        },
+        {
+          "step": 47,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.25588806150806626
+        },
+        {
+          "step": 48,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.2339716644698583
+        },
+        {
+          "step": 49,
+          "stage": "approach",
+          "ik_target_error_m": 0.012672789969758694,
+          "actual_target_error_m": 0.21294945383047179
+        },
+        {
+          "step": 50,
+          "stage": "approach",
+          "ik_target_error_m": 0.01278381638878538,
+          "actual_target_error_m": 0.19297087932511842
+        },
+        {
+          "step": 51,
+          "stage": "approach",
+          "ik_target_error_m": 0.013365819732317328,
+          "actual_target_error_m": 0.17447835537257095
+        },
+        {
+          "step": 52,
+          "stage": "approach",
+          "ik_target_error_m": 0.01435263893873519,
+          "actual_target_error_m": 0.15724474532571622
+        },
+        {
+          "step": 53,
+          "stage": "approach",
+          "ik_target_error_m": 0.015528415364550765,
+          "actual_target_error_m": 0.14107332137490658
+        },
+        {
+          "step": 54,
+          "stage": "approach",
+          "ik_target_error_m": 0.016325562179239448,
+          "actual_target_error_m": 0.12533156559612393
+        },
+        {
+          "step": 55,
+          "stage": "approach",
+          "ik_target_error_m": 0.016762398450127294,
+          "actual_target_error_m": 0.1093333183172879
+        },
+        {
+          "step": 56,
+          "stage": "approach",
+          "ik_target_error_m": 0.016998918753609933,
+          "actual_target_error_m": 0.09326319458277173
+        },
+        {
+          "step": 57,
+          "stage": "approach",
+          "ik_target_error_m": 0.01712825220441776,
+          "actual_target_error_m": 0.07726411462379394
+        },
+        {
+          "step": 58,
+          "stage": "approach",
+          "ik_target_error_m": 0.017199661831419525,
+          "actual_target_error_m": 0.06163830648982743
+        },
+        {
+          "step": 59,
+          "stage": "approach",
+          "ik_target_error_m": 0.01723917859492403,
+          "actual_target_error_m": 0.04687819113983993
+        },
+        {
+          "step": 60,
+          "stage": "approach",
+          "ik_target_error_m": 0.017261074412343713,
+          "actual_target_error_m": 0.03345085773841623
+        },
+        {
+          "step": 61,
+          "stage": "approach",
+          "ik_target_error_m": 0.017273215372686865,
+          "actual_target_error_m": 0.022375415606600054
+        },
+        {
+          "step": 62,
+          "stage": "approach",
+          "ik_target_error_m": 0.017279950084732244,
+          "actual_target_error_m": 0.023566396253950107
+        },
+        {
+          "step": 63,
+          "stage": "lower",
+          "ik_target_error_m": 0.06569690566058735,
+          "actual_target_error_m": 0.10042306231879702
+        },
+        {
+          "step": 64,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570078324411849,
+          "actual_target_error_m": 0.09883199680120515
+        },
+        {
+          "step": 65,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570293525454958,
+          "actual_target_error_m": 0.09700680153393224
+        },
+        {
+          "step": 66,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570412959483132,
+          "actual_target_error_m": 0.09516826857923887
+        },
+        {
+          "step": 67,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570479244040987,
+          "actual_target_error_m": 0.09362416803098421
+        },
+        {
+          "step": 68,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570516031253618,
+          "actual_target_error_m": 0.09212945101782005
+        },
+        {
+          "step": 69,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570536447763921,
+          "actual_target_error_m": 0.09038645756987385
+        },
+        {
+          "step": 70,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570547778710675,
+          "actual_target_error_m": 0.08848056880746098
+        },
+        {
+          "step": 71,
+          "stage": "lower",
+          "ik_target_error_m": 0.06570554067266417,
+          "actual_target_error_m": 0.08648261604139593
+        },
+        {
+          "step": 72,
+          "stage": "lower",
+          "ik_target_error_m": 0.0657055755734856,
+          "actual_target_error_m": 0.08444307941922194
+        },
+        {
+          "step": 73,
+          "stage": "lower",
+          "ik_target_error_m": 0.0656888481055682,
+          "actual_target_error_m": 0.08241670460995631
+        },
+        {
+          "step": 74,
+          "stage": "lower",
+          "ik_target_error_m": 0.06563501150726164,
+          "actual_target_error_m": 0.08046158384218276
+        },
+        {
+          "step": 75,
+          "stage": "lower",
+          "ik_target_error_m": 0.065544098629517,
+          "actual_target_error_m": 0.0786306044720913
+        },
+        {
+          "step": 76,
+          "stage": "lower",
+          "ik_target_error_m": 0.06542060367241039,
+          "actual_target_error_m": 0.07696489857087994
+        },
+        {
+          "step": 77,
+          "stage": "lower",
+          "ik_target_error_m": 0.06527083838216609,
+          "actual_target_error_m": 0.0754923596216721
+        },
+        {
+          "step": 78,
+          "stage": "lower",
+          "ik_target_error_m": 0.06510080355303158,
+          "actual_target_error_m": 0.07422444594184947
+        },
+        {
+          "step": 79,
+          "stage": "lower",
+          "ik_target_error_m": 0.06491738424095041,
+          "actual_target_error_m": 0.07315679048126353
+        },
+        {
+          "step": 80,
+          "stage": "lower",
+          "ik_target_error_m": 0.06465190854630826,
+          "actual_target_error_m": 0.07220466814154432
+        },
+        {
+          "step": 81,
+          "stage": "lower",
+          "ik_target_error_m": 0.0639448002498714,
+          "actual_target_error_m": 0.0709973696599587
+        },
+        {
+          "step": 82,
+          "stage": "lower",
+          "ik_target_error_m": 0.06293952929113952,
+          "actual_target_error_m": 0.06959481284421758
+        },
+        {
+          "step": 83,
+          "stage": "lower",
+          "ik_target_error_m": 0.061770785000757084,
+          "actual_target_error_m": 0.06807013826452937
+        },
+        {
+          "step": 84,
+          "stage": "lower",
+          "ik_target_error_m": 0.06051928131672909,
+          "actual_target_error_m": 0.0664608706963673
+        },
+        {
+          "step": 85,
+          "stage": "lower",
+          "ik_target_error_m": 0.059236321765968984,
+          "actual_target_error_m": 0.06478718543997015
+        },
+        {
+          "step": 86,
+          "stage": "lower",
+          "ik_target_error_m": 0.05795544702753574,
+          "actual_target_error_m": 0.06306027188467346
+        },
+        {
+          "step": 87,
+          "stage": "lower",
+          "ik_target_error_m": 0.0566963335509376,
+          "actual_target_error_m": 0.06128282268168702
+        },
+        {
+          "step": 88,
+          "stage": "lower",
+          "ik_target_error_m": 0.05547083694996129,
+          "actual_target_error_m": 0.05945610954516173
+        },
+        {
+          "step": 89,
+          "stage": "lower",
+          "ik_target_error_m": 0.05428691999895691,
+          "actual_target_error_m": 0.057585069171403165
+        },
+        {
+          "step": 90,
+          "stage": "lower",
+          "ik_target_error_m": 0.053147464825817926,
+          "actual_target_error_m": 0.05626769947794274
+        },
+        {
+          "step": 91,
+          "stage": "lower",
+          "ik_target_error_m": 0.0520492043528798,
+          "actual_target_error_m": 0.05537204719100892
+        },
+        {
+          "step": 92,
+          "stage": "lower",
+          "ik_target_error_m": 0.05099173229375424,
+          "actual_target_error_m": 0.05440617651312091
+        },
+        {
+          "step": 93,
+          "stage": "lower",
+          "ik_target_error_m": 0.04997608327269211,
+          "actual_target_error_m": 0.053390730875266065
+        },
+        {
+          "step": 94,
+          "stage": "lower",
+          "ik_target_error_m": 0.0490033246998711,
+          "actual_target_error_m": 0.0523550180885833
+        },
+        {
+          "step": 95,
+          "stage": "lower",
+          "ik_target_error_m": 0.04807422386914106,
+          "actual_target_error_m": 0.05130048227988606
+        },
+        {
+          "step": 96,
+          "stage": "lower",
+          "ik_target_error_m": 0.047189271541833146,
+          "actual_target_error_m": 0.050208417596669316
+        },
+        {
+          "step": 97,
+          "stage": "lower",
+          "ik_target_error_m": 0.04634864817986683,
+          "actual_target_error_m": 0.04909579193242436
+        },
+        {
+          "step": 98,
+          "stage": "lower",
+          "ik_target_error_m": 0.04555210800383234,
+          "actual_target_error_m": 0.04800726320424137
+        },
+        {
+          "step": 99,
+          "stage": "lower",
+          "ik_target_error_m": 0.04479854155648682,
+          "actual_target_error_m": 0.04699166042883551
+        },
+        {
+          "step": 100,
+          "stage": "push",
+          "ik_target_error_m": 2.911283456248745e-07,
+          "actual_target_error_m": 0.041172252927027864
+        },
+        {
+          "step": 101,
+          "stage": "push",
+          "ik_target_error_m": 1.0653322728885493e-08,
+          "actual_target_error_m": 0.041922537654230214
+        },
+        {
+          "step": 102,
+          "stage": "push",
+          "ik_target_error_m": 9.945263430475971e-09,
+          "actual_target_error_m": 0.04266065312485043
+        },
+        {
+          "step": 103,
+          "stage": "push",
+          "ik_target_error_m": 9.302022892582574e-09,
+          "actual_target_error_m": 0.04336633092895058
+        },
+        {
+          "step": 104,
+          "stage": "push",
+          "ik_target_error_m": 8.711210339828449e-09,
+          "actual_target_error_m": 0.044027309006447614
+        },
+        {
+          "step": 105,
+          "stage": "push",
+          "ik_target_error_m": 8.185860421518342e-09,
+          "actual_target_error_m": 0.04446636676159146
+        },
+        {
+          "step": 106,
+          "stage": "push",
+          "ik_target_error_m": 7.790682032999596e-09,
+          "actual_target_error_m": 0.044445643079622454
+        },
+        {
+          "step": 107,
+          "stage": "push",
+          "ik_target_error_m": 7.806545554700325e-09,
+          "actual_target_error_m": 0.04399198370400536
+        },
+        {
+          "step": 108,
+          "stage": "push",
+          "ik_target_error_m": 7.71429482009943e-09,
+          "actual_target_error_m": 0.04313268406886934
+        },
+        {
+          "step": 109,
+          "stage": "push",
+          "ik_target_error_m": 7.797651649331021e-09,
+          "actual_target_error_m": 0.041895359973685396
+        },
+        {
+          "step": 110,
+          "stage": "push",
+          "ik_target_error_m": 7.752087254407105e-09,
+          "actual_target_error_m": 0.04031432237554907
+        },
+        {
+          "step": 111,
+          "stage": "push",
+          "ik_target_error_m": 8.074903154215686e-09,
+          "actual_target_error_m": 0.038436734568329814
+        },
+        {
+          "step": 112,
+          "stage": "push",
+          "ik_target_error_m": 8.494587017491189e-09,
+          "actual_target_error_m": 0.03631640221890853
+        },
+        {
+          "step": 113,
+          "stage": "push",
+          "ik_target_error_m": 8.989383370070094e-09,
+          "actual_target_error_m": 0.034012050969256406
+        },
+        {
+          "step": 114,
+          "stage": "push",
+          "ik_target_error_m": 9.537040932909167e-09,
+          "actual_target_error_m": 0.031586117148754395
+        },
+        {
+          "step": 115,
+          "stage": "push",
+          "ik_target_error_m": 1.0115768444369348e-08,
+          "actual_target_error_m": 0.029102954595881844
+        },
+        {
+          "step": 116,
+          "stage": "push",
+          "ik_target_error_m": 1.0705294690492935e-08,
+          "actual_target_error_m": 0.026626984246364668
+        },
+        {
+          "step": 117,
+          "stage": "push",
+          "ik_target_error_m": 1.128750180582074e-08,
+          "actual_target_error_m": 0.024222387938889083
+        },
+        {
+          "step": 118,
+          "stage": "push",
+          "ik_target_error_m": 1.1846739719480146e-08,
+          "actual_target_error_m": 0.021952474893983134
+        },
+        {
+          "step": 119,
+          "stage": "push",
+          "ik_target_error_m": 1.2370092063176873e-08,
+          "actual_target_error_m": 0.019878340616907332
+        },
+        {
+          "step": 120,
+          "stage": "push",
+          "ik_target_error_m": 1.2847497125692593e-08,
+          "actual_target_error_m": 0.018056178407025416
+        },
+        {
+          "step": 121,
+          "stage": "push",
+          "ik_target_error_m": 1.3271299901175119e-08,
+          "actual_target_error_m": 0.016532469261694462
+        },
+        {
+          "step": 122,
+          "stage": "push",
+          "ik_target_error_m": 1.3636460582200934e-08,
+          "actual_target_error_m": 0.015336969629387485
+        },
+        {
+          "step": 123,
+          "stage": "push",
+          "ik_target_error_m": 1.3940217893608623e-08,
+          "actual_target_error_m": 0.014475038255080572
+        },
+        {
+          "step": 124,
+          "stage": "push",
+          "ik_target_error_m": 1.41817616576282e-08,
+          "actual_target_error_m": 0.013923150039096896
+        },
+        {
+          "step": 125,
+          "stage": "push",
+          "ik_target_error_m": 1.436194745878379e-08,
+          "actual_target_error_m": 0.013631548637456888
+        },
+        {
+          "step": 126,
+          "stage": "push",
+          "ik_target_error_m": 1.4482951664900698e-08,
+          "actual_target_error_m": 0.01353426763701669
+        },
+        {
+          "step": 127,
+          "stage": "push",
+          "ik_target_error_m": 1.4547979760875759e-08,
+          "actual_target_error_m": 0.013562115844036132
+        },
+        {
+          "step": 128,
+          "stage": "push",
+          "ik_target_error_m": 1.4560976168721984e-08,
+          "actual_target_error_m": 0.01365329615196202
+        },
+        {
+          "step": 129,
+          "stage": "push",
+          "ik_target_error_m": 1.4526344040608871e-08,
+          "actual_target_error_m": 0.013759188103277465
+        },
+        {
+          "step": 130,
+          "stage": "push",
+          "ik_target_error_m": 1.4448951532039538e-08,
+          "actual_target_error_m": 0.013845840472723706
+        },
+        {
+          "step": 131,
+          "stage": "push",
+          "ik_target_error_m": 1.4333666868131966e-08,
+          "actual_target_error_m": 0.013892927986118806
+        },
+        {
+          "step": 132,
+          "stage": "push",
+          "ik_target_error_m": 1.4185382099227963e-08,
+          "actual_target_error_m": 0.013891668982102002
+        },
+        {
+          "step": 133,
+          "stage": "push",
+          "ik_target_error_m": 1.4008872961058609e-08,
+          "actual_target_error_m": 0.01384252749199337
+        },
+        {
+          "step": 134,
+          "stage": "push",
+          "ik_target_error_m": 1.3808743343228837e-08,
+          "actual_target_error_m": 0.01375304459448165
+        },
+        {
+          "step": 135,
+          "stage": "push",
+          "ik_target_error_m": 1.358937208112084e-08,
+          "actual_target_error_m": 0.013635866416687837
+        },
+        {
+          "step": 136,
+          "stage": "push",
+          "ik_target_error_m": 1.3354852109484466e-08,
+          "actual_target_error_m": 0.013506904480127747
+        },
+        {
+          "step": 137,
+          "stage": "push",
+          "ik_target_error_m": 1.310901198766383e-08,
+          "actual_target_error_m": 0.01338356744916875
+        },
+        {
+          "step": 138,
+          "stage": "push",
+          "ik_target_error_m": 1.2855418279244464e-08,
+          "actual_target_error_m": 0.01328301854617284
+        },
+        {
+          "step": 139,
+          "stage": "push",
+          "ik_target_error_m": 1.259724292534628e-08,
+          "actual_target_error_m": 0.013220491523647186
+        },
+        {
+          "step": 140,
+          "stage": "push",
+          "ik_target_error_m": 1.2523758395944561e-08,
+          "actual_target_error_m": 0.013207814877495467
+        },
+        {
+          "step": 141,
+          "stage": "push",
+          "ik_target_error_m": 1.220719842562529e-08,
+          "actual_target_error_m": 0.0132522968323694
+        },
+        {
+          "step": 142,
+          "stage": "push",
+          "ik_target_error_m": 1.1907973243254349e-08,
+          "actual_target_error_m": 0.01335617136768433
+        },
+        {
+          "step": 143,
+          "stage": "push",
+          "ik_target_error_m": 1.1626091072242335e-08,
+          "actual_target_error_m": 0.013516685377312323
+        },
+        {
+          "step": 144,
+          "stage": "push",
+          "ik_target_error_m": 1.1360440658123313e-08,
+          "actual_target_error_m": 0.013726779812394566
+        },
+        {
+          "step": 145,
+          "stage": "push",
+          "ik_target_error_m": 1.1110671808591438e-08,
+          "actual_target_error_m": 0.013976184654390272
+        },
+        {
+          "step": 146,
+          "stage": "push",
+          "ik_target_error_m": 1.1078265570841286e-08,
+          "actual_target_error_m": 0.01425268612694696
+        },
+        {
+          "step": 147,
+          "stage": "push",
+          "ik_target_error_m": 1.0779945101195222e-08,
+          "actual_target_error_m": 0.014543348096668568
+        },
+        {
+          "step": 148,
+          "stage": "push",
+          "ik_target_error_m": 1.0524192758827989e-08,
+          "actual_target_error_m": 0.014835538622252247
+        },
+        {
+          "step": 149,
+          "stage": "push",
+          "ik_target_error_m": 1.0305243835081473e-08,
+          "actual_target_error_m": 0.015117696721933747
+        },
+        {
+          "step": 150,
+          "stage": "push",
+          "ik_target_error_m": 1.0122063525840916e-08,
+          "actual_target_error_m": 0.015379840319745989
+        },
+        {
+          "step": 151,
+          "stage": "push",
+          "ik_target_error_m": 9.97233349623279e-09,
+          "actual_target_error_m": 0.015613852404672857
+        },
+        {
+          "step": 152,
+          "stage": "push",
+          "ik_target_error_m": 9.85495715936297e-09,
+          "actual_target_error_m": 0.015813596616188842
+        },
+        {
+          "step": 153,
+          "stage": "push",
+          "ik_target_error_m": 9.771330360421995e-09,
+          "actual_target_error_m": 0.01597490324566428
+        },
+        {
+          "step": 154,
+          "stage": "push",
+          "ik_target_error_m": 9.532441516356061e-09,
+          "actual_target_error_m": 0.016095472049953756
+        },
+        {
+          "step": 155,
+          "stage": "push",
+          "ik_target_error_m": 9.43457167571827e-09,
+          "actual_target_error_m": 0.016174718894871452
+        },
+        {
+          "step": 156,
+          "stage": "push",
+          "ik_target_error_m": 9.3521709453792e-09,
+          "actual_target_error_m": 0.01621358572749848
+        },
+        {
+          "step": 157,
+          "stage": "push",
+          "ik_target_error_m": 9.285507359448051e-09,
+          "actual_target_error_m": 0.016214328342530043
+        },
+        {
+          "step": 158,
+          "stage": "push",
+          "ik_target_error_m": 9.234731171059127e-09,
+          "actual_target_error_m": 0.016180291406447566
+        },
+        {
+          "step": 159,
+          "stage": "push",
+          "ik_target_error_m": 8.959146730179774e-09,
+          "actual_target_error_m": 0.01611567677335541
+        },
+        {
+          "step": 160,
+          "stage": "push",
+          "ik_target_error_m": 8.879859256261704e-09,
+          "actual_target_error_m": 0.016025310103883188
+        },
+        {
+          "step": 161,
+          "stage": "push",
+          "ik_target_error_m": 8.806689276913455e-09,
+          "actual_target_error_m": 0.01591441285654915
+        },
+        {
+          "step": 162,
+          "stage": "push",
+          "ik_target_error_m": 8.738826172140602e-09,
+          "actual_target_error_m": 0.015788379454369
+        },
+        {
+          "step": 163,
+          "stage": "push",
+          "ik_target_error_m": 8.675498869722164e-09,
+          "actual_target_error_m": 0.015652566582687433
+        },
+        {
+          "step": 164,
+          "stage": "push",
+          "ik_target_error_m": 8.61597706959802e-09,
+          "actual_target_error_m": 0.015512099659397422
+        },
+        {
+          "step": 165,
+          "stage": "push",
+          "ik_target_error_m": 8.559586368947283e-09,
+          "actual_target_error_m": 0.015371701918050276
+        },
+        {
+          "step": 166,
+          "stage": "push",
+          "ik_target_error_m": 8.505724924196496e-09,
+          "actual_target_error_m": 0.015235551688660594
+        },
+        {
+          "step": 167,
+          "stage": "push",
+          "ik_target_error_m": 8.453847683433061e-09,
+          "actual_target_error_m": 0.015107173507416562
+        },
+        {
+          "step": 168,
+          "stage": "push",
+          "ik_target_error_m": 8.40348904445751e-09,
+          "actual_target_error_m": 0.014989367187367611
+        },
+        {
+          "step": 169,
+          "stage": "push",
+          "ik_target_error_m": 8.354257029430314e-09,
+          "actual_target_error_m": 0.01488417700984708
+        },
+        {
+          "step": 170,
+          "stage": "push",
+          "ik_target_error_m": 8.305825926622695e-09,
+          "actual_target_error_m": 0.014792901030431885
+        },
+        {
+          "step": 171,
+          "stage": "push",
+          "ik_target_error_m": 8.257941756202297e-09,
+          "actual_target_error_m": 0.014716136841159874
+        },
+        {
+          "step": 172,
+          "stage": "push",
+          "ik_target_error_m": 8.210415678037584e-09,
+          "actual_target_error_m": 0.014653858155115296
+        },
+        {
+          "step": 173,
+          "stage": "push",
+          "ik_target_error_m": 8.163120975999663e-09,
+          "actual_target_error_m": 0.01460551421391256
+        },
+        {
+          "step": 174,
+          "stage": "push",
+          "ik_target_error_m": 8.115982429011233e-09,
+          "actual_target_error_m": 0.014570142779542819
+        },
+        {
+          "step": 175,
+          "stage": "push",
+          "ik_target_error_m": 8.068973443549371e-09,
+          "actual_target_error_m": 0.014546487416171441
+        },
+        {
+          "step": 176,
+          "stage": "push",
+          "ik_target_error_m": 8.02211271933532e-09,
+          "actual_target_error_m": 0.01453311034187585
+        },
+        {
+          "step": 177,
+          "stage": "push",
+          "ik_target_error_m": 7.975446801365474e-09,
+          "actual_target_error_m": 0.014528492596403928
+        },
+        {
+          "step": 178,
+          "stage": "push",
+          "ik_target_error_m": 7.929049240934305e-09,
+          "actual_target_error_m": 0.014531122111679458
+        },
+        {
+          "step": 179,
+          "stage": "push",
+          "ik_target_error_m": 7.883026126647835e-09,
+          "actual_target_error_m": 0.014539559110794586
+        },
+        {
+          "step": 180,
+          "stage": "push",
+          "ik_target_error_m": 7.837545131288083e-09,
+          "actual_target_error_m": 0.014552500070948124
+        },
+        {
+          "step": 181,
+          "stage": "push",
+          "ik_target_error_m": 7.792681273209015e-09,
+          "actual_target_error_m": 0.014568782298934154
+        },
+        {
+          "step": 182,
+          "stage": "push",
+          "ik_target_error_m": 7.74858643759393e-09,
+          "actual_target_error_m": 0.01458740889634151
+        },
+        {
+          "step": 183,
+          "stage": "push",
+          "ik_target_error_m": 7.705388139784823e-09,
+          "actual_target_error_m": 0.014607549258159444
+        },
+        {
+          "step": 184,
+          "stage": "push",
+          "ik_target_error_m": 7.663244938036801e-09,
+          "actual_target_error_m": 0.01462852828621696
+        },
+        {
+          "step": 185,
+          "stage": "push",
+          "ik_target_error_m": 7.622247265804166e-09,
+          "actual_target_error_m": 0.014649808488523578
+        },
+        {
+          "step": 186,
+          "stage": "push",
+          "ik_target_error_m": 7.582562568527288e-09,
+          "actual_target_error_m": 0.014670968101017968
+        },
+        {
+          "step": 187,
+          "stage": "push",
+          "ik_target_error_m": 7.544286698562598e-09,
+          "actual_target_error_m": 0.01469167762767057
+        },
+        {
+          "step": 188,
+          "stage": "push",
+          "ik_target_error_m": 7.50749006995833e-09,
+          "actual_target_error_m": 0.01471167687659027
+        },
+        {
+          "step": 189,
+          "stage": "push",
+          "ik_target_error_m": 7.472295935460932e-09,
+          "actual_target_error_m": 0.014730754289012956
+        },
+        {
+          "step": 190,
+          "stage": "push",
+          "ik_target_error_m": 7.438758043825782e-09,
+          "actual_target_error_m": 0.014748729616792963
+        },
+        {
+          "step": 191,
+          "stage": "push",
+          "ik_target_error_m": 7.4068796619704676e-09,
+          "actual_target_error_m": 0.01476544056163505
+        },
+        {
+          "step": 192,
+          "stage": "push",
+          "ik_target_error_m": 7.376776847925317e-09,
+          "actual_target_error_m": 0.01478073398528102
+        },
+        {
+          "step": 193,
+          "stage": "push",
+          "ik_target_error_m": 7.348401651696372e-09,
+          "actual_target_error_m": 0.014794461225240233
+        },
+        {
+          "step": 194,
+          "stage": "push",
+          "ik_target_error_m": 7.321811446018653e-09,
+          "actual_target_error_m": 0.014806477225072638
+        },
+        {
+          "step": 195,
+          "stage": "push",
+          "ik_target_error_m": 7.2969608419074644e-09,
+          "actual_target_error_m": 0.01481664287676109
+        },
+        {
+          "step": 196,
+          "stage": "push",
+          "ik_target_error_m": 7.273820983307616e-09,
+          "actual_target_error_m": 0.014824829767862003
+        },
+        {
+          "step": 197,
+          "stage": "push",
+          "ik_target_error_m": 7.252396794663681e-09,
+          "actual_target_error_m": 0.014830926301221327
+        },
+        {
+          "step": 198,
+          "stage": "push",
+          "ik_target_error_m": 7.232595822019545e-09,
+          "actual_target_error_m": 0.014834844351794234
+        },
+        {
+          "step": 199,
+          "stage": "push",
+          "ik_target_error_m": 7.214339413953821e-09,
+          "actual_target_error_m": 0.01483652653275235
+        },
+        {
+          "step": 200,
+          "stage": "push",
+          "ik_target_error_m": 7.1976073861672595e-09,
+          "actual_target_error_m": 0.014835956926736841
+        },
+        {
+          "step": 201,
+          "stage": "push",
+          "ik_target_error_m": 7.182345902676566e-09,
+          "actual_target_error_m": 0.01483315838035055
+        },
+        {
+          "step": 202,
+          "stage": "push",
+          "ik_target_error_m": 7.16838211642188e-09,
+          "actual_target_error_m": 0.014828198367682701
+        },
+        {
+          "step": 203,
+          "stage": "push",
+          "ik_target_error_m": 7.155719240139041e-09,
+          "actual_target_error_m": 0.014821192034769537
+        },
+        {
+          "step": 204,
+          "stage": "push",
+          "ik_target_error_m": 7.144225495054216e-09,
+          "actual_target_error_m": 0.014812301405182613
+        },
+        {
+          "step": 205,
+          "stage": "push",
+          "ik_target_error_m": 7.133797533934046e-09,
+          "actual_target_error_m": 0.014801733035790738
+        },
+        {
+          "step": 206,
+          "stage": "push",
+          "ik_target_error_m": 7.124406658479523e-09,
+          "actual_target_error_m": 0.014789733617308065
+        },
+        {
+          "step": 207,
+          "stage": "push",
+          "ik_target_error_m": 7.115878583376957e-09,
+          "actual_target_error_m": 0.014776583622652174
+        },
+        {
+          "step": 208,
+          "stage": "push",
+          "ik_target_error_m": 7.108241422552258e-09,
+          "actual_target_error_m": 0.014762589862628477
+        },
+        {
+          "step": 209,
+          "stage": "push",
+          "ik_target_error_m": 7.101342520189389e-09,
+          "actual_target_error_m": 0.014748077032211222
+        },
+        {
+          "step": 210,
+          "stage": "push",
+          "ik_target_error_m": 7.095093820500376e-09,
+          "actual_target_error_m": 0.014733378598707303
+        },
+        {
+          "step": 211,
+          "stage": "push",
+          "ik_target_error_m": 7.089464961865945e-09,
+          "actual_target_error_m": 0.014718827433331612
+        },
+        {
+          "step": 212,
+          "stage": "push",
+          "ik_target_error_m": 7.084399262563533e-09,
+          "actual_target_error_m": 0.014704746596753368
+        },
+        {
+          "step": 213,
+          "stage": "push",
+          "ik_target_error_m": 7.0799033886572984e-09,
+          "actual_target_error_m": 0.014691440624161691
+        },
+        {
+          "step": 214,
+          "stage": "push",
+          "ik_target_error_m": 7.075832937111161e-09,
+          "actual_target_error_m": 0.014679187630888086
+        },
+        {
+          "step": 215,
+          "stage": "push",
+          "ik_target_error_m": 7.072131402237113e-09,
+          "actual_target_error_m": 0.014668232510494348
+        },
+        {
+          "step": 216,
+          "stage": "push",
+          "ik_target_error_m": 7.068847764172992e-09,
+          "actual_target_error_m": 0.014658781436074644
+        },
+        {
+          "step": 217,
+          "stage": "push",
+          "ik_target_error_m": 7.065960259620815e-09,
+          "actual_target_error_m": 0.014650997807364546
+        },
+        {
+          "step": 218,
+          "stage": "push",
+          "ik_target_error_m": 7.06350756673088e-09,
+          "actual_target_error_m": 0.014644999718432234
+        },
+        {
+          "step": 219,
+          "stage": "push",
+          "ik_target_error_m": 7.061338939755325e-09,
+          "actual_target_error_m": 0.014640858952902307
+        },
+        {
+          "step": 220,
+          "stage": "push",
+          "ik_target_error_m": 7.059539535731152e-09,
+          "actual_target_error_m": 0.014638601450029019
+        },
+        {
+          "step": 221,
+          "stage": "push",
+          "ik_target_error_m": 7.0581593511871925e-09,
+          "actual_target_error_m": 0.014638209128675387
+        },
+        {
+          "step": 222,
+          "stage": "push",
+          "ik_target_error_m": 7.057157910514213e-09,
+          "actual_target_error_m": 0.014639622909746153
+        },
+        {
+          "step": 223,
+          "stage": "push",
+          "ik_target_error_m": 7.056545718604905e-09,
+          "actual_target_error_m": 0.01464274674238032
+        },
+        {
+          "step": 224,
+          "stage": "push",
+          "ik_target_error_m": 7.0563704487052905e-09,
+          "actual_target_error_m": 0.014647452416109003
+        },
+        {
+          "step": 225,
+          "stage": "push",
+          "ik_target_error_m": 7.056599371800188e-09,
+          "actual_target_error_m": 0.014653584930320072
+        },
+        {
+          "step": 226,
+          "stage": "push",
+          "ik_target_error_m": 7.057472828725177e-09,
+          "actual_target_error_m": 0.014660968192984186
+        },
+        {
+          "step": 227,
+          "stage": "push",
+          "ik_target_error_m": 7.058656734002251e-09,
+          "actual_target_error_m": 0.014669409727582057
+        },
+        {
+          "step": 228,
+          "stage": "push",
+          "ik_target_error_m": 7.060521387762559e-09,
+          "actual_target_error_m": 0.014678708987358308
+        },
+        {
+          "step": 229,
+          "stage": "push",
+          "ik_target_error_m": 7.062877683640201e-09,
+          "actual_target_error_m": 0.014688663154831317
+        },
+        {
+          "step": 230,
+          "stage": "push",
+          "ik_target_error_m": 7.066004643828669e-09,
+          "actual_target_error_m": 0.014699069264195407
+        },
+        {
+          "step": 231,
+          "stage": "push",
+          "ik_target_error_m": 7.069700248062623e-09,
+          "actual_target_error_m": 0.014709729252027478
+        },
+        {
+          "step": 232,
+          "stage": "push",
+          "ik_target_error_m": 7.074092145309511e-09,
+          "actual_target_error_m": 0.014720454033603057
+        },
+        {
+          "step": 233,
+          "stage": "push",
+          "ik_target_error_m": 7.0793181903342735e-09,
+          "actual_target_error_m": 0.014731068046861582
+        },
+        {
+          "step": 234,
+          "stage": "push",
+          "ik_target_error_m": 7.085179856043414e-09,
+          "actual_target_error_m": 0.014741409740021645
+        },
+        {
+          "step": 235,
+          "stage": "push",
+          "ik_target_error_m": 7.09183473310774e-09,
+          "actual_target_error_m": 0.014751333189676903
+        },
+        {
+          "step": 236,
+          "stage": "push",
+          "ik_target_error_m": 7.099296282204839e-09,
+          "actual_target_error_m": 0.014760712407891577
+        },
+        {
+          "step": 237,
+          "stage": "push",
+          "ik_target_error_m": 7.107756635819114e-09,
+          "actual_target_error_m": 0.014769441675693626
+        },
+        {
+          "step": 238,
+          "stage": "push",
+          "ik_target_error_m": 7.1168121705067676e-09,
+          "actual_target_error_m": 0.014777435710415725
+        },
+        {
+          "step": 239,
+          "stage": "push",
+          "ik_target_error_m": 7.126795274737447e-09,
+          "actual_target_error_m": 0.014784629351987901
+        },
+        {
+          "step": 240,
+          "stage": "push",
+          "ik_target_error_m": 7.137566925146286e-09,
+          "actual_target_error_m": 0.014790976616936586
+        },
+        {
+          "step": 241,
+          "stage": "push",
+          "ik_target_error_m": 7.149556743926544e-09,
+          "actual_target_error_m": 0.01479644973396466
+        },
+        {
+          "step": 242,
+          "stage": "push",
+          "ik_target_error_m": 7.1620589416212945e-09,
+          "actual_target_error_m": 0.014801037920221808
+        },
+        {
+          "step": 243,
+          "stage": "push",
+          "ik_target_error_m": 7.175586262783995e-09,
+          "actual_target_error_m": 0.014804745946609278
+        },
+        {
+          "step": 244,
+          "stage": "push",
+          "ik_target_error_m": 7.190039769762583e-09,
+          "actual_target_error_m": 0.01480759255648859
+        },
+        {
+          "step": 245,
+          "stage": "push",
+          "ik_target_error_m": 7.205397408911198e-09,
+          "actual_target_error_m": 0.01480960869291591
+        },
+        {
+          "step": 246,
+          "stage": "push",
+          "ik_target_error_m": 7.221491141545694e-09,
+          "actual_target_error_m": 0.014810834860406278
+        },
+        {
+          "step": 247,
+          "stage": "push",
+          "ik_target_error_m": 7.238421954223016e-09,
+          "actual_target_error_m": 0.01481132342350834
+        },
+        {
+          "step": 248,
+          "stage": "push",
+          "ik_target_error_m": 7.256236343063685e-09,
+          "actual_target_error_m": 0.014811133765717304
+        },
+        {
+          "step": 249,
+          "stage": "push",
+          "ik_target_error_m": 7.2751000636302435e-09,
+          "actual_target_error_m": 0.014810330178475991
+        },
+        {
+          "step": 250,
+          "stage": "push",
+          "ik_target_error_m": 7.294745277663001e-09,
+          "actual_target_error_m": 0.014808980619067573
+        },
+        {
+          "step": 251,
+          "stage": "push",
+          "ik_target_error_m": 7.315084782171797e-09,
+          "actual_target_error_m": 0.014807155376004702
+        },
+        {
+          "step": 252,
+          "stage": "push",
+          "ik_target_error_m": 7.336384512943517e-09,
+          "actual_target_error_m": 0.014804925927482004
+        },
+        {
+          "step": 253,
+          "stage": "push",
+          "ik_target_error_m": 7.358574543626645e-09,
+          "actual_target_error_m": 0.014802363919563225
+        },
+        {
+          "step": 254,
+          "stage": "push",
+          "ik_target_error_m": 7.3816281387187405e-09,
+          "actual_target_error_m": 0.014799540094700884
+        },
+        {
+          "step": 255,
+          "stage": "push",
+          "ik_target_error_m": 7.404731909905793e-09,
+          "actual_target_error_m": 0.014796523336405156
+        },
+        {
+          "step": 256,
+          "stage": "push",
+          "ik_target_error_m": 7.429283084703845e-09,
+          "actual_target_error_m": 0.014793379836429987
+        },
+        {
+          "step": 257,
+          "stage": "push",
+          "ik_target_error_m": 7.454637927437973e-09,
+          "actual_target_error_m": 0.014790172371623134
+        },
+        {
+          "step": 258,
+          "stage": "push",
+          "ik_target_error_m": 7.480429127334687e-09,
+          "actual_target_error_m": 0.014786959680198554
+        },
+        {
+          "step": 259,
+          "stage": "push",
+          "ik_target_error_m": 7.506975874535024e-09,
+          "actual_target_error_m": 0.014783795943104364
+        },
+        {
+          "step": 260,
+          "stage": "push",
+          "ik_target_error_m": 7.534129602569289e-09,
+          "actual_target_error_m": 0.014780730366244407
+        },
+        {
+          "step": 261,
+          "stage": "push",
+          "ik_target_error_m": 7.56218462389189e-09,
+          "actual_target_error_m": 0.014777806858572346
+        },
+        {
+          "step": 262,
+          "stage": "push",
+          "ik_target_error_m": 7.59073998169231e-09,
+          "actual_target_error_m": 0.0147750638016862
+        },
+        {
+          "step": 263,
+          "stage": "push",
+          "ik_target_error_m": 7.620557875032828e-09,
+          "actual_target_error_m": 0.014772533906971098
+        },
+        {
+          "step": 264,
+          "stage": "push",
+          "ik_target_error_m": 7.650312778942497e-09,
+          "actual_target_error_m": 0.014770244155654814
+        },
+        {
+          "step": 265,
+          "stage": "push",
+          "ik_target_error_m": 7.681029831511102e-09,
+          "actual_target_error_m": 0.01476821581706283
+        },
+        {
+          "step": 266,
+          "stage": "push",
+          "ik_target_error_m": 7.712928491614246e-09,
+          "actual_target_error_m": 0.014766465125515844
+        },
+        {
+          "step": 267,
+          "stage": "push",
+          "ik_target_error_m": 7.745034830609645e-09,
+          "actual_target_error_m": 0.014765002575459419
+        },
+        {
+          "step": 268,
+          "stage": "push",
+          "ik_target_error_m": 7.778050368844204e-09,
+          "actual_target_error_m": 0.014763831159109462
+        },
+        {
+          "step": 269,
+          "stage": "push",
+          "ik_target_error_m": 7.811583057811258e-09,
+          "actual_target_error_m": 0.01476294981800381
+        },
+        {
+          "step": 270,
+          "stage": "push",
+          "ik_target_error_m": 7.845997339567593e-09,
+          "actual_target_error_m": 0.014762353461091388
+        },
+        {
+          "step": 271,
+          "stage": "push",
+          "ik_target_error_m": 7.88094041613692e-09,
+          "actual_target_error_m": 0.014762033184184785
+        },
+        {
+          "step": 272,
+          "stage": "push",
+          "ik_target_error_m": 7.916534166920191e-09,
+          "actual_target_error_m": 0.014761976587623368
+        },
+        {
+          "step": 273,
+          "stage": "push",
+          "ik_target_error_m": 7.95327259378314e-09,
+          "actual_target_error_m": 0.014762167961896151
+        },
+        {
+          "step": 274,
+          "stage": "push",
+          "ik_target_error_m": 7.990424572532883e-09,
+          "actual_target_error_m": 0.014762588688635609
+        },
+        {
+          "step": 275,
+          "stage": "push",
+          "ik_target_error_m": 8.0290089085146e-09,
+          "actual_target_error_m": 0.014763217822993127
+        },
+        {
+          "step": 276,
+          "stage": "push",
+          "ik_target_error_m": 8.067200192906195e-09,
+          "actual_target_error_m": 0.014764032264324323
+        },
+        {
+          "step": 277,
+          "stage": "push",
+          "ik_target_error_m": 8.107465537187315e-09,
+          "actual_target_error_m": 0.014765007353235856
+        },
+        {
+          "step": 278,
+          "stage": "push",
+          "ik_target_error_m": 8.147818916011877e-09,
+          "actual_target_error_m": 0.014766117389494572
+        },
+        {
+          "step": 279,
+          "stage": "push",
+          "ik_target_error_m": 8.1892475036669e-09,
+          "actual_target_error_m": 0.014767336079578598
+        },
+        {
+          "step": 280,
+          "stage": "push",
+          "ik_target_error_m": 8.23144700731905e-09,
+          "actual_target_error_m": 0.014768636969492915
+        },
+        {
+          "step": 281,
+          "stage": "push",
+          "ik_target_error_m": 8.27514594408607e-09,
+          "actual_target_error_m": 0.014769993856831785
+        },
+        {
+          "step": 282,
+          "stage": "push",
+          "ik_target_error_m": 8.31927593017285e-09,
+          "actual_target_error_m": 0.014771381177804153
+        },
+        {
+          "step": 283,
+          "stage": "push",
+          "ik_target_error_m": 8.364660574128024e-09,
+          "actual_target_error_m": 0.014772774361598424
+        },
+        {
+          "step": 284,
+          "stage": "push",
+          "ik_target_error_m": 8.409910648429782e-09,
+          "actual_target_error_m": 0.014774150144560889
+        },
+        {
+          "step": 285,
+          "stage": "push",
+          "ik_target_error_m": 8.457506788201104e-09,
+          "actual_target_error_m": 0.01477548680120758
+        },
+        {
+          "step": 286,
+          "stage": "push",
+          "ik_target_error_m": 8.505570328554365e-09,
+          "actual_target_error_m": 0.014776764490841345
+        },
+        {
+          "step": 287,
+          "stage": "push",
+          "ik_target_error_m": 8.554655249544226e-09,
+          "actual_target_error_m": 0.014777965407813003
+        },
+        {
+          "step": 288,
+          "stage": "push",
+          "ik_target_error_m": 8.604784828354053e-09,
+          "actual_target_error_m": 0.014779073912393605
+        },
+        {
+          "step": 289,
+          "stage": "push",
+          "ik_target_error_m": 8.65641206844026e-09,
+          "actual_target_error_m": 0.014780076642181983
+        },
+        {
+          "step": 290,
+          "stage": "push",
+          "ik_target_error_m": 8.708430763804462e-09,
+          "actual_target_error_m": 0.014780962581252048
+        },
+        {
+          "step": 291,
+          "stage": "push",
+          "ik_target_error_m": 8.762610858707075e-09,
+          "actual_target_error_m": 0.014781723087735307
+        },
+        {
+          "step": 292,
+          "stage": "push",
+          "ik_target_error_m": 8.817447823230222e-09,
+          "actual_target_error_m": 0.014782351882473482
+        },
+        {
+          "step": 293,
+          "stage": "push",
+          "ik_target_error_m": 8.835297241343759e-09,
+          "actual_target_error_m": 0.014782845003279053
+        },
+        {
+          "step": 294,
+          "stage": "push",
+          "ik_target_error_m": 8.891509794287172e-09,
+          "actual_target_error_m": 0.014783200727213107
+        },
+        {
+          "step": 295,
+          "stage": "push",
+          "ik_target_error_m": 8.948962813997128e-09,
+          "actual_target_error_m": 0.014783419464224123
+        },
+        {
+          "step": 296,
+          "stage": "push",
+          "ik_target_error_m": 9.007691235628857e-09,
+          "actual_target_error_m": 0.014783503625798293
+        },
+        {
+          "step": 297,
+          "stage": "push",
+          "ik_target_error_m": 9.06771162965411e-09,
+          "actual_target_error_m": 0.014783457472437995
+        },
+        {
+          "step": 298,
+          "stage": "push",
+          "ik_target_error_m": 9.129048197774053e-09,
+          "actual_target_error_m": 0.014783286951746272
+        },
+        {
+          "step": 299,
+          "stage": "push",
+          "ik_target_error_m": 9.191747603138293e-09,
+          "actual_target_error_m": 0.014782999523580679
+        },
+        {
+          "step": 300,
+          "stage": "push",
+          "ik_target_error_m": 9.255821085837787e-09,
+          "actual_target_error_m": 0.014782603956815858
+        }
+      ]
+    }
+  ]
+}
