@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-02T01:07:10.558803+00:00",
+  "protected_files_checked": 114,
+  "protected_files_changed": [],
+  "original_protocol_verified": true,
+  "frozen_v2_verified": true,
+  "v2_state_and_audit_equal_published_receipts": true,
+  "candidate_source": "control/progress_recovery.py",
+  "candidate_sha256": "16a0e7f7f5a0a541a2a4c2a27b3ec7637ec718c7e62cdbd186524e2f33dbff58",
+  "authorship": "developer",
+  "agent_activated": false,
+  "new_model_sessions": 0,
+  "new_heldout_evaluations": 0
+}

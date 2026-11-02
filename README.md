@@ -209,6 +209,9 @@ The latest developer recovery work is described in
 [Reachable recovery](docs/REACHABLE_RECOVERY.md), including measured improvements,
 regressions and gripper/table collision diagnosis. It remains separate from
 the original frozen benchmark and TrueForge result.
+The subsequent [progress-aware recovery experiment](docs/PROGRESS_RECOVERY.md)
+tests bounded tracking memory and observed-motion braking while preserving
+frozen v2 and its agent budgets.
 
 GitHub Actions runs on pushes, pull requests and manual dispatch using Windows
 and Python 3.11. It installs the pinned simulator dependencies, checks dependency
