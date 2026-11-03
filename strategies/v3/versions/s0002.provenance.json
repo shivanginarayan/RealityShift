@@ -1,0 +1,11 @@
+{
+  "authorship": "TrueForge agent policy selection; developer-authored primitive implementation",
+  "session_id": "01m6g1asb68209kvmsqs2ma9an",
+  "turn_id": "01m6g1ascjs0vmjm0tfgfed53h",
+  "save_tool_call_id": "call-3f134613-f220-45c0-a06f-b713440a12cd",
+  "canonical_policy_sha256": "fc1f7e9fe8a51d9626f901ec46618d67be905915637587151a493525993990f1",
+  "baseline_run": "79de82e25376414c9c64c93ea1b2cd91",
+  "candidate_run": "98d82cb946424c5281923e999f591348",
+  "promoted": true,
+  "copy": "Unchanged public copy of the actual saved agent policy"
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "verified_final_stall_repush_replay",
+  "condition": {
+    "id": "h04",
+    "seed": 1000,
+    "delay_steps": 5,
+    "onset_step": 0,
+    "group": "delayed_from_start"
+  },
+  "source_archive_sha256": "6a3df078f02bcfe7cea6bac4ece99905f86d8a3aed7f2ef413af566ea37a8e98",
+  "every_observation_and_applied_command_verified": true,
+  "strategy_events": [
+    {
+      "step": 130,
+      "reason": "stall",
+      "strategy": "repush",
+      "stabilized_tracking": true
+    }
+  ],
+  "left_success": false,
+  "right_success": true,
+  "video_sha256": "83879ea1c7d6ea5f5415862b8917130d960cf579102fb4c94988a64f4957e492",
+  "source_sha256": "1e6b93fcea207cc2388e68374259c98850a0e00ac8cfd1f57f32f0afae6c0cd7"
+}

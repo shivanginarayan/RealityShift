@@ -1,0 +1,14 @@
+{
+  "utc": "2026-11-03T06:54:39.906738+00:00",
+  "protected_files_checked": 119,
+  "changed": [],
+  "v1_v2_v3_locks_verified": true,
+  "v2_state_and_audit_unchanged": true,
+  "old_heldout_receipt_unchanged": true,
+  "new_trueforge_sessions": 1,
+  "corrective_followups": 0,
+  "controller_changes_after_opening_final": 0,
+  "public_credential_pattern_scan": "passed",
+  "new_final_comparisons": 1,
+  "final_policy_evaluations": 4
+}

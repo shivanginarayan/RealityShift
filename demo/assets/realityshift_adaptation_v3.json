@@ -1,0 +1,148 @@
+{
+  "kind": "verified_recorded_v3_replay",
+  "condition": {
+    "id": "v05",
+    "seed": 200,
+    "delay_steps": 4,
+    "onset_step": 60,
+    "group": "delay_begins_mid_task"
+  },
+  "baseline_run": "79de82e25376414c9c64c93ea1b2cd91",
+  "candidate_run": "98d82cb946424c5281923e999f591348",
+  "policy_id": "s0002",
+  "agent_hypothesis": "Stabilized approach with controlled repush and reposition correct will reduce oscillation and improve contact acquisition, increasing successes without losing baseline.",
+  "every_observation_and_applied_command_verified": true,
+  "trajectory_overlay": "Observed object XY, drawn 56 mm above its center for visibility; simulation state unchanged.",
+  "validation_original": {
+    "eligible": true,
+    "episodes": 21,
+    "successes": 3,
+    "success_rate": 0.14285714285714285,
+    "score": 23.60760885094309,
+    "rank": [
+      0.14285714285714285,
+      -0.17826215967880357,
+      -3.663362904985968
+    ]
+  },
+  "validation_agent": {
+    "eligible": true,
+    "episodes": 21,
+    "successes": 21,
+    "success_rate": 1.0,
+    "score": 92.36222938972442,
+    "rank": [
+      1.0,
+      -0.009595058907683087,
+      -0.017453050153984347
+    ]
+  },
+  "files": {
+    "nominal.mp4": "7a89c151de73813d58d9a19a69e0e68b8fa74e54196714cb055d1be3a9be890f",
+    "paired.mp4": "69ecfc8ab5bb63a276a31f7f7569dfef9bf83ce1e029b6cd078a5ddcf6cb3e3d"
+  },
+  "duration_seconds": 75,
+  "fps": 20,
+  "video_sha256": "f687a72a035bdc2badb4baa460488417952c604f35896f7f4f66c55f0ec09125",
+  "final_results": {
+    "original": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 5,
+      "success_rate": 0.2,
+      "score": 29.208310704408227,
+      "rank": [
+        0.2,
+        -0.14672556572312764,
+        -3.5865344589796297
+      ],
+      "success_wilson_95": [
+        0.08860584686802572,
+        0.3913095036954033
+      ],
+      "mean_final_error_m": 0.14672556572312767,
+      "mean_squared_torque": 3.58653445897963,
+      "recovery_entries": 0,
+      "predictive_brake_activations": 0,
+      "failure_categories": {
+        "approach_tracking_failure": 14,
+        "contact_acquisition_failure": 1,
+        "control_oscillation": 14,
+        "pushing_or_settling_failure": 16
+      }
+    },
+    "developer": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 20,
+      "success_rate": 0.8,
+      "score": 76.98169270583676,
+      "rank": [
+        0.8,
+        -0.031624349020747324,
+        -0.6781632149052998
+      ],
+      "success_wilson_95": [
+        0.6086904963045967,
+        0.9113941531319742
+      ],
+      "mean_final_error_m": 0.03162434902074733,
+      "mean_squared_torque": 0.6781632149053,
+      "recovery_entries": 14,
+      "predictive_brake_activations": 17,
+      "failure_categories": {
+        "approach_tracking_failure": 5,
+        "control_oscillation": 5,
+        "pushing_or_settling_failure": 5
+      }
+    },
+    "conventional": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 20,
+      "success_rate": 0.8,
+      "score": 76.98169270583676,
+      "rank": [
+        0.8,
+        -0.031624349020747324,
+        -0.6781632149052998
+      ],
+      "success_wilson_95": [
+        0.6086904963045967,
+        0.9113941531319742
+      ],
+      "mean_final_error_m": 0.03162434902074733,
+      "mean_squared_torque": 0.6781632149053,
+      "recovery_entries": 14,
+      "predictive_brake_activations": 17,
+      "failure_categories": {
+        "approach_tracking_failure": 5,
+        "control_oscillation": 5,
+        "pushing_or_settling_failure": 5
+      }
+    },
+    "trueforge": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 25,
+      "success_rate": 1.0,
+      "score": 92.37257149677758,
+      "rank": [
+        1.0,
+        -0.009485712580560263,
+        -0.028446764593838544
+      ],
+      "success_wilson_95": [
+        0.8668077490609515,
+        0.9999999999999999
+      ],
+      "mean_final_error_m": 0.009485712580560263,
+      "mean_squared_torque": 0.028446764593838533,
+      "recovery_entries": 1,
+      "predictive_brake_activations": 25,
+      "failure_categories": {}
+    }
+  },
+  "source_sha256": "c3dc040e5ad895b4718623da2e15765c6dab61a98c884a68b81319494775452e",
+  "note": "Actual recorded trajectories and actual saved agent hypothesis; no private reasoning or fabricated trajectories."
+}

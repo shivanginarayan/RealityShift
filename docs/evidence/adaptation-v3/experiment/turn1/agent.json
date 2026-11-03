@@ -1,0 +1,61 @@
+{
+  "id": "01m6g1amcnk69a5z1n7c42ammp",
+  "name": "realityshift-delay-adapter-v3",
+  "description": "Measured robotic strategy adaptation across paired validation tasks",
+  "manifest": {
+    "model": {
+      "name": "nvidia/nemotron-lightning"
+    },
+    "instructions": "# RealityShift v3: evidence-based robotic recovery\n\nUse only the six RealityShiftAdaptationV3 tools. No shell, web, extra instruction\npacks, arbitrary code, hidden dynamics or final-test data. Numeric gains and\nscoring are fixed. The available controller primitives are developer-authored;\nyour contribution is the actual saved strategy decision and its evaluation.\n\n1. Get status and read the strategy catalog. Evaluate `initial` on the entire\n   validation suite FIRST. A trial is not a baseline evaluation. The bridge\n   enforces baseline-first and returns the same completed baseline on repetition.\n2. Diagnose failing behavior through listed development trials. Opaque IDs do\n   not identify physics. Low early response, tracking error, saturation and\n   oscillation are observations, not estimates of mass or actuator latency.\n   Marker proximity does not measure contact forces. A small tracking gap with\n   slow productive pushing differs from failure to acquire contact.\n3. Form a hypothesis, choose the recovery family and bounded enum strategies\n   from the catalog, then save a unique version >=2. The template illustrates\n   valid syntax; your actual choices must be supported by observed behavior.\n   Inspect the saved diff, including simultaneous changes you did not intend.\n4. Evaluate the revision on the same full validation suite. Compare matching\n   condition IDs, successes, final errors, effort and actual recovery decisions.\n   Never compare a few trials with a full evaluation and call it improvement.\n5. If measured improvement preserves all initial successful validation tasks,\n   call promote_strategy with genuine evaluation run IDs. A claimed promotion\n   is not a promotion tool call. Preserve and report every failed candidate.\n6. You have six full validation evaluations INCLUDING initial, twelve development\n   trials, and four saves. Do not rerun identical policies unnecessarily. Stop\n   when evidence or budgets warrant it. If no candidate improves, report that.\n   This task authorizes the experiment; do not ask for permission to continue.\n\nSummarize actual run IDs and before/after measurements. Distinguish improved\ntracking, preventing overshoot and explicit retry recovery. Do not claim clinical\nvalidation, hardware transfer, unseen generalization or agent-written primitive\ncode. Validation guides selection; only the separately reserved final test can\nassess unobserved seeds/settings after all choices are frozen.\n",
+    "mcp_servers": [
+      {
+        "name": "realityshift-adaptation-v3",
+        "enable_tools": [
+          "get_status",
+          "run_trial",
+          "save_candidate_strategy",
+          "get_strategy_diff",
+          "evaluate_candidate",
+          "promote_strategy"
+        ],
+        "disable_tools": [],
+        "preload_tools": [],
+        "require_approval_for_tools": [],
+        "preload": true
+      }
+    ],
+    "skills": [],
+    "config": {
+      "iteration_limit": 40,
+      "sandbox": {
+        "enabled": false,
+        "file_downloads": true
+      },
+      "dynamic_sub_agents": {
+        "enabled": false
+      },
+      "context_management": {
+        "compaction": {
+          "enabled": true
+        },
+        "large_tool_response": {
+          "enabled": true
+        }
+      },
+      "generative_ui": {
+        "enabled": false
+      },
+      "ask_user_questions": {
+        "enabled": false
+      },
+      "web_search": {
+        "enabled": false
+      }
+    }
+  },
+  "created_by_subject": {
+    "subject_id": "trueforge-default",
+    "subject_type": "user",
+    "subject_display_name": "trueforge-default"
+  }
+}

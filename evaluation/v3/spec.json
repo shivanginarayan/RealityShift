@@ -1,0 +1,512 @@
+{
+  "version": 3,
+  "name": "delay_strategy_adaptation_three_splits",
+  "horizon": 300,
+  "dt_seconds": 0.05,
+  "goal_tolerance_xy_m": 0.05,
+  "settle_steps": 10,
+  "max_abs_torque": 2.0,
+  "error_normalization_m": 0.5,
+  "weights": {
+    "success": 70,
+    "error": 20,
+    "time": 10
+  },
+  "splits": {
+    "development": [
+      {
+        "id": "d01",
+        "seed": 0,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "d02",
+        "seed": 0,
+        "delay_steps": 2,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d03",
+        "seed": 0,
+        "delay_steps": 2,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d04",
+        "seed": 0,
+        "delay_steps": 4,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d05",
+        "seed": 0,
+        "delay_steps": 4,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d06",
+        "seed": 0,
+        "delay_steps": 6,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d07",
+        "seed": 0,
+        "delay_steps": 6,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d08",
+        "seed": 1,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "d09",
+        "seed": 1,
+        "delay_steps": 2,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d10",
+        "seed": 1,
+        "delay_steps": 2,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d11",
+        "seed": 1,
+        "delay_steps": 4,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d12",
+        "seed": 1,
+        "delay_steps": 4,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d13",
+        "seed": 1,
+        "delay_steps": 6,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d14",
+        "seed": 1,
+        "delay_steps": 6,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d15",
+        "seed": 2,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "d16",
+        "seed": 2,
+        "delay_steps": 2,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d17",
+        "seed": 2,
+        "delay_steps": 2,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d18",
+        "seed": 2,
+        "delay_steps": 4,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d19",
+        "seed": 2,
+        "delay_steps": 4,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "d20",
+        "seed": 2,
+        "delay_steps": 6,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "d21",
+        "seed": 2,
+        "delay_steps": 6,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      }
+    ],
+    "validation": [
+      {
+        "id": "v01",
+        "seed": 200,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "v02",
+        "seed": 200,
+        "delay_steps": 2,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v03",
+        "seed": 200,
+        "delay_steps": 2,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v04",
+        "seed": 200,
+        "delay_steps": 4,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v05",
+        "seed": 200,
+        "delay_steps": 4,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v06",
+        "seed": 200,
+        "delay_steps": 6,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v07",
+        "seed": 200,
+        "delay_steps": 6,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v08",
+        "seed": 201,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "v09",
+        "seed": 201,
+        "delay_steps": 2,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v10",
+        "seed": 201,
+        "delay_steps": 2,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v11",
+        "seed": 201,
+        "delay_steps": 4,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v12",
+        "seed": 201,
+        "delay_steps": 4,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v13",
+        "seed": 201,
+        "delay_steps": 6,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v14",
+        "seed": 201,
+        "delay_steps": 6,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v15",
+        "seed": 202,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "v16",
+        "seed": 202,
+        "delay_steps": 2,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v17",
+        "seed": 202,
+        "delay_steps": 2,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v18",
+        "seed": 202,
+        "delay_steps": 4,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v19",
+        "seed": 202,
+        "delay_steps": 4,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "v20",
+        "seed": 202,
+        "delay_steps": 6,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "v21",
+        "seed": 202,
+        "delay_steps": 6,
+        "onset_step": 60,
+        "group": "delay_begins_mid_task"
+      }
+    ],
+    "heldout": [
+      {
+        "id": "h01",
+        "seed": 1000,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "h02",
+        "seed": 1000,
+        "delay_steps": 3,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h03",
+        "seed": 1000,
+        "delay_steps": 3,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h04",
+        "seed": 1000,
+        "delay_steps": 5,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h05",
+        "seed": 1000,
+        "delay_steps": 5,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h06",
+        "seed": 1001,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "h07",
+        "seed": 1001,
+        "delay_steps": 3,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h08",
+        "seed": 1001,
+        "delay_steps": 3,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h09",
+        "seed": 1001,
+        "delay_steps": 5,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h10",
+        "seed": 1001,
+        "delay_steps": 5,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h11",
+        "seed": 1002,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "h12",
+        "seed": 1002,
+        "delay_steps": 3,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h13",
+        "seed": 1002,
+        "delay_steps": 3,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h14",
+        "seed": 1002,
+        "delay_steps": 5,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h15",
+        "seed": 1002,
+        "delay_steps": 5,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h16",
+        "seed": 1003,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "h17",
+        "seed": 1003,
+        "delay_steps": 3,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h18",
+        "seed": 1003,
+        "delay_steps": 3,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h19",
+        "seed": 1003,
+        "delay_steps": 5,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h20",
+        "seed": 1003,
+        "delay_steps": 5,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h21",
+        "seed": 1004,
+        "delay_steps": 0,
+        "onset_step": 0,
+        "group": "nominal"
+      },
+      {
+        "id": "h22",
+        "seed": 1004,
+        "delay_steps": 3,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h23",
+        "seed": 1004,
+        "delay_steps": 3,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      },
+      {
+        "id": "h24",
+        "seed": 1004,
+        "delay_steps": 5,
+        "onset_step": 0,
+        "group": "delayed_from_start"
+      },
+      {
+        "id": "h25",
+        "seed": 1004,
+        "delay_steps": 5,
+        "onset_step": 90,
+        "group": "delay_begins_mid_task"
+      }
+    ]
+  },
+  "agent_budgets": {
+    "evaluations": 6,
+    "trials": 12,
+    "candidates": 4
+  },
+  "conventional_search": {
+    "evaluations": 6,
+    "seed": 20261102,
+    "candidate_yaml": [
+      "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+      "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: reapproach\n  overshoot: reposition_correct\n  contact: reapproach\n  tracking_memory: 'off'\n  braking: pose_hold\n",
+      "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: direct\n  stall: reapproach\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: 'off'\n  braking: 'off'\n",
+      "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: 'off'\n  braking: 'off'\n",
+      "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: reapproach\n  overshoot: reapproach\n  contact: reapproach\n  tracking_memory: 'off'\n  braking: 'off'\n"
+    ]
+  },
+  "promotion": "strict aggregate improvement and preserve every baseline successful validation condition",
+  "developer_gate": "finite eligible episodes, no nominal regression, and at least one unchanged four-step-delay failure converted to success",
+  "final_rule": "One reserved evaluation of four finalized policies; no controller or policy changes after opening heldout.",
+  "uncertainty": "Wilson intervals descriptive only; paired bootstrap resamples whole starting-seed clusters."
+}

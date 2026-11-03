@@ -1,0 +1,10 @@
+name: realityshift_adaptation_v3
+version: 2
+policy:
+  controller: recovery
+  approach: stabilized
+  stall: controlled_repush
+  overshoot: reposition_correct
+  contact: stabilized_reacquire
+  tracking_memory: progress_gated
+  braking: pose_hold

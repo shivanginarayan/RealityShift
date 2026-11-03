@@ -1,0 +1,13 @@
+{"utc": "2026-11-03T06:25:22.070102+00:00", "operation": "reserve_budget", "kind": "evaluations", "used": 1}
+{"utc": "2026-11-03T06:26:21.010918+00:00", "operation": "evaluation_completed", "run_id": "79de82e25376414c9c64c93ea1b2cd91", "strategy_id": "initial"}
+{"utc": "2026-11-03T06:26:25.397631+00:00", "operation": "reserve_budget", "kind": "trials", "used": 1}
+{"utc": "2026-11-03T06:26:28.441079+00:00", "operation": "trial_completed", "run_id": "a372eb1736194909a2c00110145242e9", "strategy_id": "initial", "condition_id": "d02"}
+{"utc": "2026-11-03T06:26:29.718622+00:00", "operation": "reserve_budget", "kind": "trials", "used": 2}
+{"utc": "2026-11-03T06:26:32.212751+00:00", "operation": "trial_completed", "run_id": "11fc6a52948045fe9a42ba651f80748d", "strategy_id": "initial", "condition_id": "d03"}
+{"utc": "2026-11-03T06:26:33.225563+00:00", "operation": "reserve_budget", "kind": "trials", "used": 3}
+{"utc": "2026-11-03T06:26:35.782805+00:00", "operation": "trial_completed", "run_id": "8fad4c8d36aa4cd687a3910abee7f906", "strategy_id": "initial", "condition_id": "d04"}
+{"utc": "2026-11-03T06:26:43.981596+00:00", "operation": "reserve_budget", "kind": "candidates", "used": 1}
+{"utc": "2026-11-03T06:26:43.988594+00:00", "operation": "strategy_saved", "strategy_id": "s0002", "hypothesis": "Stabilized approach with controlled repush and reposition correct will reduce oscillation and improve contact acquisition, increasing successes without losing baseline.", "policy_sha256": "fc1f7e9fe8a51d9626f901ec46618d67be905915637587151a493525993990f1"}
+{"utc": "2026-11-03T06:26:45.033219+00:00", "operation": "reserve_budget", "kind": "evaluations", "used": 2}
+{"utc": "2026-11-03T06:27:52.695990+00:00", "operation": "evaluation_completed", "run_id": "98d82cb946424c5281923e999f591348", "strategy_id": "s0002"}
+{"utc": "2026-11-03T06:27:57.095949+00:00", "operation": "promotion_decision", "baseline": "79de82e25376414c9c64c93ea1b2cd91", "candidate": "98d82cb946424c5281923e999f591348", "accepted": true}

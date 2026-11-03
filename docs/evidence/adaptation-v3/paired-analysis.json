@@ -1,0 +1,31 @@
+{
+  "comparison": "TrueForge minus developer/conventional policy; descriptive post-evaluation analysis, no new simulations",
+  "paired": {
+    "starting_seed_clusters": 5,
+    "resamples": 5000,
+    "note": "Few seed clusters; intervals are descriptive and do not establish broad transfer.",
+    "metrics": {
+      "success": {
+        "candidate_minus_original": 0.2,
+        "paired_seed_cluster_bootstrap_95": [
+          0.08,
+          0.32
+        ]
+      },
+      "final_error_xy_m": {
+        "candidate_minus_original": -0.022138636440187064,
+        "paired_seed_cluster_bootstrap_95": [
+          -0.031674851792983315,
+          -0.01260242108739081
+        ]
+      },
+      "mean_squared_torque": {
+        "candidate_minus_original": -0.6497164503114614,
+        "paired_seed_cluster_bootstrap_95": [
+          -0.6912303005033535,
+          -0.6153179988324211
+        ]
+      }
+    }
+  }
+}

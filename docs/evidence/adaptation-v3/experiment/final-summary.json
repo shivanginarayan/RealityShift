@@ -1,0 +1,214 @@
+{
+  "benchmark_version": 3,
+  "first_and_only_final_results": true,
+  "policies_frozen_before_outcomes": {
+    "status": "reserved_before_any_final_outcome",
+    "reserved_utc": "2026-11-03T06:37:02.861152+00:00",
+    "policies": {
+      "original": {
+        "yaml": "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: original\n",
+        "sha256": "86a56344c4d58e77a5d8dbd418015a8366345d00be54bcc6014cedb2f50fa12d"
+      },
+      "developer": {
+        "yaml": "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+        "sha256": "1512282919e821fb15606b5c0df467413f0fadc1c5fe8d70adfee1b6c4c7af2e"
+      },
+      "conventional": {
+        "yaml": "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+        "sha256": "1512282919e821fb15606b5c0df467413f0fadc1c5fe8d70adfee1b6c4c7af2e"
+      },
+      "trueforge": {
+        "yaml": "name: realityshift_adaptation_v3\nversion: 2\npolicy:\n  controller: recovery\n  approach: stabilized\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+        "sha256": "fc1f7e9fe8a51d9626f901ec46618d67be905915637587151a493525993990f1"
+      }
+    }
+  },
+  "results": {
+    "original": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 5,
+      "success_rate": 0.2,
+      "score": 29.208310704408227,
+      "rank": [
+        0.2,
+        -0.14672556572312764,
+        -3.5865344589796297
+      ],
+      "success_wilson_95": [
+        0.08860584686802572,
+        0.3913095036954033
+      ],
+      "mean_final_error_m": 0.14672556572312767,
+      "mean_squared_torque": 3.58653445897963,
+      "recovery_entries": 0,
+      "predictive_brake_activations": 0,
+      "failure_categories": {
+        "approach_tracking_failure": 14,
+        "contact_acquisition_failure": 1,
+        "control_oscillation": 14,
+        "pushing_or_settling_failure": 16
+      }
+    },
+    "developer": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 20,
+      "success_rate": 0.8,
+      "score": 76.98169270583676,
+      "rank": [
+        0.8,
+        -0.031624349020747324,
+        -0.6781632149052998
+      ],
+      "success_wilson_95": [
+        0.6086904963045967,
+        0.9113941531319742
+      ],
+      "mean_final_error_m": 0.03162434902074733,
+      "mean_squared_torque": 0.6781632149053,
+      "recovery_entries": 14,
+      "predictive_brake_activations": 17,
+      "failure_categories": {
+        "approach_tracking_failure": 5,
+        "control_oscillation": 5,
+        "pushing_or_settling_failure": 5
+      }
+    },
+    "conventional": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 20,
+      "success_rate": 0.8,
+      "score": 76.98169270583676,
+      "rank": [
+        0.8,
+        -0.031624349020747324,
+        -0.6781632149052998
+      ],
+      "success_wilson_95": [
+        0.6086904963045967,
+        0.9113941531319742
+      ],
+      "mean_final_error_m": 0.03162434902074733,
+      "mean_squared_torque": 0.6781632149053,
+      "recovery_entries": 14,
+      "predictive_brake_activations": 17,
+      "failure_categories": {
+        "approach_tracking_failure": 5,
+        "control_oscillation": 5,
+        "pushing_or_settling_failure": 5
+      }
+    },
+    "trueforge": {
+      "eligible": true,
+      "episodes": 25,
+      "successes": 25,
+      "success_rate": 1.0,
+      "score": 92.37257149677758,
+      "rank": [
+        1.0,
+        -0.009485712580560263,
+        -0.028446764593838544
+      ],
+      "success_wilson_95": [
+        0.8668077490609515,
+        0.9999999999999999
+      ],
+      "mean_final_error_m": 0.009485712580560263,
+      "mean_squared_torque": 0.028446764593838533,
+      "recovery_entries": 1,
+      "predictive_brake_activations": 25,
+      "failure_categories": {}
+    }
+  },
+  "paired_vs_original": {
+    "developer": {
+      "starting_seed_clusters": 5,
+      "resamples": 5000,
+      "note": "Few seed clusters; intervals are descriptive and do not establish broad transfer.",
+      "metrics": {
+        "success": {
+          "candidate_minus_original": 0.6,
+          "paired_seed_cluster_bootstrap_95": [
+            0.48,
+            0.72
+          ]
+        },
+        "final_error_xy_m": {
+          "candidate_minus_original": -0.11510121670238034,
+          "paired_seed_cluster_bootstrap_95": [
+            -0.14229690185023064,
+            -0.09028299285739877
+          ]
+        },
+        "mean_squared_torque": {
+          "candidate_minus_original": -2.9083712440743303,
+          "paired_seed_cluster_bootstrap_95": [
+            -2.9824001064736287,
+            -2.8343423816750315
+          ]
+        }
+      }
+    },
+    "conventional": {
+      "starting_seed_clusters": 5,
+      "resamples": 5000,
+      "note": "Few seed clusters; intervals are descriptive and do not establish broad transfer.",
+      "metrics": {
+        "success": {
+          "candidate_minus_original": 0.6,
+          "paired_seed_cluster_bootstrap_95": [
+            0.48,
+            0.72
+          ]
+        },
+        "final_error_xy_m": {
+          "candidate_minus_original": -0.11510121670238034,
+          "paired_seed_cluster_bootstrap_95": [
+            -0.14229690185023064,
+            -0.09028299285739877
+          ]
+        },
+        "mean_squared_torque": {
+          "candidate_minus_original": -2.9083712440743303,
+          "paired_seed_cluster_bootstrap_95": [
+            -2.9824001064736287,
+            -2.8343423816750315
+          ]
+        }
+      }
+    },
+    "trueforge": {
+      "starting_seed_clusters": 5,
+      "resamples": 5000,
+      "note": "Few seed clusters; intervals are descriptive and do not establish broad transfer.",
+      "metrics": {
+        "success": {
+          "candidate_minus_original": 0.8,
+          "paired_seed_cluster_bootstrap_95": [
+            0.8,
+            0.8
+          ]
+        },
+        "final_error_xy_m": {
+          "candidate_minus_original": -0.1372398531425674,
+          "paired_seed_cluster_bootstrap_95": [
+            -0.1690346745307173,
+            -0.10943951796741766
+          ]
+        },
+        "mean_squared_torque": {
+          "candidate_minus_original": -3.5580876943857915,
+          "paired_seed_cluster_bootstrap_95": [
+            -3.6115729668832905,
+            -3.493153572147475
+          ]
+        }
+      }
+    }
+  },
+  "conditions": 25,
+  "uncertainty_caveat": "Wilson bounds treat episodes descriptively; paired intervals resample five starting-seed clusters.",
+  "scope": "Simulation, unseen starting seeds and interpolated unseen delay/onset settings. No hardware or clinical validation."
+}

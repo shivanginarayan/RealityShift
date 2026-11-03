@@ -1,0 +1,44 @@
+{
+  "protocol": 3,
+  "used": {
+    "evaluations": 2,
+    "trials": 3,
+    "candidates": 1
+  },
+  "runs": {
+    "79de82e25376414c9c64c93ea1b2cd91": {
+      "strategy_id": "initial",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 3,
+        "success_rate": 0.14285714285714285,
+        "score": 23.60760885094309,
+        "rank": [
+          0.14285714285714285,
+          -0.17826215967880357,
+          -3.663362904985968
+        ]
+      },
+      "report_sha256": "e5bc2f678f383e13e81a0461ca6bac9647deab14cbd065f70f8ed17836b2962a"
+    },
+    "98d82cb946424c5281923e999f591348": {
+      "strategy_id": "s0002",
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 21,
+        "success_rate": 1.0,
+        "score": 92.36222938972442,
+        "rank": [
+          1.0,
+          -0.009595058907683087,
+          -0.017453050153984347
+        ]
+      },
+      "report_sha256": "3c4cb0603dbbc9a5f63d537c27df60c74ffedea134a7f5d9a1401cb625ef3b4c"
+    }
+  },
+  "baseline_run": "79de82e25376414c9c64c93ea1b2cd91",
+  "promoted": "s0002"
+}

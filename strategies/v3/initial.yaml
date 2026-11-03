@@ -1,0 +1,4 @@
+name: realityshift_adaptation_v3
+version: 1
+policy:
+  controller: original

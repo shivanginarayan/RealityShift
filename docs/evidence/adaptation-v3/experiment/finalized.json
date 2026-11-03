@@ -1,0 +1,22 @@
+{
+  "status": "reserved_before_any_final_outcome",
+  "reserved_utc": "2026-11-03T06:37:02.861152+00:00",
+  "policies": {
+    "original": {
+      "yaml": "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: original\n",
+      "sha256": "86a56344c4d58e77a5d8dbd418015a8366345d00be54bcc6014cedb2f50fa12d"
+    },
+    "developer": {
+      "yaml": "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+      "sha256": "1512282919e821fb15606b5c0df467413f0fadc1c5fe8d70adfee1b6c4c7af2e"
+    },
+    "conventional": {
+      "yaml": "name: realityshift_adaptation_v3\nversion: 1\npolicy:\n  controller: recovery\n  approach: adaptive\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+      "sha256": "1512282919e821fb15606b5c0df467413f0fadc1c5fe8d70adfee1b6c4c7af2e"
+    },
+    "trueforge": {
+      "yaml": "name: realityshift_adaptation_v3\nversion: 2\npolicy:\n  controller: recovery\n  approach: stabilized\n  stall: controlled_repush\n  overshoot: reposition_correct\n  contact: stabilized_reacquire\n  tracking_memory: progress_gated\n  braking: pose_hold\n",
+      "sha256": "fc1f7e9fe8a51d9626f901ec46618d67be905915637587151a493525993990f1"
+    }
+  }
+}

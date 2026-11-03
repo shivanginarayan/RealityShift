@@ -1,0 +1,19 @@
+{
+  "authorship": "developer primitives; actual agent policy selection recorded in tool events",
+  "note": "reasoning_content removed recursively from public projections. Export receipts retain hashes of original private exports.",
+  "sha256": {
+    "audit.jsonl": "a30788b6a56c547a03b10b357d223a85822d664e1ebb887f6ee8572f608ec7dc",
+    "final-completion.json": "bb8e8e124c100328ee9d56a16d18470ee99eb96079505aaaf3b970858a92dd35",
+    "final-summary.json": "6557b8f88eec2770919329a7316aed3dbd91130f2bd1c841d6a4d57c707df610",
+    "finalized.json": "c6de3f94c9b1a4ef854c83cbf23ac442d87b10d3c32b31afa814ae95498b9ba5",
+    "search.json": "22c0ab29279a796ca09725cb8d65be027f2bc8bba50a6f99be6eb08f557c669e",
+    "session-reservation.json": "8de17b569b47fad98adbd104880187da71c3c27dfcb9808fb920c1a88eb0596c",
+    "state.json": "4e605be4df7e438a2fba894d7de518f7b51088192f34ac2b8cab26e2f6e91c73",
+    "trajectories.zip": "6a3df078f02bcfe7cea6bac4ece99905f86d8a3aed7f2ef413af566ea37a8e98",
+    "trueforge-agent.json": "b733f02f358919b9a5c7f665e4a9546569d5dd9a473991e44fb4bfcd37c7ec2c",
+    "turn1/agent.json": "4eebffd6f01c1493522741084cf873be2690df81761b86a8342f51dec979765e",
+    "turn1/events.jsonl": "ae14b7e576e5193e089aaf607b1141616d74cbcf052c02f5d349285768d8156d",
+    "turn1/evidence.json": "5ecb66842ae57f37d2dac74cfaa91c5b82f640b159d9de4717114dd96e75d6fb",
+    "turn1/run.json": "6ba27834687c09b2dd56b651cd99b622404453f16b401129dccb5de7c4a842be"
+  }
+}

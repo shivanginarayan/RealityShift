@@ -1,0 +1,104 @@
+{
+  "method": "predeclared developer anchor plus four seeded enum samples, all compared with original",
+  "used_evaluations": 6,
+  "limit": 6,
+  "best_index": 1,
+  "runs": [
+    {
+      "index": 0,
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 3,
+        "success_rate": 0.14285714285714285,
+        "score": 23.60760885094309,
+        "rank": [
+          0.14285714285714285,
+          -0.17826215967880357,
+          -3.663362904985968
+        ]
+      },
+      "policy_sha256": "86a56344c4d58e77a5d8dbd418015a8366345d00be54bcc6014cedb2f50fa12d"
+    },
+    {
+      "index": 1,
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 14,
+        "success_rate": 0.6666666666666666,
+        "score": 66.57267466901799,
+        "rank": [
+          0.6666666666666666,
+          -0.049968847560264776,
+          -0.5504299920155867
+        ]
+      },
+      "policy_sha256": "1512282919e821fb15606b5c0df467413f0fadc1c5fe8d70adfee1b6c4c7af2e"
+    },
+    {
+      "index": 2,
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 13,
+        "success_rate": 0.6190476190476191,
+        "score": 62.470090007433825,
+        "rank": [
+          0.6190476190476191,
+          -0.05908108314748786,
+          -0.5505956903288997
+        ]
+      },
+      "policy_sha256": "5455008e9518706f3052a72809ec6e34d4372b6e6137e2a09686b1abe8ac7975"
+    },
+    {
+      "index": 3,
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 5,
+        "success_rate": 0.23809523809523808,
+        "score": 31.44768748809036,
+        "rank": [
+          0.23809523809523808,
+          -0.15031574930567745,
+          -2.125943361287407
+        ]
+      },
+      "policy_sha256": "0a7e3bb67309d718859c3372f229e4b48f4565bd40eb2f216e3c4454a68d6b3b"
+    },
+    {
+      "index": 4,
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 11,
+        "success_rate": 0.5238095238095238,
+        "score": 55.82527615066857,
+        "rank": [
+          0.5238095238095238,
+          -0.059685556550745936,
+          -0.7688621206997791
+        ]
+      },
+      "policy_sha256": "2806d953d699cd87a955f6a984d3183a1cd7ae879f4ba5afec52ed1a8afaf8eb"
+    },
+    {
+      "index": 5,
+      "aggregate": {
+        "eligible": true,
+        "episodes": 21,
+        "successes": 13,
+        "success_rate": 0.6190476190476191,
+        "score": 62.5139823903272,
+        "rank": [
+          0.6190476190476191,
+          -0.05798377357515302,
+          -0.7691663696218107
+        ]
+      },
+      "policy_sha256": "f80776a7ffb34cb9d95c0c325b8f623c9fc5075742dd4b5fc9fb28883a1d6f6c"
+    }
+  ]
+}
